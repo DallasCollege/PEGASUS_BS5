@@ -1,0 +1,77 @@
+<header id="l-header-mobile" aria-hidden="false">
+    <div class="skiptocontent"><a style="color:#ffffff!important" href="#main__body">Skip to Main Content</a></div>
+    <nav class="navbar navbar-default navbar-utility bg-cprimary-lt">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+          <ul class="nav navbar-nav">
+            <li class="dropdown dropdown--people">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Governance <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span></a>
+              <ul class="dropdown-menu">
+                  {% for item in site.data.sitemap.gov %}
+                      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  {% endfor %}
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown dropdown--tools">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cheatsheets &amp; Tools <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span></a>
+              <ul class="dropdown-menu row">
+                  {% for item in site.data.sitemap.toc2 %}
+                      <li class="col-xs-4 col-xxs-6"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  {% endfor %}
+                  {% for item in site.data.sitemap.tools %}
+                      <li class="col-xs-4 col-xxs-6"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  {% endfor %}
+              </ul>
+            </li>
+          </ul>
+
+    </nav>
+
+
+    <nav class="navbar navbar-inverse shadow-nav pgs-banner bg-cprimary" data-spy="affix" data-offset-top="45">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header"  style="background: linear-gradient(0deg, rgba(0, 51, 133, 0.85), rgba(0, 51, 133, 0.85)), url('{{ site.baseurl }}images/banner.jpg');background-position: middle right;">
+
+            <button class="hamburger hamburger--squeeze navbar-toggle collapsed bg-cprimary-dk navbar-primary-toggle" type="button" data-toggle="collapse" data-target="#l-header-mobile__menu" aria-expanded="false">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span><span class="sr-only">Toggle Menu</span>
+              </span>
+            </button>
+
+            <script>
+              var $hamburger = $(".hamburger");
+                $hamburger.on("click", function(e) {
+                $hamburger.toggleClass("is-active");
+                // Do something else, like open/close menu
+              });
+            </script>
+
+
+
+          <a class="mobile-logo" href="https://www.dallascollege.edu/"><img src="https://www.dallascollege.edu/publishingimages/logos/dc-logo-dmark-white.svg" alt="Dallas College"></a> <a href="#" class="mobile-logo">PEGASUS</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="l-header-mobile__menu">
+          <ul class="nav navbar-nav navbar-primary">
+              {% for item in site.data.sitemap.toc %}
+              <li class="dropdown">
+                    <a href="#" class="dropdown-toggle{% if page.url contains "/{{ item.slug}}" %} current-page{% endif %}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu row">
+                        {% for entry in item.subfolderitems %}
+                        <li class="col-xs-4 col-xxs-6"><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
+                        {% endfor %}
+                    </ul>
+              </li>
+              {% endfor %}
+          </ul>
+          <ul class="nav navbar-nav navbar-secondary bg-cprimary-dk">
+            <li><a href="{{ site.baseurl }}changelog.html">Changelog</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+</header>

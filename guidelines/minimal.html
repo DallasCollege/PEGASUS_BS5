@@ -1,0 +1,29 @@
+---
+layout: sidebar
+title: Minimal Headers and Footers
+permalink: guidelines/minimal.html
+slug: minimal
+---
+
+<section>
+    <h2 class="page-header">Minimal Header</h2>
+    <img src="{{ site.baseurl}}images/guidelines/min-header.jpg" alt="Screenshot of subsite landing page showing no primary navigation, utility navigation or breadcrumb." class="shadow-3 img-responsive"/>
+    <div class="spacer-1"></div>
+    <p>When a subsite landing page needs to be used as an ad landing page (or any landing page where options/menus should be kept clean and to a minimum) use the following CSS to remove primary navigation, utility navigation and breadcrumb bar:</p>
+    <pre><code class="language-css">#s4-workspace .l-breadcrumb-bar, /* breadcumb bar */
+#s4-workspace #l-nav-utility, /* utility nav bar */
+#s4-workspace #l-nav-primary { /* primary nav bar */
+&#x9;display:none
+}</code></pre>
+    <div class="alert bg-info"><p>Because the primary and utility nav bars are tucked away in the hamburger menu on mobile, there is no need to hide the mobile versions.</p></div>
+</section>
+<section>
+    <h2 class="page-header">Minimal Footer</h2>
+    <img src="{{ site.baseurl}}images/guidelines/min-footer.jpg" alt="Screenshot of subsite landing page showing no CTA footer bar or main footer bar." class="shadow-1 img-responsive" />
+    <div class="spacer-1"></div>
+    <p>To make a landing page even more minimal, the option to minify the footer is also available. </p>
+    <pre><code class="language-css">#s4-workspace #l-footer_cta, /* cta footer bar */
+#s4-workspace #l-footer_main { /* main footer bar */
+&#x9;display:none
+}</code></pre>
+</section>

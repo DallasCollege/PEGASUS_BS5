@@ -1,0 +1,43 @@
+<!-- Sidebar Begin -->
+<aside id="sidebar" class="sidebar col-md-3 col-offset-1 col-md-push-9">
+
+  <div class="sidebar-img">
+    <img class="pgs-featured-img img-responsive "src="{{ site.baseurl }}images/menu/pegasus-menu-{{ page.slug }}-400x400.png" alt="">
+  </div>
+
+  <div class="ms-core-sideNavBox-removeLeftMargin">
+    <nav class="navbar pgs-navbar pgs-navbar--sidebar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pgs-navbar--sidebar__collapse" aria-expanded="false">Guidelines Menu<span aria-hidden="true" class="ico fas fa-chevron-circle-down"></span></button>
+      </div>
+      <div class="collapse navbar-collapse" id="pgs-navbar--sidebar__collapse">
+        <div id="ctl00_PlaceHolderMain_QuickLaunchNavigationManager">
+          <div id="zz1_V4QuickLaunchMenu" style="float: left;">
+              <ul class="level1 nav nav-stacked static" tabindex="0" role="menu" style="position: relative; width: auto; float: left;">
+                  <li><a href="{{ site.baseurl }}guidelines/index.html">Guidelines</a></li>
+                  {% for item in site.data.sitemap.toc %}
+                      {% for entry in item.subfolderitems %}
+                          {% if entry.url contains "guidelines" %}
+                  <li><a class="static {% if page.title == "{{ entry.page }}" %} selected{% endif %}" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
+                          {% endif %}
+                      {% endfor %}
+                  {% endfor %}
+              </ul>
+          </div>
+          <div style="clear: left;"></div>
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+  </div>
+
+  <div class="sidebar__additional">
+    <!--<h2>Optional Stuff:</h2>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul> -->
+  </div>
+
+</aside>
+<!-- Sidebar End -->

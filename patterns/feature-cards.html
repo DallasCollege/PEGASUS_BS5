@@ -1,0 +1,227 @@
+---
+layout: default-level2
+title: Feature Cards
+cat: Patterns
+permalink: patterns/feature-cards.html
+---
+
+
+                <div class="subsection3" id="feature-cards">
+                    <div class="text-right">
+                        <a href="https://my2.siteimprove.com/Policy/26196522395/PolicyDetails/Content/1?policyId=29787570245&tagIds=&ignoredPolicyViolationsOnly=false&last30DaysOnly=false" class="button button-mn bg-cgrey"><span class="ico fas fa-search ico-left" aria-hidden="true"></span>View SiteImprove Policy for This Pattern</a>
+                    </div>
+                    <p class="lead">A Feature Card (formerly known as Content Box #3) is a flexible component used for building an individual block of content around one idea or "feature." Multiple cards can be used together to describe a variety of
+                        features.
+                        <p>Each card includes the option of using: </p>
+                        <ul>
+                            <li>an icon (or image)</li>
+                            <li>a heading</li>
+                            <li>descriptive copy</li>
+                            <li>a link</li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="code-example shadow-3">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>As a link:</p>
+                                            <div class="feature-card bg-cprimary">
+                                                <a href="#">
+                                                    <div class="cb-mainico">
+                                                        <span aria-hidden="true" class="ico fas fa-briefcase"></span>&#8203;
+                                                    </div>
+                                                    <h3 class="cb-title">The Job Skills You Need</h3>
+                                                </a>
+                                                <p>Go from “higher ed” to “hired” with hands-on training that builds job-ready skills. You’ll learn from industry professionals in a small, supportive environment. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="code-example shadow-3">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>Not as a link:</p>
+                                            <div class="feature-card bg-cprimary">
+                                                <div class="cb-mainico">
+                                                    <span aria-hidden="true" class="ico fas fa-briefcase"></span>&#8203;
+                                                </div>
+                                                <h3 class="cb-title">The Job Skills You Need</h3>
+                                                <p>Go from “higher ed” to “hired” with hands-on training that builds job-ready skills. You’ll learn from industry professionals in a small, supportive environment. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row extra-space">
+                            <div class="col-md-12">
+                                <h3>Basic Code and Classes:</h3>
+                                <pre><code class="language-markup">&lt;div class=&quot;feature-card bg-cprimary&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+        &lt;div class=&quot;cb-mainico&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-briefcase&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;h3 class=&quot;cb-title&quot;&gt;The Job Skills You Need&lt;/h3&gt;
+    &lt;/a&gt;
+    &lt;p&gt;Go from ... environment.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                        <div class="spacer-2"></div>
+                        <ul>
+                          <li><code>.feature-card</code> - applied to the containing <code>&lt;div&gt;</code></li>
+                          <li>Usually a Feature Card is used to link to another page, but the <code>&lt;a&gt;</code> element can be removed altogether if no link is needed</li>
+                          <li><code>.cb-mainico</code> - applied the child <code>&lt;div&gt;</code> where the icon will appear (to use an image instead, see below)</li>
+                          <li><code>.cb-title</code> - applied the element (usually a heading element) to serve as the title of the card (for additional styling options, you can apply any of the <a href="{{ site.baseurl }}elements/typography.html#cb-titles">CB Titles in the Pegasus heading specifications</a>)</li>
+                          <li>Feature Cards can be used at any width; simply wrap component within a sized <code>&lt;div&gt;</code>, or any bootstrap column</li>
+                        </ul>
+                        <div class="spacer-2"></div>
+                        <div class="alert extra-padding alert-info">
+                          <h3><strong><span class="ico ico-left fas fa-palette" aria-hidden="true"></span>Style This Component</strong></h3>
+                          <p>Notice how variations to the layout above can be made by customizing individual USE Framework elements like the following:</p>
+                          <ul>
+                            <li>The use of a <a href="{{ site.baseurl }}elements/utilities/shadows.html">shadow</a> on the card (apply to <code>.feature-card</code>) </li>
+                            <li>The <a href="{{ site.baseurl }}elements/colors.html">color of the background</a> of the card (apply to <code>.feature-card</code>; <code>.bg-cprimary</code> is used in this example) </li>
+                            <li>The <a href="{{ site.baseurl }}elements/typography.html#heading-styles">size and style of the heading</a> (<code>h2.cb-title</code> is used in this example)</li>
+                          </ul>
+                        </div>
+
+                        <div class="alert extra-padding alert-warning">
+                          <h3><strong><span class="ico ico-left fas fa-universal-access" aria-hidden="true"></span>Accessibility Note!</strong></h3>
+                          <ul>
+                            <li>The above example uses an <code>&lt;h3&gt;</code> but any of the heading elements can be used <strong>as long as it constitutes semantic code</strong>. The <code>.cb-title</code> class will always control the size and weight of that element.</li>
+                            <li>If there is no descriptive copy beneath the title, we recommend using the <code>&lt;span&gt;</code> element instead.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="spacer-3"></div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3>Styles and Variations</h3>
+                        <div class="alert extra-padding alert-info">
+                          <p><strong><span class="ico fas fa-palette" aria-hidden="true"></span> Style Note:</strong> Notice how variations to the layouts below can be made by customizing individual USE Framework elements like the following:</p>
+                          <div class="spacer-1"></div>
+                          <ul>
+                            <li>The use of a <a href="{{ site.baseurl }}elements/utilities/shadows.html">shadow</a> on the icon circle/square (apply to <code>.cb-mainico</code>) or on the image (apply to <code>img.cb-mainimg</code>) </li>
+                            <li>The <a href="{{ site.baseurl }}elements/colors.html">color</a> of the icon circle/square (apply to <code>.cb-mainico</code>) </li>
+                            <li>The <a href="{{ site.baseurl }}elements/typography.html#heading-styles">size and style of the headings</a> (<code>h2.cb-title</code> is used in this example)</li>
+                          </ul>
+                        </div>
+                        <div class="row extra-space">
+                          <div class="col-sm-6">
+                            <h4>Icon In Circle</h4>
+                            <div class="code-example shadow-3">
+                              <div class="feature-card bg-cgrey">
+                                  <div class="cb-mainico bg-csecondary img-circle shadow-1">
+                              			<span aria-hidden="true"  class="ico fab fa-twitter"></span>&#8203;
+                              		</div>
+                                  <h3 class="cb-title">Training Close to Home</h3>
+                                <p>Spend less time ... completely online.</p>
+                              </div>
+                            </div>
+                            <p>To use, simply add any <a href="{{ site.baseurl }}elements/colors.html">color class</a> <em>and</em> the <code>.img-circle</code> class to the <code>div.cb-mainico</code></p>
+                  <pre><code class="language-markup">&lt;div class=&quot;feature-card bg-cgrey&quot;&gt;
+    &lt;div class=&quot;cb-mainico bg-csecondary img-circle shadow-1&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;h3 class=&quot;cb-title&quot;&gt;Title&lt;/h3&gt;
+    &lt;p&gt;Spend less time ... completely online.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                          </div>
+                          <div class="col-sm-6">
+                            <h4>Icon In Square</h4>
+                            <div class="code-example shadow-3">
+                              <div class="feature-card bg-cgrey">
+                                  <div class="cb-mainico bg-csecondary ico-square shadow-1">
+                              			<span aria-hidden="true"  class="ico fab fa-twitter"></span>&#8203;
+                              		</div>
+                                  <h3 class="cb-title">Training Close to Home</h3>
+                                <p>Spend less time ... completely online.</p>
+                              </div>
+                            </div>
+                            <p>To use, simply add any <a href="{{ site.baseurl }}elements/colors.html">color class</a> <em>and</em> the <code>.ico-square</code> class to the <code>div.cb-mainico</code></p>
+                  <pre><code class="language-markup">&lt;div class=&quot;feature-card bg-cgrey&quot;&gt;
+    &lt;div class=&quot;cb-mainico bg-csecondary ico-square shadow-1&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;h3 class=&quot;cb-title&quot;&gt;Title&lt;/h3&gt;
+    &lt;p&gt;Spend less time ... completely online.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                          </div>
+                          <div class="col-sm-6">
+                            <h4>Feature Card with Circle Image</h4>
+                            <div class="code-example shadow-3">
+                              <div class="feature-card bg-cgrey">
+                                  <img class="cb-mainimg img-circle" src="https://via.placeholder.com/150x150">
+                                  <h3 class="cb-title">Training Close to Home</h3>
+                                <p>Spend less time ... completely online.</p>
+                              </div>
+                            </div>
+                            <p>To use, replace the entire <code>div.cb-mainico</code> element with: <code>img.cb-mainimg</code>. Also use <code>.img-circle</code>.</p>
+                  <pre><code class="language-markup">&lt;div class=&quot;feature-card bg-cgrey&quot;&gt;
+    &lt;img class=&quot;cb-mainimg img-circle&quot; src=&quot;#&quot;&gt;
+        &lt;h3 class=&quot;cb-title&quot;&gt;Title&lt;/h3&gt;
+        &lt;p&gt;Spend less time ... completely online.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                          </div>
+                          <div class="col-sm-6">
+                            <h4>Feature Card with Rounded-Square Image</h4>
+                            <div class="code-example shadow-3">
+                              <div class="feature-card bg-cgrey">
+                                  <img class="cb-mainimg img-rounded" src="https://via.placeholder.com/150x150">
+                                  <h3 class="cb-title">Training Close to Home</h3>
+                                <p>Spend less time ... completely online.</p>
+                              </div>
+                            </div>
+                            <p>To use, replace the entire <code>div.cb-mainico</code> element with: <code>img.cb-mainimg</code>. Also use <code>.img-rounded</code>.</p>
+                  <pre><code class="language-markup">&lt;div class=&quot;feature-card bg-cgrey&quot;&gt;
+    &lt;img class=&quot;cb-mainimg img-rounded&quot; src=&quot;#&quot;&gt;
+        &lt;h3 class=&quot;cb-title&quot;&gt;Title&lt;/h3&gt;
+        &lt;p&gt;Spend less time ... completely online.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                          </div>
+                          <div class="col-sm-6">
+                            <h4>Feature Card with Large Image</h4>
+                            <div class="code-example shadow-3">
+                              <div class="feature-card bg-cgrey">
+                                  <img class="cb-mainimg-lg img-circle" src="https://via.placeholder.com/150x150">
+                                  <h3 class="cb-title">Training Close to Home</h3>
+                                <p>Spend less time ... completely online.</p>
+                              </div>
+                            </div>
+                            <p>To use, simply add <code>.ico-block</code> class to the <code>div.cb-mainico</code> to achieve the full icon block.</p>
+                  <pre><code class="language-markup">&lt;div class=&quot;feature-card bg-cgrey&quot;&gt;
+    &lt;div class=&quot;cb-mainico bg-csecondary ico-block&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;h3 class=&quot;cb-title&quot;&gt;Title&lt;/h3&gt;
+    &lt;p&gt;Spend less time ... completely online.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                          </div>
+                          <div class="col-sm-6">
+                            <h4>Icon In Full Block</h4>
+                            <div class="code-example shadow-3">
+                              <div class="feature-card bg-cgrey">
+                                  <div class="cb-mainico bg-cprimary ico-block">
+                              			<span aria-hidden="true"  class="ico fab fa-twitter"></span>&#8203;
+                              		</div>
+                                  <h3 class="cb-title">Training Close to Home</h3>
+                                <p>Spend less time ... completely online.</p>
+                              </div>
+                            </div>
+                            <p>To use, simply add <code>.ico-block</code> class to the <code>div.cb-mainico</code> to achieve the full icon block.</p>
+                  <pre><code class="language-markup">&lt;div class=&quot;feature-card bg-cgrey&quot;&gt;
+    &lt;div class=&quot;cb-mainico bg-cprimary ico-block&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;h3 class=&quot;cb-title&quot;&gt;Title&lt;/h3&gt;
+    &lt;p&gt;Spend less time ... completely online.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {% include patterns/nav.html %}

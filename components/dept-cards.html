@@ -1,0 +1,505 @@
+---
+layout: default-level2
+title: Department Cards
+cat: Components
+permalink: components/dept-cards.html
+---
+
+
+                <div class="subsection3" id="dept-cards">
+                    <p class="lead">Department Cards are used to standardize the appearance of departmental contact information including location, phone numbers, email addresses, office hours, social media links, etc.</p>
+                    <p>Department Cards are available in two modes:</p>
+                    <ul>
+                        <li><strong>Standard Mode - </strong>to be used when it is the only department card on a page</li>
+                        <li><strong>Quiet Mode - </strong>to be used when multiple contact cards (like in accordions) are used on a page</li>
+                    </ul>
+                    <div class="spacer-3"></div>
+                    <section>
+                       <h3>Example of Department Card (Standard Mode)</h3>
+                       <div class="code-example shadow-3">
+                           <div class="pgs-dept-card">
+                              <h2 class="pgs-dept-card__title">Mountain View Counseling Center</h2>
+                              <div class="row">
+                                 <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                    <h3 class="pgs-dept-card__subhead">Visit Us</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>Student Services Center, S-2076</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span><strong>Mountain View</strong><br/> 4849 W. Illiniois Ave.<br/> Dallas, TX 75211 </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                    <h3 class="pgs-dept-card__subhead">Call or Email Us</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>214-860-3640</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:MVC-lets-talk@dcccd.edu">Email Counseling Center</a></li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                    <h3 class="pgs-dept-card__subhead">Office Hours</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Fri:</strong> 8:30 a.m. - 4:30 p.m.</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Sat-Sun:</strong> Closed</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                       </div>
+                       <div class="spacer-2"></div>
+<pre><code class="language-markup">&lt;div class=&quot;pgs-dept-card&quot;&gt;
+   &lt;h2 class=&quot;pgs-dept-card__title&quot;&gt;[DEPARTMENT TITLE]&lt;/h2&gt;
+   &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+         &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h3&gt;
+         &lt;ul class=&quot;fa-ul&quot;&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;[BUILDING NAME], [BLDG LETTER]-[ROOM NUMBER]&lt;/li&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;!-- Reusable Content Goes Here --&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+         &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h3&gt;
+         &lt;ul class=&quot;fa-ul&quot;&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;[123-456-7890]&lt;/li&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;[EMAIL]@dcccd.edu&quot;&gt;Email [DEPT TITLE]&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+         &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Office Hours [OR HOURS OF OPERATION]&lt;/h3&gt;
+         &lt;ul class=&quot;fa-ul&quot;&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Mon-Fri:&lt;/strong&gt; 8:30 a.m. - 4:30 p.m.&lt;/li&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<div class="spacer-3"></div>
+                       <h3>Here are some notes to be aware of when using Department Cards:</h3>
+                       <div class="indent">
+                       <h4>&quot;Visit Us&quot; Column</h4>
+                       <ul>
+                          <li>The room location item should be:
+                             <strong>[Building Name], [Building Letter]-[Room No.]</strong> (for example:
+                             <strong>Thunderduck Hall, T-101</strong>)
+                             <ul>
+                                <li>If the campus building doesn&#39;t have a name or if the buildings are more commonly referred to by their letter code, then we would use:
+                                   <strong>Building [Building Letter], [Building Letter]-[Room No.]</strong> (for example:
+                                   <strong>Building T, T-101</strong>)</li>
+                             </ul>
+                          </li>
+                          <li>The campus location item should be input using Reusable Content (for easy updates once campus/location/center names are decided). If the location is a previous-college&#39;s community campus (for example, Richland College Garland Campus), the address for that community campus should be used and not the address for the main campus.</li>
+                          <li>Within the Reusable Content snippet, there should be a link to that campus location on Google Maps.</li>
+                          <li>If, for whatever reason, no room location is provided, that list item will be removed. Do not just leave it empty.</li>
+                          <li>If a mailing address is provided: Add a new subheading underneath &quot;Visit Us&quot; titled &quot;Mailing Address&quot; and place the mailing address here (even if it is the exact same as the location above). Also, change the icon for the list item to be
+                             <code>ico fas fa-mail-bulk</code></li>
+                       </ul>
+                       </div>
+                       <div class="indent">
+                       <h4>&quot;Call or Email Us&quot; Column</h4>
+                       <ul>
+                          <li>If the dept. lists more than one phone: Make sure to specify what each phone number is for in parantheses after the number.</li>
+                          <li>If the dept. lists more than one email: Make sure to specify what each email is for within the link text itself.</li>
+                          <li>If the dept. contact info also includes social media links: You can change that dept. card subhead to read &quot;Connect With Us&quot; and add extra list items for social media accounts. Make sure to use those the
+                             <a href="https://fontawesome.com/icons?d=gallery&amp;s=brands%2csolid&amp;m=free">appropriate icons for each social media link</a>. </li>
+                          <li>If the dept. lists only a phone number and nothing else: Change the subhead to read &quot;Call Us&quot;</li>
+                          <li>If the dept. lists only an email and nothing else: Change the subhead to read &quot;Email Us&quot;</li>
+                          <li>If the dept. contact phone is a person&#39;s direct number: Put that person&#39;s name in parantheses after the phone number.</li>
+                          <li>If the dept. contact email is a person&#39;s direct email: Put that person&#39;s name in the link text itself so it reads &quot;Email John Doe&quot;.</li>
+                       </ul>
+                   </div>
+                   <div class="indent">
+                       <div class="alert alert-warning extra-padding">
+                       <h4 class="h3"><span class="ico fas fa-universal-access ico-left" aria-hidden="true"></span>Accessibility Note: Email Link Text</h4>
+                       <p>If you are listing multiple department cards on one page:</p>
+                       <ul>
+                           <li>Instead of having the email address be the actual link text (as it was previously), we are now making the link text read: &quot;Email [Department Name].&quot; However, having seven links on a page that read the exact same is horrible for accessibility.</li>
+                       </ul>
+                           <p>Please make sure that the following code is always included when using this new format:</p>
+                       <pre class="language-markup"><code>&lt;a href=&quot;email@dcccd.edu&quot;&gt;Email &lt;span class=&quot;sr-only&quot;&gt;Brookhaven &lt;/span&gt;Health Center&lt;/a&gt;</code></pre>
+                       <p>This will ensure that when screen readers read all link text on a page, that the dictation will specify which colleges the email address pertains to.</p>
+                   </div>
+                   </div>
+                   <div class="indent">
+                       <h4>&quot;Hours&quot; Column</h4>
+                       <ul>
+                          <li>We have used the phrases &quot;Office Hours&quot; and &quot;Hours of Operation&quot; interchangeably for the title here. If it is a student-facing service we tend toward &quot;Hours of Operation.&quot; If it&#39;s a department or office that does not primarily engage with students in person, we tend toward &quot;Office Hours.&quot;</li>
+                          <li>We use the following abbreviations for days of the week: Mon, Tues, Wed, Thurs, Fri, Sat, Sun</li>
+                          <li>We adhere to AP style for the writing of the times. By saying: 8 a.m., 10:30 a.m., Noon, 2:15 p.m.</li>
+                          <li>When displaying a time range we type as follows: [Day]-[Day]: [Time] - [Time] (if both times are in a.m or p.m., then it only needs to be included on the 2nd time)</li>
+                          <li>If the office or department is closed on Saturday and Sunday, please indicate that with &quot;Sat-Sun: Closed&quot;</li>
+                          <li>If there are additional notes or notices about Hours, add another list item and bold the word &quot;Note:&quot; with the note following it. Make sure not to include any icons for this list item</li>
+                          <li>If department list different sets of hours (like Fall hours and Spring hours): Change the subheading to read &quot;Fall Office Hours&quot; and display the fall hours there. Then add another subhead below that with &quot;Spring Office Hours&quot; and display the spring hours there.</li>
+                       </ul>
+                       </div>
+                       <div class="alert alert-warning extra-padding">
+                       <h4 class="h3"><span class="ico fas fa-universal-access ico-left" aria-hidden="true"></span>Accessibility Note: Headings</h4>
+                       <p>Be mindful about the heading hierarchy when you place an department card on the page. If you are placing a department card underneath a
+                          <code>&lt;h2&gt;</code> element, then the hierarchy should be as follows:</p>
+                       <pre class="language-markup"><code>&lt;h2&gt;Heading 2 Already On the Page&lt;/h2&gt;
+&lt;h3&gt;Department Name&lt;/h3&gt;
+&lt;h4&gt;Visit Us&lt;/h4&gt;
+&lt;h4&gt;Call or Email Us&lt;/h4&gt;
+&lt;h4&gt;Hours of Operation&lt;/h4&gt;
+                      </code></pre>
+                       <p>If you are placing a department card by itself and not underneath a
+                          <code>&lt;h2&gt;</code> element, then the hierarchy should be as follows:</p>
+                       <pre class="language-markup"><code>&lt;h2&gt;Department Name&lt;/h2&gt;
+&lt;h3&gt;Visit Us&lt;/h3&gt;
+&lt;h3&gt;Call or Email Us&lt;/h3&gt;
+&lt;h3&gt;Hours of Operation&lt;/h3&gt;
+                      </code></pre>
+                       <p><a href="https://webaim.org/techniques/semanticstructure/#contentstructure">Learn more about Headings on WebAIM.org</a></p>
+                          </div>
+                          </section>
+                          <div class="spacer-3"></div>
+                          <section>
+                             <h3 id="quiet">Quiet Mode</h3>
+                             <p>When using a Department Card listed along side other Department Cards (even within a group of accordions) use the QUIET MODE (with no title heading): </p>
+                             <div class="code-example shadow-3">
+                                 <div class="pgs-dept-card pgs-dept-card--quiet">
+                                    <div class="row">
+                                       <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                          <h3 class="pgs-dept-card__subhead">Visit Us</h3>
+                                          <ul class="fa-ul">
+                                             <li>
+                                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>Student Services Center, S-2076</li>
+                                             <li>
+                                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span><strong>Mountain View</strong><br/> 4849 W. Illiniois Ave.<br/> Dallas, TX 75211 </li>
+                                          </ul>
+                                       </div>
+                                       <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                          <h3 class="pgs-dept-card__subhead">Call or Email Us</h3>
+                                          <ul class="fa-ul">
+                                             <li>
+                                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>214-860-3640</li>
+                                             <li>
+                                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:MVC-lets-talk@dcccd.edu">Email Counseling Center</a></li>
+                                          </ul>
+                                       </div>
+                                       <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                          <h3 class="pgs-dept-card__subhead">Office Hours</h3>
+                                          <ul class="fa-ul">
+                                             <li>
+                                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Fri:</strong> 8:30 a.m. - 4:30 p.m.</li>
+                                             <li>
+                                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Sat-Sun:</strong> Closed</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                             </div>
+                             <pre class="language-markup"><code>  &lt;div class=&quot;pgs-dept-card pgs-dept-card--quiet&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+        &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h3&gt;
+        &lt;ul class=&quot;fa-ul&quot;&gt;
+          &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;[BUILDING NAME], [BLDG LETTER]-[ROOM NUMBER]&lt;/li&gt;
+          &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;!-- Reusable Content Goes Here --&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+        &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h3&gt;
+        &lt;ul class=&quot;fa-ul&quot;&gt;
+          &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;[123-456-7890]&lt;/li&gt;
+          &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;mailto:[EMAIL]@dcccd.edu&quot;&gt;Email [DEPT NAME]&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+        &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Office Hours[OR Hours of Operation]&lt;/h3&gt;
+        &lt;ul class=&quot;fa-ul&quot;&gt;
+          &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Mon-Fri:&lt;/strong&gt; 8:30 a.m. - 4:30 p.m.&lt;/li&gt;
+          &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+
+
+                   </section>
+                    <div class="spacer-4"></div>
+
+                    <section>
+                       <h3 class="h2" id="full">Example Showing Almost All Variations</h3>
+                       <p>Below are extreme examples of Department Cards that hold all sorts of different information:</p>
+                       <div class="spacer-3"></div>
+                       <h4>Variations in Standard Mode</h4>
+                       <div class="shadow-3 code-example">
+                           <div class="pgs-dept-card">
+                              <h2 class="pgs-dept-card__title">Richland Multicultural Center</h2>
+                              <div class="row">
+                                 <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                    <h3 class="pgs-dept-card__subhead">Visit Us</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, T-150</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span><strong>Richland</strong><br/> 12800 Abrams Rd.<br/> Dallas, TX 75243 </li>
+                                    </ul>
+                                    <h3 class="pgs-dept-card__subhead">Mailing Address</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-mail-bulk"></span></span>Multicultural Center<br/>Richland Campus<br/> 12800 Abrams Rd.<br/> Dallas, TX 75243 </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                    <h3 class="pgs-dept-card__subhead">Call or Email Us</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>972-238-6900 (general information)</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>972-238-6291 (direct line)</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-fax"></span></span>972-238-6165 (fax)</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="/sandbox/migration/Pages/richlandmulticultural@dcccd.edu">Email
+                                             <span class="sr-only">Richland </span>Multicultural Center (for resident students)</a></li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="/sandbox/migration/Pages/RLCWorld@dcccd.edu">Email
+                                             <span class="sr-only">Richland </span>Multicultural Center (for international students)</a></li>
+                                    </ul>
+                                    <h3 class="pgs-dept-card__subhead">Connect with Us</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fab fa-facebook"></span></span><a href="https://www.facebook.com/rlcmulticultural"><span class="sr-only">Richland Multicultural Center</span>On Facebook</a></li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fab fa-twitter"></span></span><a href="https://www.twitter.com/rlc_mc"><span class="sr-only">Richland Multicultural Center</span>On Twitter</a></li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fab fa-instagram"></span></span><a href="https://www.instagram.com/rlcmulticultural"><span class="sr-only">Richland Multicultural Center</span>On Instagram</a></li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                    <h3 class="pgs-dept-card__subhead">Hours for Academic Advising</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Thurs:</strong> 8 a.m. - 7 p.m.</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Fri:</strong> 8 a.m. - 5 p.m.</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Sat-Sun:</strong> Closed</li>
+                                       <li>
+                                          <strong>Note:</strong> Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration</li>
+                                    </ul>
+                                    <h3 class="pgs-dept-card__subhead">Hours for International Advising</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Thurs:</strong> 8:30 a.m. - 4:30 p.m.</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Fri-Sun:</strong> Closed</li>
+                                       <li>
+                                          <strong>Note:</strong> Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="panel-group pgs-accordion pgs-accordion--sm pgs-accordion--quiet" aria-expanded="false">
+                            <h5>
+                               <a href="#Collapse-variations-standard" class="collapsible collapsed" data-toggle="collapse">
+                                  <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>View code snippet <span class="sr-only"> for Variations in Standard Mode</span></a></h5>
+                            <div id="Collapse-variations-standard" class="panel-collapse collapse">
+                               <div class="panel-body">
+                                   <pre class="language-markup"><code>&lt;div class=&quot;pgs-dept-card&quot;&gt;
+  &lt;h2 class=&quot;pgs-dept-card__title&quot;&gt;Richland Multicultural Center&lt;/h2&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+      &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h3&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Thunderduck Hall, T-150&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Richland&lt;/strong&gt;&lt;br&gt;
+          12800 Abrams Rd.&lt;br /&gt;
+          Dallas, TX 75243
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Mailing Address&lt;/h3&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-mail-bulk&quot;&gt;&lt;/span&gt;&lt;/span&gt;Multicultural Center&lt;br /&gt;Richland Campus&lt;br&gt;
+          12800 Abrams Rd.&lt;br /&gt;
+          Dallas, TX 75243
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+      &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h3&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;972-238-6900 (general information)&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;972-238-6291 (direct line)&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-fax&quot;&gt;&lt;/span&gt;&lt;/span&gt;972-238-6165 (fax)&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;richlandmulticultural@dcccd.edu&quot;&gt;Email &lt;span class=&quot;sr-only&quot;&gt;Richland &lt;/span&gt;Multicultural Center (for resident students)&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;RLCWorld@dcccd.edu&quot;&gt;Email &lt;span class=&quot;sr-only&quot;&gt;Richland &lt;/span&gt;Multicultural Center (for international students)&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Connect with Us&lt;/h3&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-facebook&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;https://www.facebook.com/rlcmulticultural&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Richland Multicultural Center&lt;/span&gt;On Facebook&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;https://www.twitter.com/rlc_mc&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Richland Multicultural Center&lt;/span&gt;On Twitter&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-instagram&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;https://www.instagram.com/rlcmulticultural&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Richland Multicultural Center&lt;/span&gt;On Instagram&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+      &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours for Academic Advising&lt;/h3&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 8 a.m. - 7 p.m.&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Fri:&lt;/strong&gt; 8 a.m. - 5 p.m.&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Note:&lt;/strong&gt; Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours for International Advising&lt;/h3&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 8:30 a.m. - 4:30 p.m.&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Fri-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Note:&lt;/strong&gt; Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+                               </div>
+                            </div>
+                         </div>
+                      <div class="spacer-3"></div>
+                      <h4>Variations in Quiet Mode</h4>
+                      <div class="code-example shadow-3">
+                           <div class="pgs-dept-card pgs-dept-card--quiet">
+                              <div class="row">
+                                 <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                    <h4 class="pgs-dept-card__subhead">Visit Us</h4>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, T-150</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span><strong>Richland</strong><br/> 12800 Abrams Rd.<br/> Dallas, TX 75243 </li>
+                                    </ul>
+                                    <h3 class="pgs-dept-card__subhead">Mailing Address</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-mail-bulk"></span></span>Multicultural Center<br/>Richland Campus<br/> 12800 Abrams Rd.<br/> Dallas, TX 75243 </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                    <h3 class="pgs-dept-card__subhead">Call or Email Us</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>972-238-6900 (general information)</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>972-238-6291 (direct line)</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-fax"></span></span>972-238-6165 (fax)</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="/sandbox/migration/Pages/richlandmulticultural@dcccd.edu">Email
+                                             <span class="sr-only">Richland </span>Multicultural Center (for resident students)</a></li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="/sandbox/migration/Pages/RLCWorld@dcccd.edu">Email
+                                             <span class="sr-only">Richland </span>Multicultural Center (for international students)</a></li>
+                                    </ul>
+                                    <h3 class="pgs-dept-card__subhead">Connect with Us</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fab fa-facebook"></span></span><a href="https://www.facebook.com/rlcmulticultural"><span class="sr-only">Richland Multicultural Center</span>On Facebook</a></li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fab fa-twitter"></span></span><a href="https://www.twitter.com/rlc_mc"><span class="sr-only">Richland Multicultural Center</span>On Twitter</a></li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fab fa-instagram"></span></span><a href="https://www.instagram.com/rlcmulticultural"><span class="sr-only">Richland Multicultural Center</span>On Instagram</a></li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                    <h3 class="pgs-dept-card__subhead">Hours for Academic Advising</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Thurs:</strong> 8 a.m. - 7 p.m.</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Fri:</strong> 8 a.m. - 5 p.m.</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Sat-Sun:</strong> Closed</li>
+                                       <li>
+                                          <strong>Note:</strong> Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration</li>
+                                    </ul>
+                                    <h3 class="pgs-dept-card__subhead">Hours for International Advising</h3>
+                                    <ul class="fa-ul">
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Thurs:</strong> 8:30 a.m. - 4:30 p.m.</li>
+                                       <li>
+                                          <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Fri-Sun:</strong> Closed</li>
+                                       <li>
+                                          <strong>Note:</strong> Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                       </div>
+                       <div class="panel-group pgs-accordion pgs-accordion--sm pgs-accordion--quiet">
+                           <h5>
+                              <a href="#Collapse-variation-quiet" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false">
+                                 <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>View code snippet <span class="sr-only">for Variations in Standard Mode</span></a></h5>
+                           <div id="Collapse-variation-quiet" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  <pre class="language-markup"><code>&lt;div class=&quot;pgs-dept-card pgs-dept-card--quiet&quot;&gt;
+ &lt;div class=&quot;row&quot;&gt;
+   &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+     &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h3&gt;
+     &lt;ul class=&quot;fa-ul&quot;&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Thunderduck Hall, T-150&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Richland&lt;/strong&gt;&lt;br&gt;
+         12800 Abrams Rd.&lt;br /&gt;
+         Dallas, TX 75243
+       &lt;/li&gt;
+     &lt;/ul&gt;
+     &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Mailing Address&lt;/h3&gt;
+     &lt;ul class=&quot;fa-ul&quot;&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-mail-bulk&quot;&gt;&lt;/span&gt;&lt;/span&gt;Multicultural Center&lt;br /&gt;Richland Campus&lt;br&gt;
+         12800 Abrams Rd.&lt;br /&gt;
+         Dallas, TX 75243
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+     &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h3&gt;
+     &lt;ul class=&quot;fa-ul&quot;&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;972-238-6900 (general information)&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;972-238-6291 (direct line)&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-fax&quot;&gt;&lt;/span&gt;&lt;/span&gt;972-238-6165 (fax)&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;richlandmulticultural@dcccd.edu&quot;&gt;Email &lt;span class=&quot;sr-only&quot;&gt;Richland &lt;/span&gt;Multicultural Center (for resident students)&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;RLCWorld@dcccd.edu&quot;&gt;Email &lt;span class=&quot;sr-only&quot;&gt;Richland &lt;/span&gt;Multicultural Center (for international students)&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+     &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Connect with Us&lt;/h3&gt;
+     &lt;ul class=&quot;fa-ul&quot;&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-facebook&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;https://www.facebook.com/rlcmulticultural&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Richland Multicultural Center&lt;/span&gt;On Facebook&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;https://www.twitter.com/rlc_mc&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Richland Multicultural Center&lt;/span&gt;On Twitter&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-instagram&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;https://www.instagram.com/rlcmulticultural&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Richland Multicultural Center&lt;/span&gt;On Instagram&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+     &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours for Academic Advising&lt;/h3&gt;
+     &lt;ul class=&quot;fa-ul&quot;&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 8 a.m. - 7 p.m.&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Fri:&lt;/strong&gt; 8 a.m. - 5 p.m.&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+       &lt;li&gt;&lt;strong&gt;Note:&lt;/strong&gt; Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration&lt;/li&gt;
+     &lt;/ul&gt;
+     &lt;h3 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours for International Advising&lt;/h3&gt;
+     &lt;ul class=&quot;fa-ul&quot;&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 8:30 a.m. - 4:30 p.m.&lt;/li&gt;
+       &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;Fri-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+       &lt;li&gt;&lt;strong&gt;Note:&lt;/strong&gt; Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration&lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                              </div>
+                           </div>
+                        </div>
+                    </section> ​<br/>
+                </div>
+
+                {% include components/nav.html %}

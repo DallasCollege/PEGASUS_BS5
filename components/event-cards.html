@@ -1,0 +1,504 @@
+---
+layout: default-level2
+title: Event Cards
+cat: Components
+permalink: components/event-cards.html
+---
+
+                <div class="subsection3" id="event-cards">
+                  <p class="lead">The Event Card can be used to make up schedules or agendas for conferences. It can also be used as a stand-alone component when giving information about a specific event or speaker. Event Cards are flexible and have multiple pieces that can be mixed-and-matched.</p>
+                  <ul>
+                    <li>Basic Event Card</li>
+                    <li>Event Card w/ Description</li>
+                    <li>Event Card w/ Participant (Speaker)</li>
+                    <li>Event Card w/ Sub-Event (for instances when event cards need to be broken down into parts)</li>
+                    <li>Event Card w/ Footer</li>
+                  </ul>
+                  <div class="subsection4">
+                  <h3>Basic Event Card</h3>
+                  <p>All Event Cards have, at the very least, <code>.event-head</code> which can contain:
+                    <ul>
+                      <li>Start time (end time is optional)</li>
+                      <li>Event title</li>
+                      <li>Event location</li>
+                    </ul>
+                    <div class="code-example shadow-3">
+                      <div class="event-card shadow-1">
+                        <div class="event-head">
+                          <div class="row bg-cprimary-lt">
+                            <div class="col-md-2 col-sm-3 event-time">
+                              <h3 class="h4">9:00 a.m.</h3></div>
+                            <div class="col-md-7 col-sm-9 event-card-title">
+                              <span class="h4">Keynote Presentation: To Infinity And Beyond</span> </div>
+                            <div class="col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location">
+                              <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left" aria-label="Location"></span>Lone Star Lobby</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><code class="language-markup">&lt;div class=&quot;event-card shadow-&quot;&gt;
+    &lt;div class=&quot;event-head&quot;&gt;
+        &lt;div class=&quot;row bg-cprimary-lt&quot;&gt;
+        &lt;div class=&quot;col-md-2 col-sm-3 event-time&quot;&gt;
+            &lt;h3 class=&quot;h4&quot;&gt;9:00 a.m.&lt;/h3&gt;&lt;/div&gt;
+        &lt;div class=&quot;col-md-7 col-sm-9 event-card-title&quot;&gt;
+            &lt;span class=&quot;h4&quot;&gt;Keynote Presentation: To Infinity And Beyond&lt;/span&gt; &lt;/div&gt;
+        &lt;div class=&quot;col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-map-marker-alt ico-left&quot; aria-label=&quot;Location&quot;&gt;&lt;/span&gt;Lone Star Lobby&lt;/a&gt; &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                </div>
+                <div class="subsection4">
+                  <h3>Event Card w/ Description</h3>
+                  <div class="code-example shadow-3">
+                    <div class="event-card shadow-1">
+                      <div class="event-head">
+                        <div class="row bg-cprimary-lt">
+                          <div class="col-md-2 col-sm-3 event-time">
+                            <h3 class="h4">9:00 a.m.</h3></div>
+                          <div class="col-md-7 col-sm-9 event-card-title">
+                            <span class="h4">Keynote Presentation: To Infinity And Beyond</span> </div>
+                          <div class="col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location">
+                            <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left" aria-label="Location"></span>Lone Star Lobby</a> </div>
+                        </div>
+                      </div>
+                      <div class="event-body">
+                        <div class="row">
+                          <div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3">
+                            <div class="event-description">
+                              <p>Kevin is a thought leader in the field of sustainability, having taught at over seven different universities and written four acclaimed books, including: “Return on Sustainability: How Business Can Increase Profitability &amp; Address Climate Change in an Uncertain Economy,” “Making Sustainability Stick,” and “An Introduction to Sustainable Business.” He is on the cutting edge of online teaching, as he has successfully “flipped the classroom” with his multimedia online materials and videos that have made the online experience much more student-friendly.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <pre><code class="language-markup">&lt;div class=&quot;event-card shadow-&quot;&gt;
+    &lt;div class=&quot;event-head&quot;&gt;
+        &lt;div class=&quot;row bg-cprimary-lt&quot;&gt;
+            &lt;div class=&quot;col-md-2 col-sm-3 event-time&quot;&gt;
+              &lt;h3 class=&quot;h4&quot;&gt;9:00 a.m.&lt;/h3&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-md-7 col-sm-9 event-card-title&quot;&gt;
+              &lt;span class=&quot;h4&quot;&gt;Keynote Presentation: To Infinity And Beyond&lt;/span&gt; &lt;/div&gt;
+            &lt;div class=&quot;col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-map-marker-alt ico-left&quot; aria-label=&quot;Location&quot;&gt;&lt;/span&gt;Lone Star Lobby&lt;/a&gt; &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;event-body&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3&quot;&gt;
+              &lt;div class=&quot;event-description&quot;&gt;
+                &lt;p&gt;Kevin is a thought leader...&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+                <div class="subsection4">
+                  <h3>Event Card w/ Participant (Speaker)</h3>
+                  <div class="code-example shadow-3">
+                    <div class="event-card shadow-1">
+                      <div class="event-head">
+                        <div class="row bg-cprimary-lt">
+                          <div class="col-md-2 col-sm-3 event-time">
+                            <h3 class="h4">9:00 a.m.</h3></div>
+                          <div class="col-md-7 col-sm-9 event-card-title">
+                            <span class="h4">Keynote Presentation: To Infinity And Beyond</span> </div>
+                          <div class="col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location">
+                            <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left" aria-label="Location"></span>Lone Star Lobby</a> </div>
+                        </div>
+                      </div>
+                      <div class="event-body">
+                        <div class="row">
+                          <div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3">
+                            <ul class="list-unstyled">
+                              <li class="event-participant">
+                                <img src="https://via.placeholder.com/100" class="img-circle float-left width-75" alt="">
+                                <div class="participant-name">Dr. Kevin Wilhelm <span class="participant-title">CEO, Sustainable Business Consulting</span> </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <pre><code class="language-markup">&lt;div class=&quot;event-card shadow-&quot;&gt;
+    &lt;div class=&quot;event-head&quot;&gt;
+        &lt;div class=&quot;row bg-cprimary-lt&quot;&gt;
+            &lt;div class=&quot;col-md-2 col-sm-3 event-time&quot;&gt;
+              &lt;h3 class=&quot;h4&quot;&gt;9:00 a.m.&lt;/h3&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-md-7 col-sm-9 event-card-title&quot;&gt;
+              &lt;span class=&quot;h4&quot;&gt;Keynote Presentation: To Infinity And Beyond&lt;/span&gt; &lt;/div&gt;
+            &lt;div class=&quot;col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-map-marker-alt ico-left&quot; aria-label=&quot;Location&quot;&gt;&lt;/span&gt;Lone Star Lobby&lt;/a&gt; &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;event-body&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3&quot;&gt;
+              &lt;ul class=&quot;list-unstyled&quot;&gt;
+                &lt;li class=&quot;event-participant&quot;&gt;
+                  &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left width-75&quot; alt=&quot;&quot;&gt;
+                  &lt;div class=&quot;participant-name&quot;&gt;Dr. Kevin Wilhelm &lt;span class=&quot;participant-title&quot;&gt;CEO, Sustainable Business Consulting&lt;/span&gt; &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+                <div class="subsection4">
+                  <h3>Event Card w/ Footer</h3>
+                  <div class="code-example shadow-3">
+                    <div class="event-card shadow-1">
+                      <div class="event-head">
+                        <div class="row bg-cprimary-lt">
+                          <div class="col-md-2 col-sm-3 event-time">
+                            <h3 class="h4">9:00 a.m.</h3></div>
+                          <div class="col-md-7 col-sm-9 event-card-title">
+                            <span class="h4">Keynote Presentation: To Infinity And Beyond</span> </div>
+                          <div class="col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location">
+                              <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left" aria-label="Location"></span>Lone Star Lobby</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="event-footer">
+                        <div class="row">
+                          <div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3">
+                            <ul class="list-inline list-unstyled">
+                              <li><a href="#"><span class="text-cprimary ico fas fa-download ico-left" aria-hidden="true"></span>Download Slides</a></li>
+                              <li><a href="#"><span class="text-cprimary ico fas fa-play-circle ico-left" aria-hidden="true"></span>Watch Video Recording</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <pre><code class="language-markup">&lt;div class=&quot;event-card shadow-&quot;&gt;
+    &lt;div class=&quot;event-head&quot;&gt;
+        &lt;div class=&quot;row bg-cprimary-lt&quot;&gt;
+            &lt;div class=&quot;col-md-2 col-sm-3 event-time&quot;&gt;
+              &lt;h3 class=&quot;h4&quot;&gt;9:00 a.m.&lt;/h3&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-md-7 col-sm-9 event-card-title&quot;&gt;
+              &lt;span class=&quot;h4&quot;&gt;Keynote Presentation: To Infinity And Beyond&lt;/span&gt; &lt;/div&gt;
+            &lt;div class=&quot;col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-map-marker-alt ico-left&quot; aria-label=&quot;Location&quot;&gt;&lt;/span&gt;Lone Star Lobby&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;event-footer&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3&quot;&gt;
+              &lt;ul class=&quot;list-inline list-unstyled&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-download ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Download Slides&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-play-circle ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Watch Video Recording&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+
+                <div class="subsection4">
+                <h3>Event Card w/ Sub-Events</h3>
+                <div class="code-example shadow-3">
+                <div class="event-card shadow-1">
+                <div class="event-head">
+                <div class="row bg-cprimary-lt">
+                  <div class="col-md-2 col-sm-3 event-time">
+                    <h3 class="h4">Noon</h3></div>
+                  <div class="col-md-7 col-sm-9 event-card-title">
+                    <span class="h4">General Session</span> </div>
+                  <div class="col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location">
+                    <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left" aria-label="Location"></span>Lone Star Lobby</a> </div>
+                </div>
+                </div>
+                <div class="event-body">
+                <div class="row">
+                  <div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3">
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">A Conversation with Dr. Joe May</h4>
+                      <ul class="row list-unstyled">
+                        <li class="col-md-12 event-participant">
+                          <img src="https://via.placeholder.com/100" class="img-circle float-left" alt="">
+                          <div class="participant-name">Dr. Joe May <span class="participant-title">Chancellor, Dallas College</span> </div>
+                        </li>
+                        <li class="col-md-12 event-participant">
+                          <img src="https://via.placeholder.com/100" class="img-circle float-left" alt="">
+                          <div class="participant-name">Dr. Robert Mong <span class="participant-title">President, UNT at Dallas</span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">Keynote Speaker</h4>
+                      <ul class="row list-unstyled">
+                        <li class="col-md-12 event-participant">
+                          <img src="https://via.placeholder.com/100" class="img-circle float-left" alt="">
+                          <div class="participant-name">
+                            <a href="#">Wes Moore</a>
+                            <span class="participant-title">CEO, Robin Hood</span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">Chancellor's Award Presentation</h4></div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">Closing Remarks</h4></div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <pre><code class="language-markup">&lt;div class=&quot;event-card shadow-&quot;&gt;
+    &lt;div class=&quot;event-head&quot;&gt;
+        &lt;div class=&quot;row bg-cprimary-lt&quot;&gt;
+            &lt;div class=&quot;col-md-2 col-sm-3 event-time&quot;&gt;
+                &lt;h3 class=&quot;h4&quot;&gt;Noon&lt;/h3&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-md-7 col-sm-9 event-card-title&quot;&gt;
+                &lt;span class=&quot;h4&quot;&gt;General Session&lt;/span&gt; &lt;/div&gt;
+            &lt;div class=&quot;col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-map-marker-alt ico-left&quot; aria-label=&quot;Location&quot;&gt;&lt;/span&gt;Lone Star Lobby&lt;/a&gt; &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;event-body&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3&quot;&gt;
+                  &lt;div class=&quot;sub-event&quot;&gt;
+                        &lt;h4 class=&quot;h5 page-header&quot;&gt;A Conversation with Dr. Joe May&lt;/h4&gt;
+                        &lt;ul class=&quot;row list-unstyled&quot;&gt;
+                            &lt;li class=&quot;col-md-12 event-participant&quot;&gt;
+                                &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left&quot; alt=&quot;&quot;&gt;
+                                &lt;div class=&quot;participant-name&quot;&gt;Dr. Joe May &lt;span class=&quot;participant-title&quot;&gt;Chancellor, Dallas College&lt;/span&gt; &lt;/div&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;col-md-12 event-participant&quot;&gt;
+                                &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left&quot; alt=&quot;&quot;&gt;
+                                &lt;div class=&quot;participant-name&quot;&gt;Dr. Robert Mong &lt;span class=&quot;participant-title&quot;&gt;President, UNT at Dallas&lt;/span&gt; &lt;/div&gt;
+                          &lt;/li&gt;
+                    &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;sub-event&quot;&gt;
+                &lt;h4 class=&quot;h5 page-header&quot;&gt;Keynote Speaker&lt;/h4&gt;
+                &lt;ul class=&quot;row list-unstyled&quot;&gt;
+                  &lt;li class=&quot;col-md-12 event-participant&quot;&gt;
+                    &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left&quot; alt=&quot;&quot;&gt;
+                    &lt;div class=&quot;participant-name&quot;&gt;
+                      &lt;a href=&quot;#&quot;&gt;Wes Moore&lt;/a&gt;
+                      &lt;span class=&quot;participant-title&quot;&gt;CEO, Robin Hood&lt;/span&gt; &lt;/div&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;sub-event&quot;&gt;
+                &lt;h4 class=&quot;h5 page-header&quot;&gt;Chancellor&apos;s Award Presentation&lt;/h4&gt;&lt;/div&gt;
+              &lt;div class=&quot;sub-event&quot;&gt;
+                &lt;h4 class=&quot;h5 page-header&quot;&gt;Closing Remarks&lt;/h4&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+
+
+                <div class="subsection4">
+                <h3>Full Event Card</h3>
+                <div class="code-example shadow-3">
+                <div class="event-card shadow-1">
+                <div class="event-head">
+                <div class="row bg-cprimary-lt">
+                  <div class="col-md-2 col-sm-3 event-time">
+                    <h3 class="h4">Noon <span>to 9:00 a.m.</span></h3></div>
+                  <div class="col-md-7 col-sm-9 event-card-title">
+                    <span class="h4">General Session</span> </div>
+                  <div class="col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location">
+                    <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left" aria-label="Location"></span>Lone Star Lobby</a> </div>
+                </div>
+                </div>
+                <div class="event-body">
+                <div class="row">
+                  <div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3">
+                    <ul class="row list-unstyled">
+                      <li class="col-md-6 event-participant">
+                        <img src="https://via.placeholder.com/100" class="img-circle float-left width-75" alt="">
+                        <div class="participant-name"><a href="#">Professer Bob Newhart</a> <span class="participant-title">CEO, Sustainable Business Consulting</span> </div>
+                      </li>
+                      <li class="col-md-6 event-participant">
+                        <img src="https://via.placeholder.com/100" class="img-circle float-left width-75" alt="">
+                        <div class="participant-name">Kevin Wilhelm <span class="participant-title">CEO, <a href="#">Sustainable Business Consulting</a></span> </div>
+                      </li>
+                    </ul>
+                    <div class="event-description">
+                      <p>Kevin is a thought leader in the field of sustainability, having taught at over seven different universities and written four acclaimed books, including: “Return on Sustainability: How Business Can Increase Profitability &amp; Address Climate Change in an Uncertain Economy,” “Making Sustainability Stick,” and “An Introduction to Sustainable Business.” He is on the cutting edge of online teaching, as he has successfully “flipped the classroom” with his multimedia online materials and videos that have made the online experience much more student-friendly.</p>
+                    </div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">Greetings from the Dallas College Board of Trustees<br></h4>
+                      <ul class="row list-unstyled">
+                        <li class="col-md-12 event-participant">
+                          <img src="https://via.placeholder.com/100" class="img-circle float-left" alt="">
+                          <div class="participant-name">Diana Flores
+                            <span class="participant-title">Chair, Dallas College Board of Trustees</span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">A Conversation with Dr. Joe May</h4>
+                      <ul class="row list-unstyled">
+                        <li class="col-md-12 event-participant">
+                          <img src="https://via.placeholder.com/100" class="img-circle float-left" alt="">
+                          <div class="participant-name">Dr. Joe May
+                            <span class="participant-title">Chancellor, Dallas College</span> </div>
+                        </li>
+                        <li class="col-md-12 event-participant">
+                          <img src="https://via.placeholder.com/100" class="img-circle float-left" alt="">
+                          <div class="participant-name">Dr. Robert Mong
+                            <span class="participant-title">President, UNT at Dallas</span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">Keynote Speaker</h4>
+                      <ul class="row list-unstyled">
+                        <li class="col-md-12 event-participant">
+                          <img src="https://via.placeholder.com/100" class="img-circle float-left" alt="">
+                          <div class="participant-name">
+                            <a href="#">Wes Moore</a>
+                            <span class="participant-title">CEO, Robin Hood</span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">Words from the Foundation Board</h4>
+                      <ul class="row list-unstyled">
+                        <li class="col-md-12 event-participant">
+                          <img src="https://via.placeholder.com/100" class="img-circle float-left" alt="">
+                          <div class="participant-name">Debbie Taylor
+                            <span class="participant-title">Chair, Dallas College Foundation Board</span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">Chancellor's Award Presentation</h4></div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">Employee Giving Campaign Announcement</h4></div>
+                    <div class="sub-event">
+                      <h4 class="h5 page-header">Closing Remarks</h4></div>
+                  </div>
+                </div>
+                </div>
+                <div class="event-footer">
+                <div class="row">
+                  <div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3">
+                    <ul class="list-inline list-unstyled">
+                      <li>
+                        <a href="#"><span class="text-cprimary ico fas fa-download ico-left" aria-hidden="true"></span>Download Slides</a></li>
+                      <li>
+                        <a href="#"><span class="text-cprimary ico fas fa-play-circle ico-left" aria-hidden="true"></span>Watch Video Recording</a></li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <pre><code class="language-markup">&lt;div class=&quot;event-card shadow-&quot;&gt;
+    &lt;div class=&quot;event-head&quot;&gt;
+        &lt;div class=&quot;row bg-cprimary-lt&quot;&gt;
+          &lt;div class=&quot;col-md-2 col-sm-3 event-time&quot;&gt;
+            &lt;h3 class=&quot;h4&quot;&gt;Noon &lt;span&gt;to 9:00 a.m.&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;
+          &lt;div class=&quot;col-md-7 col-sm-9 event-card-title&quot;&gt;
+            &lt;span class=&quot;h4&quot;&gt;General Session&lt;/span&gt; &lt;/div&gt;
+          &lt;div class=&quot;col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-map-marker-alt ico-left&quot; aria-label=&quot;Location&quot;&gt;&lt;/span&gt;Lone Star Lobby&lt;/a&gt; &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;event-body&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3&quot;&gt;
+            &lt;ul class=&quot;row list-unstyled&quot;&gt;
+              &lt;li class=&quot;col-md-6 event-participant&quot;&gt;
+                &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left width-75&quot; alt=&quot;&quot;&gt;
+                &lt;div class=&quot;participant-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Professer Bob Newhart&lt;/a&gt; &lt;span class=&quot;participant-title&quot;&gt;CEO, Sustainable Business Consulting&lt;/span&gt; &lt;/div&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;col-md-6 event-participant&quot;&gt;
+                &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left width-75&quot; alt=&quot;&quot;&gt;
+                &lt;div class=&quot;participant-name&quot;&gt;Kevin Wilhelm &lt;span class=&quot;participant-title&quot;&gt;CEO, &lt;a href=&quot;#&quot;&gt;Sustainable Business Consulting&lt;/a&gt;&lt;/span&gt; &lt;/div&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div class=&quot;event-description&quot;&gt;
+              &lt;p&gt;Kevin is a thought leader in the field of sustainability, having taught at over seven different universities and written four acclaimed books, including: &ldquo;Return on Sustainability: How Business Can Increase Profitability &amp;amp; Address Climate Change in an Uncertain Economy,&rdquo; &ldquo;Making Sustainability Stick,&rdquo; and &ldquo;An Introduction to Sustainable Business.&rdquo; He is on the cutting edge of online teaching, as he has successfully &ldquo;flipped the classroom&rdquo; with his multimedia online materials and videos that have made the online experience much more student-friendly.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;sub-event&quot;&gt;
+              &lt;h4 class=&quot;h5 page-header&quot;&gt;Greetings from the Dallas College Board of Trustees&lt;br&gt;&lt;/h4&gt;
+              &lt;ul class=&quot;row list-unstyled&quot;&gt;
+                &lt;li class=&quot;col-md-12 event-participant&quot;&gt;
+                  &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left&quot; alt=&quot;&quot;&gt;
+                  &lt;div class=&quot;participant-name&quot;&gt;Diana Flores
+                    &lt;span class=&quot;participant-title&quot;&gt;Chair, Dallas College Board of Trustees&lt;/span&gt; &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;sub-event&quot;&gt;
+              &lt;h4 class=&quot;h5 page-header&quot;&gt;A Conversation with Dr. Joe May&lt;/h4&gt;
+              &lt;ul class=&quot;row list-unstyled&quot;&gt;
+                &lt;li class=&quot;col-md-12 event-participant&quot;&gt;
+                  &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left&quot; alt=&quot;&quot;&gt;
+                  &lt;div class=&quot;participant-name&quot;&gt;Dr. Joe May
+                    &lt;span class=&quot;participant-title&quot;&gt;Chancellor, Dallas College&lt;/span&gt; &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;col-md-12 event-participant&quot;&gt;
+                  &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left&quot; alt=&quot;&quot;&gt;
+                  &lt;div class=&quot;participant-name&quot;&gt;Dr. Robert Mong
+                    &lt;span class=&quot;participant-title&quot;&gt;President, UNT at Dallas&lt;/span&gt; &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;sub-event&quot;&gt;
+              &lt;h4 class=&quot;h5 page-header&quot;&gt;Keynote Speaker&lt;/h4&gt;
+              &lt;ul class=&quot;row list-unstyled&quot;&gt;
+                &lt;li class=&quot;col-md-12 event-participant&quot;&gt;
+                  &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left&quot; alt=&quot;&quot;&gt;
+                  &lt;div class=&quot;participant-name&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Wes Moore&lt;/a&gt;
+                    &lt;span class=&quot;participant-title&quot;&gt;CEO, Robin Hood&lt;/span&gt; &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;sub-event&quot;&gt;
+              &lt;h4 class=&quot;h5 page-header&quot;&gt;Words from the Foundation Board&lt;/h4&gt;
+              &lt;ul class=&quot;row list-unstyled&quot;&gt;
+                &lt;li class=&quot;col-md-12 event-participant&quot;&gt;
+                  &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;img-circle float-left&quot; alt=&quot;&quot;&gt;
+                  &lt;div class=&quot;participant-name&quot;&gt;Debbie Taylor
+                    &lt;span class=&quot;participant-title&quot;&gt;Chair, Dallas College Foundation Board&lt;/span&gt; &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;sub-event&quot;&gt;
+              &lt;h4 class=&quot;h5 page-header&quot;&gt;Chancellor&apos;s Award Presentation&lt;/h4&gt;&lt;/div&gt;
+            &lt;div class=&quot;sub-event&quot;&gt;
+              &lt;h4 class=&quot;h5 page-header&quot;&gt;Employee Giving Campaign Announcement&lt;/h4&gt;&lt;/div&gt;
+            &lt;div class=&quot;sub-event&quot;&gt;
+              &lt;h4 class=&quot;h5 page-header&quot;&gt;Closing Remarks&lt;/h4&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;event-footer&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-3&quot;&gt;
+            &lt;ul class=&quot;list-inline list-unstyled&quot;&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-download ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Download Slides&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-play-circle ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Watch Video Recording&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div> <!-- /subsection3 -->
+                {% include components/nav.html %}

@@ -1,0 +1,18 @@
+<div class="l-breadcrumb-bar bg-cwhite">
+    <div class="container">
+        <div class="row">
+            <nav aria-label="Breadcrumb" class="col-xs-12 pgs-breadcrumb">
+                <ol>
+                    <li><a href="{{ site.baseurl }}"><span class="ico fas fa-home ico-left" aria-hidden="true"></span>PEGASUS</a></li>
+                    {% if page.url contains "/elements/" %}<li><a href="{{ 'elements/index.html' | relative_url }}">Elements</a></li>{% endif %}
+                    {% if page.url contains "/patterns/" %}<li><a href="{{ 'patterns/index.html' | relative_url }}">Patterns</a></li>{% endif %}
+                    {% if page.url contains "/components/" %}<li><a href="{{ 'components/index.html' | relative_url }}">Components</a></li>{% endif %}
+                    {% if page.url contains "/templates/" %}<li><a href="{{ 'templates/index.html' | relative_url }}">Templates</a></li>{% endif %}
+                    {% if page.url contains "/utilities/" %}<li><a href="{{ 'utilities/index.html' | relative_url }}">Utilities</a></li>{% endif %}
+                    {% if page.url contains "/guidelines/" %}<li><a href="{{ 'guidelines/index.html' | relative_url }}">Guidelines</a></li>{% endif %}
+                    {% if page.url contains "/cheatsheets/" %}<li><a href="{{ 'utilities/index.html' | relative_url }}">Cheatsheets</a></li>{% endif %}
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>

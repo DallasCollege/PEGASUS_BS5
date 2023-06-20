@@ -1,0 +1,197 @@
+---
+layout: sidebar
+title: Page Layouts
+permalink: guidelines/page-layouts.html
+slug: page-layouts
+---
+
+<section>
+    <div class="well">
+        <h2>​On this page:</h2>
+        <ul>
+            <li><a href="#interior">Interior Page Layouts</a></li>
+            <li><a href="#landing">Landing Page Layouts</a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="subsection3">
+    <h2 class="page-header" id="landing">Landing Page Layouts</h2>
+    <p>Know when and how to use this category of page layouts:</p>
+    <ul>
+        <li>Use on pages that are the <strong>starting or landing point for any particular topic</strong> or subsite</li>
+        <li>Use on pages that are <strong>introductions to their content area</strong></li>
+        <li>Recommended to use on <strong>default pages</strong> of any subsite</li>
+        <li>Design these pages <strong>more visually</strong> than standard interior pages</li>
+    </ul>
+    <div class="spacer-2"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ site.baseurl }}images/page-layouts/subsite-landing-full-width.png" alt="" />
+        </div>
+        <div class="col-md-8">
+            <h3 class="margin-top-0">Subsite Landing Page Full Width</h3>
+            <ul>
+                <li>Should be the default layout for any subsite homepage</li>
+                <li>Full-width allows for creative use of patterns which makes them more dynamic and interactive than plain text</li>
+                <li>Subsite navigation is under the banner horizontally and is populated dynamically by the site&#39;s <a href="{{ site.baseurl }}guidelines/navigation.html">navigation structure</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ site.baseurl }}images/page-layouts/subsite-landing-full-width-manual.png" alt="" /> </div>
+        <div class="col-md-8">
+            <h3 class="margin-top-0">Subsite Landing Page Full Width (Manual)</h3>
+            <p>Layout is the exact same as the one above except for:</p>
+            <ul>
+                <li>Subsite navigation is managed manually and can be customized further than what the site navigation settings allow</li>
+            </ul>
+            <div class="panel-group pgs-accordion pgs-accordion--quiet pgs-accordion--sm" id="manual-navigation">
+                <h3>
+                    <a href="#collapse-manual-navigation" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false">
+                        <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Using Manual Navigation Bar
+                    </a>
+                </h3>
+                <div id="collapse-manual-navigation" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>To add or modify items in the manual navigation:</p>
+                        <ol>
+                            <li>Access <strong>Authoring Edit Mode Options</strong></li>
+                            <li>Select "Other" tab</li>
+                            <li>While the open text area allows for any HTML, each navigation item needs to be formatted like this:
+                                <pre><code class="lang-markup">&lt;li&gt;&lt;a href=&quot;[LINK DESTINATION]&quot;&gt;[LINK TEXT]&lt;/a&gt;&lt;/li&gt;</code></pre>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ site.baseurl }}images/page-layouts/subsite-landing-full-width-no-nav.png" alt="" /> </div>
+        <div class="col-md-8">
+            <h3 class="margin-top-0">Subsite Landing Page Full Width (No Navigation)</h3>
+            <p>Layout is the exact same as the ones above except for:</p>
+            <ul>
+                <li>This layout does not include any sidebar or horizontal navigation</li>
+                <li>Use on standalone landing pages that do not have any sub-pages to link to</li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ site.baseurl }}images/page-layouts/subsite-landing-sidebar.png" alt="" /> </div>
+        <div class="col-md-8">
+            <h3 class="margin-top-0">Subsite Landing Page with Sidebar</h3>
+            <ul>
+                <li>Use when page doesn't need to be more visual and full-width isn't required</li>
+                <li>Navigation appears in the sidebar and is populated automatically from site navigation settings</li>
+                <li>Banner image is not optional and always appears</li>
+                <li>Sidebar is not optional and always appears</li>
+            </ul>
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ site.baseurl }}images/page-layouts/top-level-landing.png" alt="" /> </div>
+        <div class="col-md-8">
+            <h3 class="margin-top-0">Top-Level Landing Page</h3>
+            <ul>
+                <li>Very specialized layout reserved for top-level landing pages and campus landing pages</li>
+                <li>Allows for intro paragraph in the main banner area</li>
+                <li>Utilizes manual navigation as outlined in "Subsite Landing Page Full Width (Manual)" above</li>
+            </ul>
+            <div class="panel-group pgs-accordion pgs-accordion--quiet pgs-accordion--sm" id="intro-paragraph">
+                <h3>
+                    <a href="#collapse-intro-paragraph" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false">
+                        <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Adding or Modifying Intro Paragraph
+                    </a>
+                </h3>
+                <div id="collapse-intro-paragraph" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>To add or modify items in the manual navigation:</p>
+                        <ol>
+                            <li>Access <strong>Authoring Edit Mode Options</strong></li>
+                            <li>Select "Banner Items" tab</li>
+                            <li>Add or modify the text in the "Banner Description" text field. It only allows for plain text.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="page-header" id="interior">Interior Page Layouts</h2>
+    <p>Know when and how to use this category of page layouts:</p>
+    <ul>
+        <li>Use on pages that are <strong>not the starting point</strong> of any topic or content area</li>
+        <li>Meant for use on <strong>most sub-pages</strong> on nearly all subsites</li>
+    </ul>
+    <div class="spacer-2"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ site.baseurl }}images/page-layouts/interior-featured.png" alt="" /> </div>
+        <div class="col-md-8">
+            <h3 class="margin-top-0">Interior Featured Image <div class="badge bg-success">Go-To Interior Layout</div></h3>
+            <ul>
+                <li>Use on pages where the content is primarily text</li>
+                <li>Featured Image is optional and can be toggled on or off</li>
+                <li>Sidebar always appears</li>
+                <li>Used on most interior pages</li>
+            </ul>
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ site.baseurl }}images/page-layouts/interior-full-width.png" alt="" /> </div>
+        <div class="col-md-8">
+            <h3 class="margin-top-0">Interior Full Width</h3>
+            <ul>
+                <li>Use on pages where content is more visual and uses more patterns</li>
+                <li>Featured image and sidebar navigation are not optional and will never appear</li>
+            </ul>
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ site.baseurl }}images/page-layouts/interior-banner-full-width.png" alt="" /> </div>
+        <div class="col-md-8">
+            <h3 class="margin-top-0">Interior Banner (Full Width)</h3>
+            <ul>
+                <li>Use on non-landing pages where additional visual emphasis is needed</li>
+                <li>Banner always appears</li>
+                <li>Sidebar never appears</li>
+                <li>Use on pages that require extra space for visuals and patterns</li>
+            </ul>
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ site.baseurl }}images/page-layouts/interior-banner.png" alt="" /> </div>
+        <div class="col-md-8">
+            <h3 class="margin-top-0">Interior Banner (Sidebar)</h3>
+            <ul>
+                <li>Use on non-landing pages where additional visual emphasis is needed</li>
+                <li>Banner always appears</li>
+                <li>Sidebar always appears</li>
+                <li>Use on pages that are mostly standard text and use minimal visuals or patterns</li>
+            </ul>
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+
+</section>
+​<br />

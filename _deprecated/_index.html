@@ -1,0 +1,254 @@
+---
+layout: home-layout
+title: Home
+---
+
+        <p class="h2 text-center text-cprimary-dk"><span class="text-cprimary" style="font-weight:800;">P</span>atterns, <span class="text-cprimary" style="font-weight:800;">E</span>lements and <span class="text-cprimary" style="font-weight:800;">G</span>uidelines for <span class="text-cprimary" style="font-weight:800;">A</span>ccessibility, <span class="text-cprimary" style="font-weight:800;">S</span>tyles, <span class="text-cprimary" style="font-weight:800;">U</span>sability and <span class="text-cprimary" style="font-weight:800;">S</span>EO</p>
+        <div class="spacer-4"></div>
+
+
+        
+
+
+
+
+
+
+          <section id="toc">
+              <h2 class="text-center serif sr-only">Table of Contents</h2>
+                <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                  <img src="images/use-design-framework-elements.png" class="img-responsive center-block" style="width:33%;" alt="">
+                  <h3 class="page-header csecondary-font text-center">Elements</h3>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-typography">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-typography" aria-expanded="false" aria-controls="collapse-typography">
+                            <span aria-hidden="true" class="ico fas fa-list-ol"></span> Typography
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-typography" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-typography">
+                        <div class="panel-body">
+                          <ul>
+                            {% include ul/typography-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-colors">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-colors" aria-expanded="false" aria-controls="collapse-colors">
+                            <span aria-hidden="true" class="ico fas fa-tachometer"></span> Colors
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-colors" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-colors">
+                        <div class="panel-body">
+                          <ul>
+                            {% include ul/colors-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-icons">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-icons" aria-expanded="false" aria-controls="collapse-icons">
+                            <span aria-hidden="true" class="ico fas fa-info"></span> Icons
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-icons" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-icons">
+                        <div class="panel-body">
+                          <ul>
+                            {% include ul/icons-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                  <img src="images/use-design-framework-components.png" class="img-responsive center-block" style="width:33%;" alt="">
+                  <h3 class="page-header csecondary-font text-center">Components</h3>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-buttons">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-buttons" aria-expanded="false" aria-controls="collapse-buttons">
+                            <span aria-hidden="true" class="ico icon-dcccd-star-circle"></span> Buttons
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-buttons" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-buttons">
+                        <div class="panel-body">
+                          <ul>
+                            {% include ul/buttons-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-grand-buttons">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-grand-buttons" aria-expanded="false" aria-controls="collapse-grand-buttons">
+                            <span aria-hidden="true" class="ico icon-dcccd-star-circle"></span> Grand Buttons
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-grand-buttons" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-grand-buttons">
+                        <div class="panel-body">
+                          <ul>
+                            {% include ul/grand-buttons-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-components">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-components" aria-expanded="false" aria-controls="collapse-components">
+                            <span aria-hidden="true" class="ico fas fa-card-o"></span> Components
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-components" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-components">
+                        <div class="panel-body">
+                          <ul>
+                            {% include ul/components-ul.html %}
+                          </ul>
+                          <hr>
+                          <h5>Bootstrap Components</h5>
+                          <ul>
+                            {% include ul/components-bs-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                  <img src="images/use-design-framework-modules.png" class="img-responsive center-block" style="width:33%;" alt="">
+                  <h3 class="page-header csecondary-font text-center">Modules</h3>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-modules">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-modules" aria-expanded="false" aria-controls="collapse-modules">
+                            <span aria-hidden="true" class="ico fas fa-calendar-check-o"></span> Modules
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-modules" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-modules">
+                        <div class="panel-body">
+                          <ul>
+                            {% include ul/modules-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-snippets">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-snippets" aria-expanded="false" aria-controls="collapse-snippets">
+                            <span aria-hidden="true" class="ico fas fa-file-code-o"></span> Snippets
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-snippets" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-snippets">
+                        <div class="panel-body">
+                          <ul>
+                            {% include snippets-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <img src="images/use-design-framework-templates.png" class="img-responsive center-block" style="width:33%;" alt="">
+                  <h3 class="page-header csecondary-font text-center">Reference</h3>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-grid">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-grid" aria-expanded="false" aria-controls="collapse-grid">
+                            <span aria-hidden="true" class="ico fas fa-table"></span> Grid System
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-grid" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-grid">
+                        <div class="panel-body">
+                          <ul>
+                            {% include ul/grid-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading-utilities">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-utilities" aria-expanded="false" aria-controls="collapse-utilities">
+                            <span aria-hidden="true" class="ico fas fa-wrench"></span> Utility Classes
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse-utilities" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-utilities">
+                        <div class="panel-body">
+                          <ul>
+                            {% include ul/utilities-ul.html %}
+                          </ul>
+                          <hr>
+                          <h5>Bootstrap Utilities</h5>
+                          <ul>
+                            {% include ul/utilities-bs-ul.html %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="panel-group">
+                  <div class="panel panel-blank">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href="https://dcccd.sharepoint.com/sites/dct/SitePages/Web-Content-Guidelines.aspx?web=1">
+                          <span aria-hidden="true" class="ico icon-dcccd-checklist"></span> Web Guidelines <span aria-label="Link to external site" class="ico fas fa-external-link"></span>
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="panel panel-blank">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href="https://wwws.dallascollege.edu/test/Documents/pop-guide/pop-guide.html">
+                          <span aria-hidden="true" class="ico icon-fa-briefcase"></span> POP Guide
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="panel panel-blank">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href="http://smartquotesforsmartpeople.com">
+                          <span aria-hidden="true" class="ico fas fa-commenting"></span> Smart Quotes <span aria-label="Link to external site" class="ico fas fa-external-link"></span>
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="panel panel-blank">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href="changelog.html">
+                          <span aria-hidden="true" class="ico icon-fa-cogs"></span> Changelog
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>

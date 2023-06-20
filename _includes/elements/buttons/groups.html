@@ -1,0 +1,113 @@
+                <section>
+                    <div class="subsection3">
+                        <h2 class="page-header text-csecondary" id="groups">Button Groups</h2>
+                        <p>With Button Groups we can semantically and visually link a row of buttons together. Screen readers and sighted users will alike will now know there is a connection between these buttons/links.</p>
+                        <h3>Example of a basic button group:</h3>
+                        <div class="indent">
+                        <ul class="button-group list-inline">
+                            <li><a class="button bg-csecondary" href="#">Item 1</a></li><li><a class="button bg-csecondary" href="#">Item 2</a></li><li><a class="button bg-csecondary" href="#">Item 3</a></li>
+                        </ul>
+
+                        <pre class="language-markup">
+<code>&lt;ul class=&quot;button-group list-inline&quot;&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-csecondary&quot; href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-csecondary&quot; href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-csecondary&quot; href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+                        <div class="alert alert-danger extra-padding">
+                            <h4 class="h3"><span class="ico fas fa-exclamation-triangle ico-left" aria-hidden="true"></span>Known Issue!</h4>
+                            <p>When using Button Groups, you may notice the spacing between each button may be too big. To solve, try removing any spaces or line breaks between the closing of one line item <code>&lt;/li&gt;</code> and the opening of the next <code>&lt;li&gt;</code></p>
+                        </div>
+                        <div class="alert alert-info extra-padding">
+                            <h4 class="h3"><strong><span class="ico fas fa-mobile-alt ico-left" aria-hidden="true"></span>Responsive Functionality: Button Groups</strong></h4>
+                            <div class="spacer-1"></div>
+                            <ul>
+                                <li>Under <code>992 px</code>: the button width will become 50% of its containing element and stack in two columns.</li>
+                                <li>Under <code>576 px</code>: the button width will become 100% of its containing element and stack in one column..</li>
+                            </ul>
+                        </div>
+                        <div class="spacer-3"></div>
+                        <h3>Styling Button Groups</h3>
+                        <p>Just like buttons above, any button size, color or type can be applied to the buttons in a Button Group.</p>
+                        <div class="indent">
+                        <p><strong>Examples in different sizes and colors:</strong></p>
+                        <ul class="button-group list-inline">
+                            <li><a class="button bg-cprimary-gr button-mn" href="#">Item 1</a></li><li><a class="button bg-cprimary-gr button-mn" href="#">Item 2</a></li><li><a class="button bg-cprimary-gr button-mn" href="#">Item 3</a></li>
+                        </ul>
+                        <ul class="button-group list-inline">
+                            <li><a class="button bg-cprimary button-sm" href="#">Item 1</a></li><li><a class="button bg-cprimary button-sm" href="#">Item 2</a></li><li><a class="button bg-cprimary button-sm" href="#">Item 3</a></li>
+                        </ul>
+                        <ul class="button-group list-inline">
+                            <li><a class="button bg-cprimary-lt button-lg" href="#">Item 1</a></li><li><a class="button bg-cprimary-lt button-lg" href="#">Item 2</a></li><li><a class="button bg-cprimary-lt button-lg" href="#">Item 3</a></li>
+                        </ul>
+                        <ul class="button-group list-inline">
+                            <li><a class="button bg-cprimary-dk button-xl" href="#">Item 1</a></li><li><a class="button bg-cprimary-dk button-xl" href="#">Item 2</a></li><li><a class="button bg-cprimary-dk button-xl" href="#">Item 3</a></li>
+                        </ul>
+                        </div>
+                        <div class="spacer-3">&#160;</div>
+                        <h3>Justified Button Groups</h3>
+                        <p>For visual reasons, a button group may need to stretch the entire width of the containing element. For these, a modifier class is availableto justify the buttons:</p>
+                            <ul>
+                            <li><code>.button-group--justified</code></li>
+                            </ul>
+                            <div class="indent">
+                        <p><strong>Example:</strong></p>
+                        <ul class="button-group button-group--justified list-inline">
+                            <li><a class="button bg-csecondary" href="#">Item 1</a></li>
+                            <li><a class="button bg-csecondary" href="#">Item 2</a></li>
+                            <li><a class="button bg-csecondary" href="#">Item 3</a></li>
+                        </ul>
+                        <pre class="language-markup"><code>&lt;ul class=&quot;button-group button-group--justified list-inline&quot;&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-csecondary&quot; href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-csecondary&quot; href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-csecondary&quot; href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                        </div>
+                        <div class="spacer-3">&#160;</div>
+                        <h3>Vertical Button Groups</h3>
+                        <p>There may be instances where the group of buttons should display vertically instead of horizontally. To accomplish this we use the following modifier class:</p>
+                        <ul>
+                            <li><code>.button-group--vertical</code></li>
+                        </ul>
+
+                        <p>You will also need to replace the
+                            <code>.list-inline</code> class with
+                            <code>.list-unstyled</code></p>
+                            <div class="indent">
+                        <p><strong>Example:</strong></p>
+                        <ul class="button-group list-unstyled button-group--vertical">
+                            <li><a class="button bg-cgrey button-sm" href="#">Item 1 Is Short</a></li><li><a class="button bg-cgrey button-sm" href="#">Item 2 Is Longer Than Short</a></li><li><a class="button bg-cgrey button-sm" href="#">Item 3 Is Longest Button of them all</a></li>
+                        </ul>
+                        <pre class="language-markup"><code>&lt;ul class=&quot;button-group list-unstyled button-group--vertical&quot; arial-label=&quot;Needs label&quot;&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-cgrey button-sm&quot; href=&quot;#&quot;&gt;Item 1 Is Short&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-cgrey button-sm&quot; href=&quot;#&quot;&gt;Item 2 Is Longer Than Short&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-cgrey button-sm&quot; href=&quot;#&quot;&gt;Item 3 Is Longest Button of them all&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+                        <p>Important things to note about <strong>Vertical Button Groups</strong>:</p>
+                        <ul>
+                            <li>This modifier uses flexbox</li>
+                            <li>The width of all the buttons will match the width the button with the most text</li>
+                        </ul>
+                        <div class="spacer-2"></div>
+                        <h4>Align button text to the left</h4>
+                        <p>For visual reasons the button text might need to align left. Simply add the <code>.text-left</code> class to the <code>.button-group</code> block:</p>
+                        <div class="indent">
+                        <ul class="button-group list-unstyled button-group--vertical text-left">
+                            <li>
+                                <a class="button bg-cgrey button-sm" href="#">Item 1 Is Short</a></li>
+                            <li>
+                                <a class="button bg-cgrey button-sm" href="#">Item 2 Is Longer Than Short</a></li>
+                            <li>
+                                <a class="button bg-cgrey button-sm" href="#">Item 3 Is Longest of them all</a></li>
+                        </ul>
+                        <pre class="language-markup"><code>&lt;ul class=&quot;button-group list-unstyled button-group--vertical text-left&quot; arial-label=&quot;Needs label&quot;&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-cgrey button-sm&quot; href=&quot;#&quot;&gt;Item 1 Is Short&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-cgrey button-sm&quot; href=&quot;#&quot;&gt;Item 2 Is Longer Than Short&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;button bg-cgrey button-sm&quot; href=&quot;#&quot;&gt;Item 3 Is Longest of them all&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre> ​<br />
+                    </div>
+                    </div>
+                </section>

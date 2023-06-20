@@ -1,0 +1,553 @@
+---
+layout: default-level2
+title: Page&colon; Conference Landing
+h1: Templates
+permalink: templates/conf-landing.html
+---
+
+                <div class="subsection3" id="flexbox-cards">
+                    <section>
+                        <p class="lead">Below you will find many pieces or modules that can be used to create landing pages for conference-type events.</p>
+                        <p>Here is the listing of modules found below:</p>
+                        <ul>
+                            <li><a href="#logotype-m">Logotype Module</a></li>
+                            <li><a href="#subheading-m">Subheading Module</a></li>
+                            <li><a href="#when-where-m">When/Where/Nav Module</a></li>
+                            <li><a href="#about-m">About Module</a></li>
+                            <li><a href="#speakers-m">Featured Speakers Module</a></li>
+                            <li><a href="#tracks-m">Tracks Module</a></li>
+                            <li><a href="#agenda-m">Agenda Module</a></li>
+                            <li><a href="#sponsors-m">Sponsors Module</a></li>
+                        </ul>
+                    </section>
+                    <div class="spacer-4"></div>
+
+                    <section aria-label="Heading Module">
+                        <h2 id="logotype-m" class="page-header">Logotype Module</h2>
+                        <p>This module can be used when the conference uses some sort of visual logotype/wordmark that does not fit or work in the banner itself. </p>
+                        <h3>Template:</h3>
+                        <div class="code-example shadow-3">
+                            <section id="logotype" aria-label="Conference Logotype">
+                                <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3">
+                                        <img class="img-responsive" src="http://via.placeholder.com/800x300" alt=""> &nbsp;
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet" id="html-logo">
+                            <h3>
+                                <button type="button" data-target="#collapse-html-logo" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-html-logo">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>HTML Markup <span class="sr-only">for Logo Module</span>:
+                                </button>
+                            </h3>
+                            <div id="collapse-html-logo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <pre class="language-markup"><code>&lt;section id=&quot;logotype&quot; aria-label=&quot;Conference logotype&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;[IMG URL]&quot; alt=&quot;[IMG ALT TEXT]&quot;&gt; &amp;nbsp;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                        <div class="spacer-4"></div>
+
+                    <section aria-label="Subheading Module">
+                        <h2 id="logotype-m" class="page-header">Subheading Module</h2>
+                        <p>This module is used to provide a basic description of the conference along with whatever the theme or slogan of the conference is.</p>
+                        <h3>Template:</h3>
+                        <div class="code-example shadow-3">
+                            <section id="Subheading">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <h2 class="h1 text-center margin-top-0">Subheader of This Conference Goes Here</h2>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet" id="html-subheading">
+                            <h3>
+                                <button type="button" data-target="#collapse-html-subheading" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-html-subheading">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>HTML Markup <span class="sr-only">for Logo Module</span>:
+                                </button>
+                            </h3>
+                            <div id="collapse-html-subheading" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <pre class="language-markup"><code>&lt;section id=&quot;subheading&quot; aria-label=&quot;Subheading&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-10 col-md-offset-1&quot;&gt;
+            &lt;h2 class=&quot;h1 text-center margin-top-0&quot;&gt;Subheading of This Conference Goes Here&lt;/h2&gt;
+            &lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="spacer-4"></div>
+
+                    <section aria-label="When-Where-Nav Module">
+                        <h2 id="when-where-m" class="page-header">When/Where/Nav Module</h2>
+                        <h3>Template:</h3>
+                        <div class="code-example shadow-3">
+                            <section id="date" arial-label="Date, time and location">
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <div class="extra-margin extra-padding border-csecondary" style="border-top:8px solid;">
+                                            <h2 class="sr-only">Date, Time and Location</h2>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p class="cb-title-lg margin-btm-0">Thursday, Nov. 23, 2022</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="margin-bottom-0">9 a.m. - 5 p.m.
+                                                        <br>Dallas College Cedar Valley Campus<br><a href="https://goo.gl/maps/UTDXkeunAWW7Z4m5A">3030 N Dallas Ave, Lancaster, TX 75134</a> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="button bg-csecondary button-block text-uppercase"><span class="far fa-check-square ico-left" aria-hidden="true"></span>Register now!</a>
+                                        <nav aria-label="Conference Pages">
+                                            <ul class="button-group button-group--justified list-inline">
+                                                <li><a class="button button-mn bg-cprimary" href="#">Conference item 1</a></li>
+                                                <li><a class="button button-mn bg-cprimary" href="#">Conference item 2</a></li>
+                                                <li><a class="button button-mn bg-cprimary" href="#">Conference item 3</a></li>
+                                                <li><a class="button button-mn bg-cprimary" href="#">Conference item 4</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet" id="html-when-where">
+                            <h3>
+                                <button type="button" data-target="#collapse-html-when-where" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-html-when-where">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>HTML Markup <span class="sr-only">for When/Where/Nav Module</span>:
+                                </button>
+                            </h3>
+                            <div id="collapse-html-when-where" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <pre class="language-markup"><code>&lt;section id=&quot;date&quot; arial-label=&quot;Date, time and location&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-8 col-sm-offset-2&quot;&gt;
+            &lt;div class=&quot;extra-margin extra-padding border-csecondary&quot; style=&quot;border-top:8px solid;&quot;&gt;
+                &lt;h2 class=&quot;sr-only&quot;&gt;Date, Time and Location&lt;/h2&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;
+                        &lt;p class=&quot;cb-title-lg margin-btm-0&quot;&gt;[DAY, DATE, YEAR]&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;
+                        &lt;p class=&quot;margin-bottom-0&quot;&gt;9 a.m. - 5 p.m.
+                            &lt;br&gt;[LOCATION NAME]&lt;br&gt;&lt;a href=&quot;[LINK TO GOOGLE MAP]&quot;&gt;[LOCATION ADDRESS]&lt;/a&gt; &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;a href=&quot;[REGISTRATION LINK]&quot; class=&quot;button bg-csecondary button-block text-uppercase&quot;&gt;&lt;span class=&quot;far fa-check-square ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Register Now!&lt;/a&gt;
+            &lt;nav aria-label=&quot;Conference Pages&quot;&gt;
+                &lt;ul class=&quot;button-group button-group--justified list-inline&quot;&gt;
+                    &lt;li&gt;&lt;a class=&quot;button button-mn bg-cprimary&quot; href=&quot;#&quot;&gt;Conference item 1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class=&quot;button button-mn bg-cprimary&quot; href=&quot;#&quot;&gt;Conference item 2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class=&quot;button button-mn bg-cprimary&quot; href=&quot;#&quot;&gt;Conference item 3&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class=&quot;button button-mn bg-cprimary&quot; href=&quot;#&quot;&gt;Conference item 4&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="spacer-4"></div>
+
+                    <section aria-label="About Module">
+                        <h2 id="about-m" class="page-header">About Module</h2>
+                        <p>There may be need for an extra module that provides even more description or explanation. This module is completely flexible for whatever content that additional info requires.</p>
+                        <h3>Template:</h3>
+                        <div class="code-example shadow-3">
+                            <section id="about" aria-label="About this conference">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <h2 class="page-header">
+                                            <span class="fas fa-users ico-left" aria-hidden="true"></span>About the Conference<br></h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                        <ul>
+                                            <li>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</li>
+                                            <li>Vel illum dolore eu feugiat nulla facilisis at vero. </li>
+                                            <li>Eros et accumsan et iusto odio dignissim</li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet" id="html-about">
+                            <h3>
+                                <button type="button" data-target="#collapse-html-about" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-html-about">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>HTML Markup <span class="sr-only">for About Module</span>:
+                                </button>
+                            </h3>
+                            <div id="collapse-html-about" class="panel-collapse collapse">
+                                <div class="panel-body">
+        <pre class="language-markup"><code>&lt;section id=&quot;about&quot; aria-label=&quot;About this conference&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-10 col-sm-offset-1&quot;&gt;
+            &lt;h2 class=&quot;page-header&quot;&gt;&lt;span class=&quot;fas fa-users ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;About the Conference&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="spacer-4"></div>
+
+                    <section aria-label="Featured Speakers Module">
+                        <h2 id="speakers-m" class="page-header">Featured Speakers Module</h2>
+                        <p>Conferences will sometimes feature particular speakers or presenters. This module allows you to highlight those. For instances where there is only one, you will need to alter the bootstrap column so that it is thinner and aligned to the center (using appropriate offsets).</p>
+                        <h3>Template:</h3>
+                        <div class="code-example shadow-3">
+                            <section id="speakers" aria-label="Featured Speakers">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <h2 class="page-header">
+                                            <span class="fas fa-microphone ico-left" aria-hidden="true"></span>Featured or Keynote Speakers</h2>
+                                            <div class="card-group">
+                                                <div class="card bg-cgrey-05 shadow-1">
+                                                    <img class="card-img-top img-responsive border-csecondary" src="https://via.placeholder.com/300" alt="" style="border-bottom:8px solid;">
+                                                    <div class="card-block">
+                                                        <h3 class="h4">
+                                                            <a href=#">Dr. Joe May</a></h3>
+                                                        <p class="card-text">Chancellor,<br />Dallas College</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card bg-cgrey-05 shadow-1">
+                                                    <img class="card-img-top img-responsive border-csecondary" src="https://via.placeholder.com/300" alt="" style="border-bottom:8px solid;">
+                                                    <div class="card-block">
+                                                        <h3 class="h4">
+                                                            <a href=#">Homer J. Simpson</a></h3>
+                                                        <p class="card-text">Nuclear Safety Technician,<br />Springfield Nuclear Power Plant</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card bg-cgrey-05 shadow-1">
+                                                    <img class="card-img-top img-responsive border-csecondary" src="https://via.placeholder.com/300" alt="" style="border-bottom:8px solid;">
+                                                    <div class="card-block">
+                                                        <h3 class="h4">
+                                                            <a href=#">George Bluth</a></h3>
+                                                        <p class="card-text">President,<br />The Bluth Company</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                        </div>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet" id="html-speakers">
+                            <h3>
+                                <button type="button" data-target="#collapse-html-speakers" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-html-speakers">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>HTML Markup <span class="sr-only">for Featured Speakers Module</span>:
+                                </button>
+                            </h3>
+                            <div id="collapse-html-speakers" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <pre class="language-markup"><code>&lt;section id=&quot;speakers&quot; aria-label=&quot;Featured Speakers&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-10 col-sm-offset-1&quot;&gt;
+            &lt;h2 class=&quot;page-header&quot;&gt;
+            &lt;span class=&quot;fas fa-microphone ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Featured (or Keynote) Speakers&lt;/h2&gt;
+            &lt;div class=&quot;card-group&quot;&gt;
+                &lt;div class=&quot;card bg-cgrey-05 shadow-1&quot;&gt;
+                    &lt;img class=&quot;card-img-top img-responsive border-csecondary&quot; src=&quot;[IMG URL]&quot; alt=&quot;&quot; style=&quot;border-bottom:8px solid;&quot;&gt;
+                    &lt;div class=&quot;card-block&quot;&gt;
+                        &lt;h3 class=&quot;h4&quot;&gt;
+                            &lt;a href=[BIO URL]&quot;&gt;[SPEAKER NAME]&lt;/a&gt;&lt;/h3&gt;
+                        &lt;p class=&quot;card-text&quot;&gt;[SPEAKER TITLE],&lt;br /&gt;[SPEAKER ORGANIZATION]&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card bg-cgrey-05 shadow-1&quot;&gt;
+                    &lt;img class=&quot;card-img-top img-responsive border-csecondary&quot; src=&quot;[IMG URL]&quot; alt=&quot;&quot; style=&quot;border-bottom:8px solid;&quot;&gt;
+                    &lt;div class=&quot;card-block&quot;&gt;
+                        &lt;h3 class=&quot;h4&quot;&gt;
+                            &lt;a href=[BIO URL]&quot;&gt;[SPEAKER NAME]&lt;/a&gt;&lt;/h3&gt;
+                        &lt;p class=&quot;card-text&quot;&gt;[SPEAKER TITLE],&lt;br /&gt;[SPEAKER ORGANIZATION]&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card bg-cgrey-05 shadow-1&quot;&gt;
+                    &lt;img class=&quot;card-img-top img-responsive border-csecondary&quot; src=&quot;[IMG URL]&quot; alt=&quot;&quot; style=&quot;border-bottom:8px solid;&quot;&gt;
+                    &lt;div class=&quot;card-block&quot;&gt;
+                        &lt;h3 class=&quot;h4&quot;&gt;
+                            &lt;a href=[BIO URL]&quot;&gt;[SPEAKER NAME]&lt;/a&gt;&lt;/h3&gt;
+                        &lt;p class=&quot;card-text&quot;&gt;[SPEAKER TITLE],&lt;br /&gt;[SPEAKER ORGANIZATION]&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="spacer-4"></div>
+
+                    <section aria-label="Conference Tracks Module">
+                        <h2 id="tracks-m" class="page-header">Conference Tracks Module</h2>
+                        <h3>Template:</h3>
+                        <div class="code-example shadow-3">
+                            <section id="tracks" aria-label="Conference Tracks">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <h2 class="page-header">
+                                            <span class="far fa-list-alt ico-left" aria-hidden="true"></span>Conference Tracks</h2>
+                                        <div class="spacer-1"></div>
+                                        <ul class="list-unstyled col-count-2">
+                                            <li class="h4"><a href="#">Sustainability in Your Business</a><br></li>
+                                            <li class="h4"><a href="#">Facilities Management</a></li>
+                                            <li class="h4"><a href="#">Resilience: Adapting and Thriving After a Crisis</a></li>
+                                            <li class="h4"><a href="#">Teaching Sustainability Track 1</a><br></li>
+                                            <li class="h4"><a href="#">Teaching Sustainability Track 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet" id="html-tracks">
+                            <h3>
+                                <button type="button" data-target="#collapse-html-tracks" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-html-tracks">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>HTML Markup <span class="sr-only">for Conference Tracks Module</span>:
+                                </button>
+                            </h3>
+                            <div id="collapse-html-tracks" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <pre class="language-markup"><code>&lt;section id=&quot;tracks&quot; aria-label=&quot;Conference Tracks&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-10 col-md-offset-1&quot;&gt;
+            &lt;h2 class=&quot;page-header&quot;&gt;
+                &lt;span class=&quot;far fa-list-alt ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Conference Tracks&lt;/h2&gt;
+            &lt;div class=&quot;spacer-1&quot;&gt;&lt;/div&gt;
+            &lt;ul class=&quot;list-unstyled col-count-2&quot;&gt;
+                &lt;li class=&quot;h4&quot;&gt;&lt;a href=&quot;#&quot;&gt;[TRACK 1]&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;h4&quot;&gt;&lt;a href=&quot;#&quot;&gt;[TRACK 2]&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;h4&quot;&gt;&lt;a href=&quot;#&quot;&gt;[TRACK 3]&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;h4&quot;&gt;&lt;a href=&quot;#&quot;&gt;[TRACK 4]&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;h4&quot;&gt;&lt;a href=&quot;#&quot;&gt;[TRACK 5]&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="spacer-4"></div>
+
+                    <section aria-label="Agenda Module">
+                        <h2 id="agenda-m" class="page-header">Agenda Module</h2>
+                        <h3>Template:</h3>
+                        <div class="code-example shadow-3">
+                            <section id="agenda" aria-label="Conference Agenda">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <h2 class="page-header">
+                                            <span class="fas fa-calendar-alt ico-left" aria-hidden="true"></span>Conference Agenda</h2>
+                                        <div class="spacer-1"></div>
+                                        <div class="event-card shadow-1">
+                                            <div class="event-head">
+                                                <div class="row bg-cgrey-05">
+                                                    <div class="col-md-2 col-sm-3 event-time">
+                                                        <h3 class="h4">10:00 a.m.</h3>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-9 event-card-title">
+                                                        <span class="h4">Keynote Presentation: To Infinity And Beyond</span> </div>
+                                                    <div class="col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location">
+                                                        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left" aria-label="Location"></span>Lone Star Lobby</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event-card shadow-1">
+                                            <div class="event-head">
+                                                <div class="row bg-cgrey-05">
+                                                    <div class="col-md-2 col-sm-3 event-time">
+                                                        <h3 class="h4">11:00 a.m.</h3>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-9 event-card-title">
+                                                        <span class="h4">Keynote Presentation: To Infinity And Beyond</span> </div>
+                                                    <div class="col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location">
+                                                        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left" aria-label="Location"></span>Lone Star Lobby</a> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event-card shadow-1">
+                                            <div class="event-head">
+                                                <div class="row bg-cgrey-05">
+                                                    <div class="col-md-2 col-sm-3 event-time">
+                                                        <h3 class="h4">2:00 p.m.</h3>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-9 event-card-title">
+                                                        <span class="h4">Keynote Presentation: To Infinity And Beyond</span> </div>
+                                                    <div class="col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location">
+                                                        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left" aria-label="Location"></span>Lone Star Lobby</a> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet" id="html-agenda">
+                            <h3>
+                                <button type="button" data-target="#collapse-html-agenda" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-html-agenda">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>HTML Markup <span class="sr-only">for Agenda Module</span>:
+                                </button>
+                            </h3>
+                            <div id="collapse-html-agenda" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <pre class="language-markup"><code>&lt;section id=&quot;agenda&quot; aria-label=&quot;Conference Agenda&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-10 col-md-offset-1&quot;&gt;
+            &lt;h2 class=&quot;page-header&quot;&gt;
+                &lt;span class=&quot;fas fa-calendar-alt ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Conference Agenda&lt;/h2&gt;
+            &lt;div class=&quot;spacer-1&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;event-card shadow-1&quot;&gt;
+                &lt;div class=&quot;event-head&quot;&gt;
+                    &lt;div class=&quot;row bg-cgrey-05&quot;&gt;
+                        &lt;div class=&quot;col-md-2 col-sm-3 event-time&quot;&gt;
+                            &lt;h3 class=&quot;h4&quot;&gt;10:00 a.m.&lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-7 col-sm-9 event-card-title&quot;&gt;
+                            &lt;span class=&quot;h4&quot;&gt;Keynote Presentation: To Infinity And Beyond&lt;/span&gt; &lt;/div&gt;
+                        &lt;div class=&quot;col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-map-marker-alt ico-left&quot; aria-label=&quot;Location&quot;&gt;&lt;/span&gt;Lone Star Lobby&lt;/a&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;event-card shadow-1&quot;&gt;
+                &lt;div class=&quot;event-head&quot;&gt;
+                    &lt;div class=&quot;row bg-cgrey-05&quot;&gt;
+                        &lt;div class=&quot;col-md-2 col-sm-3 event-time&quot;&gt;
+                            &lt;h3 class=&quot;h4&quot;&gt;11:00 a.m.&lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-7 col-sm-9 event-card-title&quot;&gt;
+                            &lt;span class=&quot;h4&quot;&gt;Keynote Presentation: To Infinity And Beyond&lt;/span&gt; &lt;/div&gt;
+                        &lt;div class=&quot;col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-map-marker-alt ico-left&quot; aria-label=&quot;Location&quot;&gt;&lt;/span&gt;Lone Star Lobby&lt;/a&gt; &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;event-card shadow-1&quot;&gt;
+                &lt;div class=&quot;event-head&quot;&gt;
+                    &lt;div class=&quot;row bg-cgrey-05&quot;&gt;
+                        &lt;div class=&quot;col-md-2 col-sm-3 event-time&quot;&gt;
+                            &lt;h3 class=&quot;h4&quot;&gt;2:00 p.m.&lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-7 col-sm-9 event-card-title&quot;&gt;
+                            &lt;span class=&quot;h4&quot;&gt;Keynote Presentation: To Infinity And Beyond&lt;/span&gt; &lt;/div&gt;
+                        &lt;div class=&quot;col-md-3 col-md-offset-0 col-sm-9 col-sm-offset-3 event-location&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;text-cprimary ico fas fa-map-marker-alt ico-left&quot; aria-label=&quot;Location&quot;&gt;&lt;/span&gt;Lone Star Lobby&lt;/a&gt; &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="spacer-4"></div>
+
+                    <section aria-label="Sponsors Module">
+                        <h2 id="sponsors-m" class="page-header">Sponsors Module</h2>
+                        <h3>Template:</h3>
+                        <div class="code-example shadow-3">
+                            <section id="sponsors">
+                                <h2 class="h1 page-header border-csecondary" style="border-width:8px;">
+                                    <span aria-hidden="true" class="ico fas fa-handshake ico-left"></span>Conference Sponsors<br></h2>
+                                <p class="text-right">
+                                    <a href="/events/conference-day/Pages/sponsorship.aspx" class="pgs-action-link">
+                                        <span aria-hidden="true" class="ico fas fa-chevron-right ico-left"></span>Become a partner</a></p>
+                                <div class="spacer-1">&nbsp;<br></div>
+                                <div class="row">
+                                    <div class="col-sm-3 col-xs-6 text-center">
+                                        <a href="#">
+                                            <img alt="Alt text" src="https://via.placeholder.com/320x220" class="img-responsive"></a></div>
+                                    <div class="col-sm-3 col-xs-6 text-center">
+                                        <a href="#">
+                                            <img alt="Alt text" src="https://via.placeholder.com/320x220" class="img-responsive"></a></div>
+                                    <div class="col-sm-3 col-xs-6 text-center">
+                                        <a href="#">
+                                            <img alt="Alt text" src="https://via.placeholder.com/320x220" class="img-responsive"></a></div>
+                                    <div class="col-sm-3 col-xs-6 text-center">
+                                        <a href="#">
+                                            <img alt="Alt text" src="https://via.placeholder.com/320x220" class="img-responsive"></a></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet" id="html-sponsors">
+                            <h3>
+                                <button type="button" data-target="#collapse-html-sponsors" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-html-sponsors">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>HTML Markup <span class="sr-only">for Sponsors Module</span>:
+                                </button>
+                            </h3>
+                            <div id="collapse-html-sponsors" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                    <pre class="language-markup"><code>&lt;section id=&quot;sponsors&quot; aria-label=&quot;Conference Sponsors&quot;&gt;
+    &lt;h2 class=&quot;h1 page-header border-csecondary&quot; style=&quot;border-width:8px;&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-handshake ico-left&quot;&gt;&lt;/span&gt;Conference Sponsors&lt;br&gt;&lt;/h2&gt;
+    &lt;p class=&quot;text-right&quot;&gt;
+        &lt;a href=&quot;[SPONSORSHIP PACKET]&quot; class=&quot;pgs-action-link&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-right ico-left&quot;&gt;&lt;/span&gt;Become a partner&lt;/a&gt;&lt;/p&gt;
+    &lt;div class=&quot;spacer-1&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-3 col-xs-6 text-center&quot;&gt;
+            &lt;a href=&quot;[SPONSOR LINK]&quot;&gt;&lt;img alt=&quot;Alt text&quot; src=&quot;[IMG URL]&quot; class=&quot;img-responsive&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class=&quot;col-sm-3 col-xs-6 text-center&quot;&gt;
+            &lt;a href=&quot;[SPONSOR LINK]&quot;&gt;&lt;img alt=&quot;Alt text&quot; src=&quot;[IMG URL]&quot; class=&quot;img-responsive&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class=&quot;col-sm-3 col-xs-6 text-center&quot;&gt;
+            &lt;a href=&quot;[SPONSOR LINK]&quot;&gt;&lt;img alt=&quot;Alt text&quot; src=&quot;[IMG URL]&quot; class=&quot;img-responsive&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class=&quot;col-sm-3 col-xs-6 text-center&quot;&gt;
+            &lt;a href=&quot;[SPONSOR LINK]&quot;&gt;&lt;img alt=&quot;Alt text&quot; src=&quot;[IMG URL]&quot; class=&quot;img-responsive&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="spacer-4"></div>
+
+                    <!-- <section aria-label="About Module">
+                        <h2 id="about-m" class="page-header">About Module</h2>
+                        <h3>Template:</h3>
+                        <div class="code-example shadow-3">
+                             ...
+                        </div>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet" id="html-about">
+                            <h3>
+                                <button type="button" data-target="#collapse-html-about" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-html-about">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>HTML Markup <span class="sr-only">for About Module</span>:
+                                </button>
+                            </h3>
+                            <div id="collapse-html-about" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="alert extra-padding alert-warning">
+                                        <p><span aria-hidden="true" class="ico fas fa-universal-access ico-left"></span><strong>Accessibility Note:</strong> </p>
+                                    </div>
+
+                                    <pre class="language-markup"><code>...</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="spacer-4"></div> -->
+
+          </div>

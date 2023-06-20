@@ -1,0 +1,555 @@
+---
+layout: default-level2
+title: Grid System
+permalink: elements/grid.html
+---
+
+
+                <!-- TYPOGRAPHY Outside Container -->
+                <div id="top">
+                    <section id="grid">
+                        <nav class="text-center">
+                            <ul class="list-inline h4">
+                                {% include ul/grid-ul.html %}
+                            </ul>
+
+                            <ul class="list-inline h6">
+                                {% include ul/grid-bs-ul.html %}
+                            </ul>
+                        </nav>
+                    </section>
+                </div> <!-- /outsideContainer -->
+
+
+    <section>
+
+    <div class="subsection3"  id="understanding-the-grid">
+      <h2 class="page-header text-csecondary">Understanding the Grid</h2>
+      <p class="lead">PEGASUS is built upon a responsive, mobile-first grid system that appropriately scales up or "stacks" as the device or viewport size changes.</p>
+      <p><strong>Grid systems</strong> are used for creating page layouts through a series of rows and columns that house your content. </p>
+      <p>The PEGASUS grid is built on <em>12 columns</em>:</p>
+      <div class="code-example shadow-3">
+      <div class="row">
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>1</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>2</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>3</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>4</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>5</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>6</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>7</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>8</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>9</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+            <p>10</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+           <p>11</p>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="extra-margin bg-cprimary-lt text-center">
+           <p>12</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer-2"></div>
+    <p>By grouping some of these individual columns together, you can begin to create interesting page layouts like so:</p>
+    <div class="code-example shadow-3">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="text-block bg-cprimary-lt">
+          <h4>6-Column Width <small>(one half of page)</small></h4>
+          <p>Dallas College is one of the largest community college systems in the state. Since 1965, we have served nearly 3 million people. We work to ensure Dallas County is vibrant, growing and economically viable for future generations.</p>
+          <p>Dallas College is one of the largest community college systems in the state. Since 1965, we have served nearly 3 million people. We work to ensure Dallas County is vibrant, growing and economically viable for future generations.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="text-block bg-cprimary-lt">
+          <h4>6-Column Width <small>(one half of page)</small></h4>
+          <p>Dallas College is one of the largest community college systems in the state. Since 1965, we have served nearly 3 million people. We work to ensure Dallas County is vibrant, growing and economically viable for future generations.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="text-block bg-cprimary-lt">
+          <h4>8-Column Width <small>(two thirds of page)</small></h4>
+          <p>Dallas College is one of the largest community college systems in the state. Since 1965, we have served nearly 3 million people. We work to ensure Dallas County is vibrant, growing and economically viable for future generations.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="text-block bg-cprimary-lt">
+          <h4>4-Column Width <small>(one third of page)</small></h4>
+          <p>Each of the Dallas County Community College District’s seven colleges — Brookhaven, Cedar Valley, Eastfield...</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="text-block bg-cprimary-lt">
+          <h4>3-Col. Width <small>(one quarter)</small></h4>
+          <p>Each of the Dallas County Community College District’s seven colleges ...</p>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="text-block bg-cprimary-lt">
+          <h4>9-Col. Width <small>(three quarters)</small></h4>
+          <p>Dallas College is one of the largest community college systems in the state. Since 1965, we have served nearly 3 million people. We work to ensure Dallas County is vibrant, growing and economically viable for future generations.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="subsection3">
+    <h2 class="page-header text-csecondary" id="using-the-grid">Using the Grid</h2>
+    <p>The PEGASUS grid is based upon <a href="https://getbootstrap.com/docs/3.3/css/#grid">Bootstrap's (version 3) grid system</a>. When it comes to building out columns in HTML, there is a specific way they should be formatted.</p>
+    <div class="spacer-2"></div>
+    <h4>Here are the CSS classes you will need to know and use:</h4>
+    <ul>
+      <li><strong><code>.container</code></strong> - class applied to the <code>&lt;div&gt;</code> (or element) that will contain individual rows; max-width for this is <code>1200px</code></li>
+      <li><strong><code>.container-fluid</code></strong> - serves similar purpose as above, but does not have a max-width; it will stretch the full-width of its containing element</li>
+      <li><strong><code>.row</code></strong> - class applied to the <code>&lt;div&gt;</code> (or element) that will contain the individual columns</li>
+      <li><strong>Column classes</strong>. Note that the <code>*</code> symbol below represents the part of the column class where <code>xl</code>, <code>lg</code>, <code>md</code>, <code>sm</code> or <code>xs</code> is to be used. But this is talked about in the Responsive Grid section. Do not worry for now.:
+      <ul>
+        <li><strong><code>.col-*-1</code></strong> - <code>&lt;div&gt;</code> with a 1-column width (<strong>1/12th</strong> of its containing row)</li>
+        <li><strong><code>.col-*-2</code></strong> - <code>&lt;div&gt;</code> with a 2-column width (<strong>1/6th</strong> of its containing row)</li>
+        <li><strong><code>.col-*-3</code></strong> - <code>&lt;div&gt;</code> with a 3-column width (<strong>1/4th</strong> of its containing row)</li>
+        <li><strong><code>.col-*-4</code></strong> - <code>&lt;div&gt;</code> with a 4-column width (<strong>1/3rd</strong> of its containing row)</li>
+        <li><strong><code>.col-*-5</code></strong> - <code>&lt;div&gt;</code> with a 5-column width</li>
+        <li><strong><code>.col-*-6</code></strong> - <code>&lt;div&gt;</code> with a 6-column width (<strong>1/2</strong> of its containing row)</li>
+        <li><strong><code>.col-*-7</code></strong> - <code>&lt;div&gt;</code> with a 7-column width</li>
+        <li><strong><code>.col-*-8</code></strong> - <code>&lt;div&gt;</code> with a 8-column width (<strong>2/3</strong> of its containing row)</li>
+        <li><strong><code>.col-*-9</code></strong> - <code>&lt;div&gt;</code> with a 9-column width (<strong>3/4</strong> of its containing row)</li>
+        <li><strong><code>.col-*-10</code></strong> - <code>&lt;div&gt;</code> with a 10-column width</li>
+        <li><strong><code>.col-*-11</code></strong> - <code>&lt;div&gt;</code> with a 11-column width</li>
+        <li><strong><code>.col-*-12</code></strong> - <code>&lt;div&gt;</code> with a 12-column width (<strong>100%</strong> of its containing row)</li>
+      </ul></li>
+
+    </ul>
+    <div class="spacer-2"></div>
+    <h3>This is the standard format when coding grid columns:</h3>
+    <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt; &lt;!-- This is the ROW; All columns must exist directly inside a ROW. --&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;[CONTENT]&lt;/div&gt; &lt;!-- Content should exist inside of columns. --&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;[CONTENT]&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <div class="spacer-2"></div>
+    <h3>Here are some examples:</h3>
+    <div class="subsection4">
+    <div class="code-example shadow-3">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="text-block bg-cprimary-lt">
+            <h4>6-Column Width <small>(one half of page)</small></h4>
+            <p>Dallas College is one of the largest community college systems in the state. Since 1965, we have served nearly 3 million people. We work to ensure Dallas County is vibrant, growing and economically viable for future generations.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-block bg-cprimary-lt">
+            <h4>6-Column Width <small>(one half of page)</small></h4>
+            <p>Dallas College is one of the largest community college systems in the state. Since 1965, we have served nearly 3 million people. We work to ensure Dallas County is vibrant, growing and economically viable for future generations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        [COLUMN CONTENT]
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        [COLUMN CONTENT]
+    &lt;/div&gt;
+&lt;/div&gt;  </code></pre>
+      <div class="spacer-3"></div>
+      <div class="code-example shadow-3">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="text-block bg-cprimary-lt">
+              <h4>8-Column Width <small>(two thirds of page)</small></h4>
+              <p>Dallas College is one of the largest community college systems in the state. Since 1965, we have served nearly 3 million people. We work to ensure Dallas County is vibrant, growing and economically viable for future generations.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-block bg-cprimary-lt">
+              <h4>4-Column Width <small>(one third of page)</small></h4>
+              <p>Each of the Dallas County Community College District’s seven colleges — Brookhaven, Cedar Valley, Eastfield...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-8&quot;&gt;
+        [COLUMN CONTENT]
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        [COLUMN CONTENT]
+    &lt;/div&gt;
+&lt;/div&gt;  </code></pre>
+        <div class="spacer-3"></div>
+        <div class="code-example shadow-3">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="text-block bg-cprimary-lt">
+                <h4>3-Col. Width <small>(one quarter)</small></h4>
+                <p>Each of the Dallas County Community College District’s seven colleges ...</p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="text-block bg-cprimary-lt">
+                <h4>9-Col. Width <small>(three quarters)</small></h4>
+                <p>Dallas College is one of the largest community college systems in the state. Since 1965, we have served nearly 3 million people. We work to ensure Dallas County is vibrant, growing and economically viable for future generations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-3&quot;&gt;
+        [COLUMN CONTENT]
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-9&quot;&gt;
+        [COLUMN CONTENT]
+    &lt;/div&gt;
+&lt;/div&gt;  </code></pre>
+          <div class="spacer-3"></div>
+        </div>
+    </div>
+
+    <div class="subsection3">
+    <h2 class="page-header text-csecondary" id="responsive-grid">Responsive Grid</h2>
+    <p>One of the most flexible features of <a href="https://getbootstrap.com/docs/3.3/css/#grid">Bootstrap's (version 3) grid system</a> is that you can control the number of columns a <code>&lt;div&gt;</code> spans at various browser widths. These varying browser widths are known as <strong>breakpoints</strong>.</p>
+    <div class="spacer-2"></div>
+    <h3>Breakpoints:</h3>
+    <div class="row text-center">
+      <div class="col-md-3 bg-cprimary-lt-border">
+        <h5>Extra Small</h5>
+        <p><code>.col-xs-*</code></p>
+        <p>Widths: <strong>&lt;768px</strong><br> <small>(or 0-767px)</small></p>
+      </div>
+      <div class="col-md-3 bg-cprimary-lt-border">
+        <h5>Small</h5>
+        <p><code>.col-sm-*</code></p>
+        <p>Widths: <strong>&ge;768px</strong><br> <small>(or 768-991px and above)</small></p>
+      </div>
+      <div class="col-md-3 bg-cprimary-lt-border">
+        <h5>Medium</h5>
+        <p><code>.col-md-*</code></p>
+        <p>Widths: <strong>&ge;992px</strong><br> <small>(or 992-1199px and above)</small></p>
+      </div>
+      <div class="col-md-3 bg-cprimary-lt-border">
+        <h5>Large</h5>
+        <p><code>.col-lg-*</code></p>
+        <p>Widths: <strong>&ge;1200px</strong><br> <small>(or 1200px and above)</small></p>
+      </div>
+    </div>
+    <div class="spacer-1"></div>
+    <p>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and <em>override</em> grid classes targeted at smaller devices.</p>
+    <p>Therefore, e.g. applying any <code>.col-md-*</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-*</code> class is <em>not</em> present.</p>
+<!--
+    <div class="spacer-2"></div>
+      <h3>Examples of responsive grid classes in action:</h3>
+      <div class="subsection4">
+        <div class="code-example shadow-3">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="text-block bg-cprimary-lt extra-padding">
+                <h4 class="margin-top-0">Block A</h4>
+                <p><em>Resize the width of your browser to see when and how Block A responds.</em></p>
+                <p>Classes applied this block:</p>
+                <ul>
+                  <li><code>.col-<strong>sm-6</strong></code></li>
+                </ul>
+                <br>
+                <div class="cprimary-md-border extra-padding-1">
+                  <h5 class="margin-top-0">Extra Small</h5>
+                  <p><code>0-767px</code></p>
+                  <p>Because there is no <code>.col-xs-*</code> specified, the default width for Block A at this browser width is <strong>12</strong> columns.</p>
+                </div>
+                <br>
+                <div class="csecondary-border extra-padding-1 cwhite">
+                  <h5 class="margin-top-0">Small</h5>
+                  <p><code>768-991px</code></p>
+                  <p>Because <code>.col-sm-6</code> <em>is</em> specified, the default width for Block A at this browser width is <strong>6</strong> columns.</p>
+                </div>
+                <br>
+                <div class="cprimary-md-border extra-padding-1">
+                  <h5 class="margin-top-0">Medium</h5>
+                  <p><code>992-1199px</code></p>
+                  <p>Because there is no <code>.col-md-*</code> specified, the default width for Block A at this browser width is based on the next smallest specified grid class (which is <code>.col-sm-6</code> or <strong>6</strong> columns.</p>
+                </div>
+                <br>
+                <div class="cprimary-md-border extra-padding-1">
+                  <h5 class="margin-top-0">Large</h5>
+                  <p><code>1200px and above</code></p>
+                  <p>Because there is no <code>.col-lg-*</code> specified, the default width for Block A at this browser width is based on the next smallest specified grid class (which is still <code>.col-sm-6</code> or <strong>6</strong> columns.</p>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;h4&gt;Block A&lt;/h4&gt;
+        [COLUMN CONTENT]
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <div class="spacer-3"></div>
+          <div class="code-example shadow-3">
+            <div class="row">
+              <div class="col-sm-9 col-md-8 col-lg-6">
+                <div class="text-block bg-cprimary-lt extra-padding">
+                  <h3 class="margin-top-0">Block B</h3>
+                  <p><em>Resize the width of your browser to see when and how Block B responds.</em></p>
+                  <p>Classes applied this block:</p>
+                  <ul>
+                    <li><code>.col-<strong>sm-9</strong></code></li>
+                    <li><code>.col-<strong>md-8</strong></code></li>
+                    <li><code>.col-<strong>lg-6</strong></code></li>
+                  </ul>
+                  <br>
+                  <div class="cprimary-md-border extra-padding-1">
+                    <h5 class="margin-top-0">Extra Small</h5>
+                    <p><code>0-767px</code></p>
+                    <p>Because there is no <code>.col-xs-*</code> specified, the default width for Block B at this browser width is <strong>12</strong> columns.</p>
+                  </div>
+                  <br>
+                  <div class="csecondary-border extra-padding-1 cwhite">
+                    <h5 class="margin-top-0">Small</h5>
+                    <p><code>768-991px</code></p>
+                    <p>Because <code>.col-sm-9</code> <em>is</em> specified, the default width for Block B at this browser width is <strong>9</strong> columns.</p>
+                  </div>
+                  <br>
+                  <div class="csecondary-border extra-padding-1 cwhite">
+                    <h5 class="margin-top-0">Medium</h5>
+                    <p><code>992-1199px</code></p>
+                    <p>Because <code>.col-md-8</code> <em>is</em> specified, the default width for Block B at this browser width is <strong>8</strong> columns.</p>
+                  </div>
+                  <br>
+                  <div class="csecondary-border extra-padding-1 cwhite">
+                    <h5 class="margin-top-0">Large</h5>
+                    <p><code>1200px and above</code></p>
+                    <p>Because <code>.col-lg-6</code> <em>is</em> specified, the default width for Block B at this browser width is <strong>6</strong> columns.</p>
+                  </div>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-9 col-md-8 col-lg-6&quot;&gt;
+        &lt;h4&gt;Block B&lt;/h4&gt;
+        [COLUMN CONTENT]
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="spacer-3"></div>
+            <div class="code-example shadow-3">
+              <div class="row">
+                <div class="col-xs-6 col-md-3">
+                  <div class="text-block bg-cprimary-lt extra-padding">
+                    <h3 class="margin-top-0">Block C</h3>
+                    <p><em>Resize the width of your browser to see when and how Block C responds.</em></p>
+                    <p>Classes applied this block:</p>
+                    <ul>
+                      <li><code>.col-<strong>xs-6</strong></code></li>
+                      <li><code>.col-<strong>md-3</strong></code></li>
+                    </ul>
+                    <br>
+                    <div class="csecondary-border extra-padding-1 cwhite">
+                      <h5 class="margin-top-0">Extra Small</h5>
+                      <p><code>0-767px</code></p>
+                      <p>Because <code>.col-xs-6</code> <em>is</em> specified, the default width for Block C at this browser width is <strong>6</strong> columns.</p>
+                    </div>
+                    <br>
+                    <div class="cprimary-md-border extra-padding-1">
+                      <h5 class="margin-top-0">Small</h5>
+                      <p><code>768-991px</code></p>
+                      <p>Because there is no <code>.col-sm-*</code> specified, the default width for Block C at this browser width is based on the next smallest specified grid class (which is <code>.col-xs-6</code> or <strong>6</strong> columns).</p>
+                    </div>
+                    <br>
+                    <div class="csecondary-border extra-padding-1 cwhite">
+                      <h5 class="margin-top-0">Medium</h5>
+                      <p><code>992-1199px</code></p>
+                      <p>Because <code>.col-md-3</code> <em>is</em> specified, the default width for Block C at this browser width is <strong>3</strong> columns.</p>
+                    </div>
+                    <br>
+                    <div class="cprimary-md-border extra-padding-1">
+                      <h5 class="margin-top-0">Large</h5>
+                      <p><code>1200px and above</code></p>
+                      <p>Because there is no <code>.col-lg-*</code> specified, the default width for Block C at this browser width is based on the next smallest specified grid class (which is <code>.col-md-3</code> or <strong>3</strong> columns).</p>
+                    </div>
+                    <br>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                  <div class="text-block bg-cprimary-lt extra-padding">
+                    <h3 class="margin-top-0">Block C</h3>
+                    <p><em>Resize the width of your browser to see when and how Block C responds.</em></p>
+                    <p>Classes applied this block:</p>
+                    <ul>
+                      <li><code>.col-<strong>xs-6</strong></code></li>
+                      <li><code>.col-<strong>md-3</strong></code></li>
+                    </ul>
+                    <br>
+                    <div class="csecondary-border extra-padding-1 cwhite">
+                      <h5 class="margin-top-0">Extra Small</h5>
+                      <p><code>0-767px</code></p>
+                      <p>Because <code>.col-xs-6</code> <em>is</em> specified, the default width for Block C at this browser width is <strong>6</strong> columns.</p>
+                    </div>
+                    <br>
+                    <div class="cprimary-md-border extra-padding-1">
+                      <h5 class="margin-top-0">Small</h5>
+                      <p><code>768-991px</code></p>
+                      <p>Because there is no <code>.col-sm-*</code> specified, the default width for Block C at this browser width is based on the next smallest specified grid class (which is <code>.col-xs-6</code> or <strong>6</strong> columns).</p>
+                    </div>
+                    <br>
+                    <div class="csecondary-border extra-padding-1 cwhite">
+                      <h5 class="margin-top-0">Medium</h5>
+                      <p><code>992-1199px</code></p>
+                      <p>Because <code>.col-md-3</code> <em>is</em> specified, the default width for Block C at this browser width is <strong>3</strong> columns.</p>
+                    </div>
+                    <br>
+                    <div class="cprimary-md-border extra-padding-1">
+                      <h5 class="margin-top-0">Large</h5>
+                      <p><code>1200px and above</code></p>
+                      <p>Because there is no <code>.col-lg-*</code> specified, the default width for Block C at this browser width is based on the next smallest specified grid class (which is <code>.col-md-3</code> or <strong>3</strong> columns).</p>
+                    </div>
+                    <br>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                  <div class="text-block bg-cprimary-lt extra-padding">
+                    <h3 class="margin-top-0">Block C</h3>
+                    <p><em>Resize the width of your browser to see when and how Block C responds.</em></p>
+                    <p>Classes applied this block:</p>
+                    <ul>
+                      <li><code>.col-<strong>xs-6</strong></code></li>
+                      <li><code>.col-<strong>md-3</strong></code></li>
+                    </ul>
+                    <br>
+                    <div class="csecondary-border extra-padding-1 cwhite">
+                      <h5 class="margin-top-0">Extra Small</h5>
+                      <p><code>0-767px</code></p>
+                      <p>Because <code>.col-xs-6</code> <em>is</em> specified, the default width for Block C at this browser width is <strong>6</strong> columns.</p>
+                    </div>
+                    <br>
+                    <div class="cprimary-md-border extra-padding-1">
+                      <h5 class="margin-top-0">Small</h5>
+                      <p><code>768-991px</code></p>
+                      <p>Because there is no <code>.col-sm-*</code> specified, the default width for Block C at this browser width is based on the next smallest specified grid class (which is <code>.col-xs-6</code> or <strong>6</strong> columns).</p>
+                    </div>
+                    <br>
+                    <div class="csecondary-border extra-padding-1 cwhite">
+                      <h5 class="margin-top-0">Medium</h5>
+                      <p><code>992-1199px</code></p>
+                      <p>Because <code>.col-md-3</code> <em>is</em> specified, the default width for Block C at this browser width is <strong>3</strong> columns.</p>
+                    </div>
+                    <br>
+                    <div class="cprimary-md-border extra-padding-1">
+                      <h5 class="margin-top-0">Large</h5>
+                      <p><code>1200px and above</code></p>
+                      <p>Because there is no <code>.col-lg-*</code> specified, the default width for Block C at this browser width is based on the next smallest specified grid class (which is <code>.col-md-3</code> or <strong>3</strong> columns).</p>
+                    </div>
+                    <br>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                  <div class="text-block bg-cprimary-lt extra-padding">
+                    <h3 class="margin-top-0">Block C</h3>
+                    <p><em>Resize the width of your browser to see when and how Block C responds.</em></p>
+                    <p>Classes applied this block:</p>
+                    <ul>
+                      <li><code>.col-<strong>xs-6</strong></code></li>
+                      <li><code>.col-<strong>md-3</strong></code></li>
+                    </ul>
+                    <br>
+                    <div class="csecondary-border extra-padding-1 cwhite">
+                      <h5 class="margin-top-0">Extra Small</h5>
+                      <p><code>0-767px</code></p>
+                      <p>Because <code>.col-xs-6</code> <em>is</em> specified, the default width for Block C at this browser width is <strong>6</strong> columns.</p>
+                    </div>
+                    <br>
+                    <div class="cprimary-md-border extra-padding-1">
+                      <h5 class="margin-top-0">Small</h5>
+                      <p><code>768-991px</code></p>
+                      <p>Because there is no <code>.col-sm-*</code> specified, the default width for Block C at this browser width is based on the next smallest specified grid class (which is <code>.col-xs-6</code> or <strong>6</strong> columns).</p>
+                    </div>
+                    <br>
+                    <div class="csecondary-border extra-padding-1 cwhite">
+                      <h5 class="margin-top-0">Medium</h5>
+                      <p><code>992-1199px</code></p>
+                      <p>Because <code>.col-md-3</code> <em>is</em> specified, the default width for Block C at this browser width is <strong>3</strong> columns.</p>
+                    </div>
+                    <br>
+                    <div class="cprimary-md-border extra-padding-1">
+                      <h5 class="margin-top-0">Large</h5>
+                      <p><code>1200px and above</code></p>
+                      <p>Because there is no <code>.col-lg-*</code> specified, the default width for Block C at this browser width is based on the next smallest specified grid class (which is <code>.col-md-3</code> or <strong>3</strong> columns).</p>
+                    </div>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;
+      &lt;h4&gt;Block C&lt;/h4&gt;
+      [COLUMN CONTENT]
+  &lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;
+      &lt;h4&gt;Block C&lt;/h4&gt;
+      [COLUMN CONTENT]
+  &lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;
+      &lt;h4&gt;Block C&lt;/h4&gt;
+      [COLUMN CONTENT]
+  &lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;
+      &lt;h4&gt;Block C&lt;/h4&gt;
+      [COLUMN CONTENT]
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <div class="spacer-3"></div>
+
+            </div>
+-->

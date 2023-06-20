@@ -1,0 +1,134 @@
+---
+layout: default-level2
+title: Widths and Heights
+cat: Utilities
+permalink: utilities/widths-heights.html
+---
+
+<section class="subsection3">
+    <h2 id="width" class="text-csecondary page-header">Width Utilities</h2>
+    <p>This utility allows you to apply a set width (and height) to any block element including:</p>
+    <ul>
+      <li><code>&lt;img&gt;</code> elements</li>
+      <li><code>&lt;div&gt;</code> elements</li>
+    </ul>
+
+        <h3>CSS</h3>
+        <div class="row">
+      <div class="col-sm-6">
+        <p>Using <code>.width-15</code> will apply the following CSS:</p>
+        <pre><code class="language-css">.width-15 {
+    width:15px;
+    height:15px;
+    max-width:100%;
+}</code></pre>
+      </div>
+    </div>
+    <h3>All Available Width Classes</h3>
+    <ul class="col-count-3">
+        <li><code>.width-15</code></li>
+        <li><code>.width-25</code></li>
+        <li><code>.width-30</code></li>
+        <li><code>.width-35</code></li>
+        <li><code>.width-50</code></li>
+        <li><code>.width-75</code></li>
+        <li><code>.width-100</code></li>
+        <li><code>.width-125</code></li>
+        <li><code>.width-150</code></li>
+        <li><code>.width-200</code></li>
+        <li><code>.width-250</code></li>
+        <li><code>.width-300</code></li>
+        <li><code>.width-350</code></li>
+        <li><code>.width-400</code></li>
+    </ul>
+</section>
+
+
+<section class="subsection3">
+  <h2 id="height" class="page-header text-csecondary">Responsive Height Utilities</h2>
+  <p>Because we have not been using Flexbox in this design framework, we needed a way to control the height of multiple block elements at once, so they can have uniform height and respond to browser width uniformly.</p>
+  <p>We created this utility to do just that. You can apply the following class to any block element:</p>
+  <pre class="lead"><code class="language-css">.height-*-50</code></pre>
+  <ul>
+    <li>* = which browser width you'd like this height to apply to (see <a href="#responsivity">Responsivity</a> below)</li>
+    <li>50 = the height of the block in pixels</li>
+  </ul>
+  <h3>All Available Height Classes</h3>
+  <ul class="col-count-3">
+    <li><code>.height-*-12</code></li>
+    <li><code>.height-*-25</code></li>
+    <li><code>.height-*-50</code></li>
+    <li><code>.height-*-60</code></li>
+    <li><code>.height-*-75</code></li>
+    <li><code>.height-*-90</code></li>
+    <li><code>.height-*-100</code></li>
+    <li><code>.height-*-105</code></li>
+    <li><code>.height-*-110</code></li>
+    <li><code>.height-*-115</code></li>
+    <li><code>.height-*-120</code></li>
+    <li><code>.height-*-125</code></li>
+    <li><code>.height-*-140</code></li>
+    <li><code>.height-*-150</code></li>
+    <li><code>.height-*-160</code></li>
+    <li><code>.height-*-175</code></li>
+    <li><code>.height-*-200</code></li>
+    <li><code>.height-*-225</code></li>
+    <li><code>.height-*-250</code></li>
+    <li><code>.height-*-275</code></li>
+    <li><code>.height-*-300</code></li>
+    <li><code>.height-*-325</code></li>
+    <li><code>.height-*-350</code></li>
+    <li><code>.height-*-375</code></li>
+    <li><code>.height-*-400</code></li>
+    <li><code>.height-*-425</code></li>
+    <li><code>.height-*-450</code></li>
+    <li><code>.height-*-475</code></li>
+    <li><code>.height-*-500</code></li>
+    <li><code>.height-*-525</code></li>
+    <li><code>.height-*-550</code></li>
+    <li><code>.height-*-575</code></li>
+    <li><code>.height-*-600</code></li>
+    <li><code>.height-*-650</code></li>
+    <li><code>.height-*-700</code></li>
+    <li><code>.height-*-750</code></li>
+    <li><code>.height-*-800</code></li>
+    <li><code>.height-*-850</code></li>
+    <li><code>.height-*-900</code></li>
+    <li><code>.height-*-950</code></li>
+    <li><code>.height-*-1000</code></li>
+    <li><code>.height-*-1100</code></li>
+    <li><code>.height-*-1200</code></li>
+    <li><code>.height-*-1300</code></li>
+    <li><code>.height-*-1400</code></li>
+    <li><code>.height-*-1500</code></li>
+  </ul>
+  <h3 id="responsivity">Responsivity</h3>
+  <p>The responsivity of this utility is modeled directly after <a href="grid.html#responsive-grid">Bootstrap's Grid classes</a>.</>
+  <div class="row text-center">
+        <div class="col-md-3 border-cprimary-lt">
+          <h3>Extra-Extra Small</h3>
+          <p><code>.height-xxs-*</code></p>
+          <p>Widths: <strong>&lt;575px</strong><br> <small>(or 0-574px)</small></p>
+        </div>
+        <div class="col-md-2 border-cprimary-lt">
+          <h3>Extra Small</h3>
+          <p><code>.height-xs-*</code></p>
+          <p>Widths: <strong>≥575px</strong><br> <small>(or 575-767px)</small></p>
+        </div>
+        <div class="col-md-2 border-cprimary-lt">
+          <h3>Small</h3>
+          <p><code>.height-sm-*</code></p>
+          <p>Widths: <strong>≥768px</strong><br> <small>(or 768-991px and above)</small></p>
+        </div>
+        <div class="col-md-2 border-cprimary-lt">
+          <h3>Medium</h3>
+          <p><code>.height-md-*</code></p>
+          <p>Widths: <strong>≥992px</strong><br> <small>(or 992-1199px and above)</small></p>
+        </div>
+        <div class="col-md-2 border-cprimary-lt">
+          <h3>Large</h3>
+          <p><code>.height-lg-*</code></p>
+          <p>Widths: <strong>≥1200px</strong><br> <small>(or 1200px and above)</small></p>
+        </div>
+      </div>
+</section>

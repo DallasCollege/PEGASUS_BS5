@@ -1,0 +1,154 @@
+---
+layout: default-level2
+title: Data Boxes
+cat: Patterns
+permalink: patterns/data-boxes.html
+---
+
+                <div class="subsection3" id="data-boxes">
+                    <div class="text-right">
+                        <a href="https://my2.siteimprove.com/Policy/26196522395/PolicyDetails/Content/1?policyId=15500049658&tagIds=&ignoredPolicyViolationsOnly=false&last30DaysOnly=false" class="button button-mn bg-cgrey"><span class="ico fas fa-search ico-left" aria-hidden="true"></span>View SiteImprove Policy for This Pattern</a>
+                    </div>
+                  <p class="lead">A <strong>Data Box</strong> is a component that is used to highlight individual bits of data or stats. This component includes options for:</p>
+                  <ul>
+                    <li>an icon (within a circle, square or by itself)</li>
+                  </ul>
+                <div class="code-example shadow-3">
+                  <div class="data-box">
+                    <div class="cb-mainico text-csecondary">
+                      <span aria-hidden="true" class="ico fas fa-graduation-cap"></span>&#8203;
+                    </div>
+                    <span class="data-figure">94,532</span>
+                    <span class="data-description">International Students</span>
+                  </div>
+                </div>
+                  <div class="row extra-space">
+                    <div class="col-md-12">
+                      <h3>Basic Code and Classes:</h3>
+                      <pre><code class="lead language-markup">&lt;div class=&quot;data-box&quot;&gt;
+    &lt;div class=&quot;cb-mainico text-csecondary&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;data-figure&quot;&gt;94,532&lt;/span&gt;
+    &lt;span class=&quot;data-description&quot;&gt;International Students&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                      <div class="spacer-2"></div>
+                      <ul>
+                        <li><code>.data-box</code> - applied to the containing <code>&lt;div&gt;</code></li>
+                        <li><code>.cb-mainico</code> - applied the child <code>&lt;div&gt;</code> where the icon will appear (to use an image instead, see below)</li>
+                        <li><code>.data-figure</code> - applied the <code>&lt;span&gt;</code> that holds the main data figure (the highlighted stat/number)</li>
+                        <li><code>.data-description</code> - applied the <code>&lt;span&gt;</code> that describes and gives context to the main data figure</li>
+                        <li>Data Boxes can be used at any width; simply wrap component within a sized <code>&lt;div&gt;</code>, or any bootstrap column</li>
+                      </ul>
+                      <div class="spacer-2"></div>
+                      <div class="alert alert-info extra-padding">
+                        <h3><span class="ico fas fa-palette ico-left" aria-hidden="true"></span>Style This Component</h3>
+                        <p>Notice how variations to the layout above can be made by customizing individual Pegasus elements like the following:</p>
+                        <ul>
+                          <li>The use of a <a href="{{ site.baseurl }}elements/utilities/shadows.html">shadow</a> on the card (apply to <code>.feature-card</code>) </li>
+                          <li>The <a href="{{ site.baseurl }}elements/colors.html">color of the icon</a> (apply to <code>.cb-mainico</code>; <code>.text-csecondary</code> is used the above example) </li>
+                          <li>The <a href="{{ site.baseurl }}elements/colors.html">color of the background</a> of the card (apply to <code>.data-box</code>; none is used in the above example) </li>
+                        </ul>
+                      </div>
+
+                      <div class="alert alert-warning">
+                        <h3><span class="ico fas fa-universal-access" aria-hidden="true"></span> Accessibility Notice!</h3>
+                        <ul>
+                          <li><code>.data-figure</code> and <code>.data-description</code> must always be applied to a <code>&lt;span&gt;</code> and NOT a <code>&lt;div&gt;</code>.</li>
+                          <ul>
+                            <li><small><strong>Why?</strong> A <code>&lt;div&gt;</code> is a block-level element which will cause screen readers to read the data figure and data description as two different statements (94,532. International students.). A <code>&lt;span&gt;</code> is an inline element which allows them to be read correctly as one unified statement (94,352 international students.).</small></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <div class="spacer-3"></div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3>Styles and Variations</h3>
+                      <div class="alert alert-info extra-padding">
+                        <p><strong><span class="ico fas fa-palette" aria-hidden="true"></span> Style Note:</strong> Notice how variations to the layouts below can be made by customizing individual Pegasus elements like the following:</p>
+                        <div class="spacer-1"></div>
+                        <ul>
+                          <li>The use of a <a href="utilities.html#shadows">shadow</a> on the icon circle/square (apply to <code>.cb-mainico</code>) </li>
+                          <li>The <a href="colors.html">color</a> of the icon circle/square (apply to <code>.cb-mainico</code>) </li>
+                          <li>The <a href="colors.html">color</a> of the data figure text (apply to <code>.data-figure</code>) </li>
+                        </ul>
+                      </div>
+                      <div class="row extra-space">
+                        <div class="col-sm-6">
+                          <h5>Simple Box with Default Color</h5>
+                          <div class="code-example shadow-3">
+                            <div class="data-box bg-cgrey">
+                              <span class="data-figure">101+</span>
+                              <span class="data-description">Programs and Degrees</span>
+                            </div>
+                          </div>
+
+                <pre><code class="language-markup">&lt;div class=&quot;data-box bg-cgrey&quot;&gt;
+    &lt;span class=&quot;data-figure&quot;&gt;101+&lt;/span&gt;
+    &lt;span class=&quot;data-description&quot;&gt;Programs and Degrees&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                        <div class="col-sm-6">
+                          <h4>Simple Box with Different Color</h4>
+                          <div class="code-example shadow-3">
+                            <div class="data-box bg-cgrey">
+                              <span class="data-figure text-cprimary">101+</span>
+                              <span class="data-description">Programs and Degrees</span>
+                            </div>
+                          </div>
+                          <p>To use, simply add any <a href="colors.html">text color class</a> to the <code>.data-figure</code></p>
+                <pre><code class="language-markup">&lt;div class=&quot;data-box bg-cgrey&quot;&gt;
+    &lt;span class=&quot;data-figure text-cprimary&quot;&gt;101+&lt;/span&gt;
+    &lt;span class=&quot;data-description&quot;&gt;Programs and Degrees&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                        <div class="col-sm-6">
+                          <h4>Data Box with Circle Icon</h4>
+                          <div class="code-example shadow-3">
+                            <div class="data-box bg-cgrey">
+                              <div class="cb-mainico img-circle bg-cprimary">
+                                <span aria-hidden="true" class="ico fab fa-twitter"></span>
+                              </div>
+                              <span class="data-figure text-cprimary">101+</span>
+                              <span class="data-description">Programs and Degrees</span>
+                            </div>
+                          </div>
+                          <p>To use, add <code>.img-circle</code> and any color class to <code>div.cb-mainico</code>.</p>
+                <pre><code class="language-markup">&lt;div class=&quot;data-box bg-cgrey&quot;&gt;
+    &lt;div class=&quot;cb-mainico img-circle text-csecondary&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;data-figure&quot;&gt;101+&lt;/span&gt;
+    &lt;span class=&quot;data-description&quot;&gt;Programs and Degrees&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                        <div class="col-sm-6">
+                          <h4>Databox with Rounded-Square Icon</h4>
+                          <div class="code-example shadow-3">
+                            <div class="data-box bg-cgrey">
+                              <div class="cb-mainico img-rounded bg-cprimary">
+                                <span aria-hidden="true" class="ico fab fa-twitter"></span>
+                              </div>
+                              <span class="data-figure text-cprimary">101+</span>
+                              <span class="data-description">Programs and Degrees</span>
+                            </div>
+                          </div>
+                          <p>To use, add <code>.img-rounded</code> and any color class to <code>div.cb-mainico</code>.</p>
+                <pre><code class="language-markup">&lt;div class=&quot;data-box bg-cgrey&quot;&gt;
+    &lt;div class=&quot;cb-mainico img-rounded text-csecondary&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;data-figure&quot;&gt;101+&lt;/span&gt;
+    &lt;span class=&quot;data-description&quot;&gt;Programs and Degrees&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+
+                {% include patterns/nav.html %}

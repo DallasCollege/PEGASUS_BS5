@@ -1,0 +1,30 @@
+---
+layout: sidebar
+title: Known Issues
+permalink: guidelines/issues.html
+slug: issues
+---
+
+<div class="panel-group pgs-accordion pgs-accordion--quiet" id="FAQ-red-dot">
+    <h3>
+        <button href="#collapse-FAQ-red-dot" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false">
+            <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>&ldquo;Red Dot of Death&rdquo;
+        </button>
+    </h3>
+    <div id="collapse-FAQ-red-dot" class="panel-collapse collapse">
+        <div class="panel-body">
+            <p>In the version of SharePoint we now use, the WYSIWYG Editor adds zero-width spaces (which appear as red dots when editing the source) where you click inside the content area. This causes problems because when the red dot appears in the middle of words, browsers and screen readers will read that word as two words. </p>
+            <p>To minimize appearance of these red dots we have found a bookmarklet that, when activated, removes all red dots inside a selected content area. To add this bookmarklet to your browser, copy the following code:</p>
+<pre><code class="language-js">javascript:;(function(e){var t=String.fromCharCode(8203);e("body").find(":not(iframe)").contents().filter(function(){return this.nodeType===3&&this.nodeValue.indexOf(t)!==-1}).each(function(){var n=e(this)[0].nodeValue;var r=new RegExp(t,"g");e(this)[0].nodeValue=n.replace(r,"")});alert("Zero-width spaces have been removed.")})(jQuery);
+</code></pre>
+<ol>
+    <li>Make a new bookmark</li>
+    <li>Paste code into Address field</li>
+    <li>Edit a page</li>
+    <li>Click inside the Content Area and click the bookmarklet</li>
+    <li>Bookmarklet removes all red dots</li>
+    <li>Check in or publish page</li>
+    </ol>
+        </div>
+    </div>
+</div>

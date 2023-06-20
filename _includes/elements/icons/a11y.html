@@ -1,0 +1,19 @@
+                <section>
+                    <div class="subsection3">
+                        <h2 class="page-header text-csecondary" id="a11y">Accessible Icons</h2>
+                        <h3>Icons for Decoration</h3>
+                        <p>As mentioned above, most icon uses are simply for decoration or styling for adjacent text or content. These instances do not add any extra meaning to the content. This means we should signal to screen readers not to read
+                            the icon. We do this by adding <code>aria-hidden="true"</code>.</p>
+                        <div class="indent">
+                            <p><strong>Example:</strong></p>
+                            <pre><code class="language-markup">&lt;span <span class="text-underline">aria-hidden=&quot;true&quot;</span> class=&quot;ico fas fa-user&quot;&gt;&lt;/span&gt;</code></pre>
+                        </div>
+                        <h3>Icons to Convey Meaning</h3>
+                        <p>If the icon needs to convey meaning to the context or interface <em>and has no adjacent text or content that already explains its meaning</em>, be sure to label the icons correctly by using the <code>aria-label</code> attribute with a text description on the interactive element.</p>
+                        <div class="indent">
+                            <p><strong>Example:</strong></p>
+                            <pre><code class="language-markup">&lt;span <span class="text-underline">aria-label=&quot;Twitter Account&quot;</span> class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt; @dallascollege_tex</code></pre>
+                            <div class="white-space-3"></div>
+                        </div>
+                    </div>
+                </section>

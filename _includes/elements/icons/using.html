@@ -1,0 +1,70 @@
+                <section>
+                    <div class="subsection3">
+                        <h2 class="page-header text-csecondary" id="using">Using Icons</h2>
+                        <p class="lead">PEGASUS utilizes Font Awesome 5 which includes over 1,500 icons to help add visual elements and variation to your page designs.</p>
+                        <p>To call an icon:
+                            <ol>
+                                <li>Identify which icon you want to use (<a
+                                href="https://fontawesome.com/icons?d=gallery&s=brands,regular,solid&m=free">see full list of available icons</a>). The chosen icon will indicate:
+                                <ul>
+                                    <li>An <strong>icon category class</strong> (<code>.fas</code>, <code>.far</code>, or <code>.fab</code>, see what these mean below)</li>
+                                    <li>and the <strong>individual icon class</strong> (always starting with <code>.fa-*</code>).</li>
+                                </ul>
+                            </li>
+
+                                <li>Create a <code>&lt;span&gt;</code> with the <code>.ico</code> class.</li>
+                                <li>Then add the icon category class and individual icon class for the chosen icon.</li>
+                                <li>Because most icons are decorative and do not carry extra meaning, <code>aria-hidden="true"</code> should also be
+                            included. <a href="#a11y">Learn more about accessible icons below</a>.</li>
+                            <div class="indent">
+                                <p><strong>Example:</strong></p>
+                                <pre class="lead"><code class="language-markup">&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fa* fa-***&quot;&gt;&lt;/span&gt;</code></pre>
+                            </div>
+                            <p class="text-center"><a class="button bg-cprimary" href="https://fontawesome.com/v5/search?o=r&m=free"><span class="ico fab fa-font-awesome" aria-hidden="true"></span>See Full List of Available Icons</a></p>
+                        <div class="panel-group pgs-accordion pgs-accordion--quiet">
+                            <h3>
+                                <a href="#Collapse-ico-cat" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false">
+                                    <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>About Icon Categories</a></h3>
+                            <div id="Collapse-ico-cat" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>The list of available Font Awesome 5 icons for use in PEGASUS are broken into three different categories of:</p>
+                                    <div class="row extra-space">
+                                        <div class="col-sm-4 text-center">
+                                            <h4 class="text-center">Solid</h4>
+                                            <p>
+                                                <span aria-hidden="true" class="ico icon-4x fas fa-user"></span>&nbsp;
+                                                <span aria-hidden="true" class="ico icon-4x fas fa-file-word"></span>&nbsp;
+                                                <span aria-hidden="true" class="ico icon-4x fas fa-envelope"></span>
+                                            </p>
+                                            <p>There are 999 regular icons. They are bold and solid. <code>.fas</code> is the class for solid icons.</p>
+                                            <div class="alert alert-info">
+                                                <p>Most of the icons used in PEGASUS are solid.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 text-center">
+                                            <h4 class="text-center">Regular</h4>
+                                            <p>
+                                                <span aria-hidden="true" class="ico icon-4x far fa-user"></span>&nbsp;
+                                                <span aria-hidden="true" class="ico icon-4x far fa-file-word"></span>&nbsp;
+                                                <span aria-hidden="true" class="ico icon-4x far fa-envelope"></span>
+                                            </p>
+                                            <p>There are only 151 regular icons. They are lighter, outline versions of many (but not all) of the solid icons. <code>.far</code> is the class for regular icons.</p>
+                                        </div>
+                                        <div class="col-sm-4 text-center">
+                                            <h4 class="text-center">Brand</h4>
+                                            <p>
+                                                <span aria-hidden="true" class="ico icon-4x fab fa-apple"></span>&nbsp;
+                                                <span aria-hidden="true" class="ico icon-4x fab fa-microsoft"></span>&nbsp;
+                                                <span aria-hidden="true" class="ico icon-4x fab fa-amazon"></span>
+                                            </p>
+                                            <p>There are 448 brand icons. They are comprised of logos and symbols directly tied to brands and corporations. <code>.fab</code> is the class for brand icons.</p>
+                                            <div class="alert alert-info">
+                                                <p>All social media icons are found in brand.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>

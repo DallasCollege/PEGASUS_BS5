@@ -1,0 +1,322 @@
+---
+layout: default-level2
+title: People Cards
+cat: Components
+permalink: components/people-cards.html
+---
+
+                <div class="subsection3" id="people-cards">
+                    <p class="lead">People Cards are components used to identify contact information for <em>people</em> (as opposed to departments).</p>
+                    <p>They are designed to display the following points of information for individuals:</p>
+                    <ul>
+                        <li>Headshot (square)</li>
+                        <li>Full Name</li>
+                        <li>Title</li>
+                        <li>Department</li>
+                        <li>Location</li>
+                        <li>Office/Room No.</li>
+                        <li>Phone</li>
+                        <li>Email</li>
+                    </ul>
+                <p>People Cards come in two sizes and two modes&ndash; yielding four variations of possible cards:</p>
+                <ul>
+                    <li>
+                        <a href="#standard">People Card - Standard Mode</a></li>
+                    <li>
+                        <a href="#quiet">People Card - Quiet Mode</a></li>
+                    <li>
+                        <a href="#compact-standard">People Card - Compact - Standard Mode</a></li>
+                    <li>
+                        <a href="#compact-quiet">People Card - Compact - Quiet Mode</a></li>
+                </ul>
+
+                <div class="alert alert-success extra-padding">
+                    <h3><span class="ico fas fa-check-circle ico-left"></span>Proper Use: Which People Card To Use</h3>
+                    <p>Here are some guidelines about when to use which card:</p>
+                    <ul>
+                       <li>If you are listing a stand-alone person (and have all of their contact info including: title, dept, location, office, phone, email and photo), use
+                          <strong>Standard Mode (Full)</strong>.<br/></li>
+                       <li>If you are listing multiple people from different areas or de​partments (and have all the listed contact info above), use
+                          <strong>Quiet Mode (Full)</strong>.<br/></li>
+                       <li>If you are listing a single person and only have their basic contact info and no photo, use
+                          <strong>Standard Mode (Compact)</strong><br/></li>
+                       <li>If you are listing multiple people from a single area or department, use
+                          <strong>Quiet Mode (Compact)</strong><strong>.</strong><br/></li>
+                    </ul>
+                    </div>
+
+                <div class="spacer-3">&#160;<br/></div>
+                <h3 id="standard">Standard Mode (Full)</h3>
+                <div class="code-example shadow-3">
+                    <div class="pgs-people-card">
+                       <div class="row">
+                          <div class="col-md-2 hidden-xs col-sm-3">
+                             <div class="pgs-people-card__photo center-block">
+                                <span class="pgs-people-card__initials">JB</span></div>
+                          </div>
+                          <div class="col-md-6 col-sm-9 pgs-people-card__col">
+                             <h2 class="pgs-people-card__name">Jonathan Blundell</h2>
+                             <ul class="list-unstyled">
+                                <li>Senior Managing Director, Digital Communications</li>
+                                <li>Public and Governmental Affairs</li>
+                             </ul>
+                          </div>
+                          <div class="col-md-4 col-sm-9 col-sm-offset-3 col-md-offset-0 pgs-people-card__col">
+                             <ul class="fa-ul">
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>Administrative Office</li>
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-university"></span></span>Office 335</li>
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-phone"></span></span>214-860-1892</li>
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                   <a href="mailto:jblundell@dcccd.edu">Email Jonathan</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="pgs-people-card">
+                       <div class="row">
+                          <div class="col-md-2 hidden-xs col-sm-3">
+                             <img src="https://via.placeholder.com/100" class="pgs-people-card__photo center-block" alt=""></img>
+                          </div>
+                          <div class="col-md-6 col-sm-9 pgs-people-card__col">
+                             <h2 class="pgs-people-card__name">Jonathan Blundell</h2>
+                             <ul class="list-unstyled">
+                                <li>Senior Managing Director, Digital Communications</li>
+                                <li>Public and Governmental Affairs</li>
+                             </ul>
+                          </div>
+                          <div class="col-md-4 col-sm-9 col-sm-offset-3 col-md-offset-0 pgs-people-card__col">
+                             <ul class="fa-ul">
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>Administrative Office</li>
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-university"></span></span>Office 335</li>
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-phone"></span></span>214-860-1892</li>
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                   <a href="mailto:jblundell@dcccd.edu">Email Jonathan</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+                <h4>Without Photo</h4>
+                <pre class="language-markup"><code>&lt;div class=&quot;pgs-people-card&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-2 hidden-xs col-sm-3&quot;&gt;
+      &lt;div class=&quot;pgs-people-card__photo center-block&quot;&gt;&lt;span class=&quot;pgs-people-card__initials&quot;&gt;JB&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6 col-sm-9 pgs-people-card__col&quot;&gt;
+      &lt;h2 class=&quot;pgs-people-card__name&quot;&gt;Jonathan Blundell&lt;/h2&gt;
+      &lt;ul class=&quot;list-unstyled&quot;&gt;
+        &lt;li&gt;Senior Managing Director, Digital Communications&lt;/li&gt;
+        &lt;li&gt;Public and Governmental Affairs&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 col-sm-9 col-sm-offset-3 col-md-offset-0 pgs-people-card__col&quot;&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;Administrative Office&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Office 335&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-860-1892&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;mailto:jblundell@dcccd.edu&quot;&gt;Email Jonathan&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<h4>With Photo</h4>
+<pre class="language-markup"><code> &lt;div class=&quot;pgs-people-card&quot;&gt;
+   &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-2 hidden-xs col-sm-3&quot;&gt;
+         &lt;img src=&quot;https://via.placeholder.com/100&quot; class=&quot;pgs-people-card__photo center-block&quot; alt=&quot;&quot;&gt;&lt;/img&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6 col-sm-9 pgs-people-card__col&quot;&gt;
+         &lt;h2 class=&quot;pgs-people-card__name&quot;&gt;Jonathan Blundell&lt;/h2&gt;
+         &lt;ul class=&quot;list-unstyled&quot;&gt;
+            &lt;li&gt;Senior Managing Director, Digital Communications&lt;/li&gt;
+            &lt;li&gt;Public and Governmental Affairs&lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4 col-sm-9 col-sm-offset-3 col-md-offset-0 pgs-people-card__col&quot;&gt;
+         &lt;ul class=&quot;fa-ul&quot;&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;
+                  &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;Administrative Office&lt;/li&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;
+                  &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Office 335&lt;/li&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;
+                  &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-860-1892&lt;/li&gt;
+            &lt;li&gt;
+               &lt;span class=&quot;fa-li&quot;&gt;
+                  &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+               &lt;a href=&quot;mailto:jblundell@dcccd.edu&quot;&gt;Email Jonathan&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                <div class="spacer-3">&#160;</div>
+                <h3 id="quiet">Quiet Mode (Full)</h3>
+                <div class="code-example shadow-3">
+                <div class="pgs-people-card pgs-people-card--quiet">
+                   <div class="row">
+                      <div class="col-md-2 hidden-xs col-sm-3">
+                         <div class="pgs-people-card__photo center-block">
+                            <span class="pgs-people-card__initials">JB</span></div>
+                      </div>
+                      <div class="col-md-6 col-sm-9 pgs-people-card__col">
+                         <h2 class="pgs-people-card__name">Jonathan Blundell</h2>
+                         <ul class="list-unstyled">
+                            <li>Senior Managing Director, Digital Communications</li>
+                            <li>Public and Governmental Affairs</li>
+                         </ul>
+                      </div>
+                      <div class="col-md-4 col-sm-9 col-sm-offset-3 col-md-offset-0 pgs-people-card__col">
+                         <ul class="fa-ul">
+                            <li>
+                               <span class="fa-li">
+                                  <span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>Administrative Office</li>
+                            <li>
+                               <span class="fa-li">
+                                  <span aria-hidden="true" class="ico fas fa-university"></span></span>Office 335</li>
+                            <li>
+                               <span class="fa-li">
+                                  <span aria-hidden="true" class="ico fas fa-phone"></span></span>214-860-1892</li>
+                            <li>
+                               <span class="fa-li">
+                                  <span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                               <a href="mailto:jblundell@dcccd.edu">Email Jonathan</a></li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                </div>
+                <pre class="language-markup"><code>&lt;div class=&quot;pgs-people-card pgs-people-card--quiet&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-2 hidden-xs col-sm-3&quot;&gt;
+      &lt;div class=&quot;pgs-people-card__photo center-block&quot;&gt;&lt;span class=&quot;pgs-people-card__initials&quot;&gt;JB&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6 col-sm-9 pgs-people-card__col&quot;&gt;
+      &lt;h2 class=&quot;pgs-people-card__name&quot;&gt;Jonathan Blundell&lt;/h2&gt;
+      &lt;ul class=&quot;list-unstyled&quot;&gt;
+        &lt;li&gt;Senior Managing Director, Digital Communications&lt;/li&gt;
+        &lt;li&gt;Public and Governmental Affairs&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 col-sm-9 col-sm-offset-3 col-md-offset-0 pgs-people-card__col&quot;&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;Administrative Office&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Office 335&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-860-1892&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;mailto:jblundell@dcccd.edu&quot;&gt;Email Jonathan&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <div class="spacer-3">&#160;</div>
+                <h3 id="compact-standard">Standard Mode (Compact)</h3>
+                <p>Compact People Cards are smaller and lighter than the full size. They only offer space for the following:</p>
+                <ul>
+                    <li>Full name</li>
+                    <li>Job title</li>
+                    <li>Phone number</li>
+                    <li>Email address</li>
+                </ul>
+                <div class="code-example shadow-3">
+                    <div class="pgs-people-card pgs-people-card--compact">
+                       <div class="row">
+                          <div class="col-md-8 pgs-people-card__col">
+                             <h2 class="pgs-people-card__name">Jonathan Blundell</h2>
+                             <ul class="list-unstyled">
+                                <li>Senior Managing Director, Digital Communications</li>
+                             </ul>
+                          </div>
+                          <div class="col-md-4 pgs-people-card__col">
+                             <ul class="fa-ul">
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-phone"></span></span>214-860-1892</li>
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                   <a href="mailto:jblundell@dcccd.edu">Email Jonathan</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+                <pre class="language-markup"><code>&lt;div class=&quot;pgs-people-card pgs-people-card--compact&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-8 pgs-people-card__col&quot;&gt;
+      &lt;h2 class=&quot;pgs-people-card__name&quot;&gt;Jonathan Blundell&lt;/h2&gt;
+      &lt;ul class=&quot;list-unstyled&quot;&gt;
+        &lt;li&gt;Senior Managing Director, Digital Communications&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 pgs-people-card__col&quot;&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-860-1892&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;mailto:jblundell@dcccd.edu&quot;&gt;Email Jonathan&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <div class="spacer-3">&#160;</div>
+                <h2 id="compact-quiet">Quiet Mode (Compact)</h2>
+                <div class="code-example shadow-3">
+                    <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact">
+                       <div class="row">
+                          <div class="col-md-8 pgs-people-card__col">
+                             <h2 class="pgs-people-card__name">Jonathan Blundell</h2>
+                             <ul class="list-unstyled">
+                                <li>Senior Managing Director, Digital Communications</li>
+                             </ul>
+                          </div>
+                          <div class="col-md-4 pgs-people-card__col">
+                             <ul class="fa-ul">
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-phone"></span></span>214-860-1892</li>
+                                <li>
+                                   <span class="fa-li">
+                                      <span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                   <a href="mailto:jblundell@dcccd.edu">Email Jonathan</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+                <pre class="language-markup"><code>&lt;div class=&quot;pgs-people-card pgs-people-card--quiet pgs-people-card--compact&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-8 pgs-people-card__col&quot;&gt;
+      &lt;h2 class=&quot;pgs-people-card__name&quot;&gt;Jonathan Blundell&lt;/h2&gt;
+      &lt;ul class=&quot;list-unstyled&quot;&gt;
+        &lt;li&gt;Senior Managing Director, Digital Communications&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 pgs-people-card__col&quot;&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-860-1892&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;mailto:jblundell@dcccd.edu&quot;&gt;Email Jonathan&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <div class="spacer-3">&#160;</div></div>
+
+
+                {% include components/nav.html %}

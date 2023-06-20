@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+{% include head.html %}
+
+    <body>
+        <div id="{{ page.layout_id}}">
+            <div id="s4-workspace">
+                {% include header.html %}
+                {% include breadcrumb.html %}
+
+                <main>
+                    <div id="main__body">
+                        <div class="container">
+                            <article id="main__article">
+                                <h1 class="page-header--xl">{{ page.title }}</h1>
+                                <!-- SharePoint Content Area Begin -->
+                                {{ content }}
+                                <!-- SharePoint Content Area End -->
+                            </article>
+                        </div>
+                    </div>
+                </main>
+
+                {% include footer.html %}
+
+            </div>
+        </div>
+    </body>
+
+</html>

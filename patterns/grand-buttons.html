@@ -1,0 +1,215 @@
+---
+layout: default-level2
+title: Grand Buttons
+cat: Patterns
+permalink: patterns/grand-buttons.html
+---
+
+                <!-- TYPOGRAPHY Outside Container -->
+                <div id="top">
+                    <div class="spacer-2"></div>
+                    <section id="buttons">
+                        <nav class="text-center">
+                            <ul class="list-inline h5">
+                                {% include ul/grand-buttons-ul.html %}
+                            </ul>
+                        </nav>
+                    </section>
+                </div> <!-- /outsideContainer -->
+
+
+
+  <section>
+      <div class="subsection3">
+        <h2 class="page-header text-csecondary" id="using-grand-buttons">Using Grand Buttons</h2>
+        <p>When you need a button to have more emphasis and visual weight, Grand Buttons provide a quick method for styling large buttons with an icon and text.</p>
+        <p>To style the buttons, wrap the button in grid size you'd like and then add the <code>.grand-button</code> class to your anchor link.</p>
+        <div class="code-example shadow-3">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="#" class="grand-button">
+                <div class="grand-button-label">Academics</div>
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <a href="#" class="grand-button">
+                <div class="grand-button-label">International</div>
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <a href="#" class="grand-button">
+                <div class="grand-button-label">Downloads</div>
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <a href="#" class="grand-button">
+                <div class="grand-button-label">Start Here</div>
+              </a>
+            </div>
+        </div>
+      </div>
+        <pre><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;grand-button&quot;&gt;
+    &lt;div class=&quot;grand-button-label&quot;&gt;Button Text&lt;/div&gt;
+&lt;/a&gt;</code></pre>
+
+    <div class="alert alert-info">
+      <p><strong><span class="ico fas fa-pencil-alt" aria-hidden="true"></span> Style Note:</strong> Because Grand Buttons have <code>display:block;</code> they will take the width of whatever <code>&lt;div&gt;</code> (or <a href="{{ site.baseurl }}elements/grid.html">Bootstrap column</a>) contains it.</p>
+    </div>
+    <div class="alert alert-info">
+      <p><strong><span class="ico fas fa-life-ring" aria-hidden="true"></span> Helper Classes!</strong> You can apply any of the <a href="{{ site.baseurl }}utilities/shadows.html">shadow styles</a> or <a href="colors.html">color styles</a> to Grand Buttons for added emphasis.</p>
+    </div>
+    <div class="spacer-2"></div>
+    <h3>Grand Buttons + Icons</h3>
+    <p>In combination with any of the available <a href="{{ site.baseurl }}elements/icons.html">icons</a>, you can create Grand Buttons <strong>with Icons</strong>:</p>
+    <div class="code-example shadow-3">
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="#" class="grand-button">
+            <span aria-hidden="true"  class="ico fas fa-graduation-cap"></span>
+            <div class="grand-button-label">Academics</div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="grand-button">
+            <span aria-hidden="true"  class="ico fas fa-globe"></span>
+            <div class="grand-button-label">International</div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="grand-button">
+            <span aria-hidden="true"  class="ico fas fa-download"></span>
+            <div class="grand-button-label">Downloads</div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="grand-button">
+            <span aria-hidden="true" class="ico fas fa-star"></span>
+            <div class="grand-button-label">Start Here</div>
+          </a>
+        </div>
+    </div>
+    </div>
+    <pre><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;grand-button&quot;&gt;
+    &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-star&quot;&gt;&lt;/span&gt;
+    &lt;div class=&quot;grand-button-label&quot;&gt;Button Text&lt;/div&gt;
+&lt;/a&gt;</code></pre>
+    <div class="alert alert-info">
+      <p><strong><span class="ico fas fa-mobile" aria-hidden="true"></span> Responsive Note:</strong> At browser widths under <code>767px</code> the icons will disappear.</p>
+    </div>
+    </div>
+
+    <div class="subsection3">
+      <h2 class="page-header text-csecondary" id="grand-button-sizes">Grand Button Sizes</h2>
+      <p>For added flexibility, we offer Grand Buttons in <strong>large</strong> and <strong>small</strong> formats.</p>
+      <div class="subsesction4">
+        <div class="row extra-space">
+          <div class="col-sm-6">
+            <h3>Large Grand Buttons <code>.grand-button-lg</code></h3>
+            <div class="code-example shadow-3 text-center">
+              <a href="#" class="grand-button grand-button-lg">
+                <span aria-hidden="true" class="ico fas fa-star"></span>
+                <div class="grand-button-label">Start Here</div>
+              </a>
+            </div>
+            <pre><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;grand-button grand-button-lg&quot;&gt;
+    &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-star&quot;&gt;&lt;/span&gt;
+    &lt;div class=&quot;grand-button-label&quot;&gt;Start Here&lt;/div&gt;
+&lt;/a&gt;</code></pre>
+          </div>
+
+          <div class="col-sm-6">
+            <h3>Small Grand Buttons <code>.grand-button-sm</code></h3>
+            <div class="code-example shadow-3 text-center">
+              <a href="#" class="grand-button grand-button-sm">
+                <span aria-hidden="true" class="ico fas fa-star"></span>
+                <div class="grand-button-label">Start Here</div>
+              </a>
+            </div>
+            <pre><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;grand-button grand-button-sm&quot;&gt;
+    &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-star&quot;&gt;&lt;/span&gt;
+    &lt;div class=&quot;grand-button-label&quot;&gt;Start Here&lt;/div&gt;
+&lt;/a&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection3">
+      <h2 class="page-header text-csecondary" id="grand-photo-buttons">Grand Photo Buttons &amp; Sizes</h2>
+      <p>These are used similarly to Grand Buttons above, but for flexibility, feature an <strong>image</strong> instead of an icon.</p>
+      <div class="alert alert-info">
+      <p><strong><span class="ico fas fa-pencil-alt" aria-hidden="true"></span> Style Note:</strong> Though any image size can be used in Grand Photo Buttons, we recommend images with dimensions of <strong>576 pixels by 250 pixels</strong>. Even if the images are rendered smaller than that on desktop, when in a mobile view, the photo buttons will go full width and an image with this resolution will look best.</p>
+      </div>
+      <div class="alert alert-info">
+        <p><strong><span class="ico fas fa-pencil-alt" aria-hidden="true"></span> Style Note:</strong> Just like Grand Buttons above, Grand Photo Buttons are styled with <code>display:block;</code> and will take the width of whatever <code>&lt;div&gt;</code> (or <a href="{{ site.baseurl }}elements/grid.html">Bootstrap column</a>) contains it.</p>
+        <p>And since these photos'/images' dimensional ratio will stay the same, <em>as the width expands or contracts, so will its height</em>.</p>
+      </div>
+      <div class="code-example shadow-3">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#" class="grand-photo-button">
+              <img src="https://via.placeholder.com/575x250" alt=""/>
+              <span class="grand-button-label">Academics</span>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" class="grand-photo-button">
+              <img src="https://via.placeholder.com/575x250" alt=""/>
+              <span class="grand-button-label">International</span>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" class="grand-photo-button">
+              <img src="https://via.placeholder.com/575x250" alt=""/>
+              <span class="grand-button-label">Downloads</span>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" class="grand-photo-button">
+              <img src="https://via.placeholder.com/575x250" alt=""/>
+              <span class="grand-button-label">Start Here</span>
+            </a>
+          </div>
+        </div>
+      </div>
+        <pre><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;grand-photo-button&quot;&gt;
+    &lt;img src=&quot;https://via.placeholder.com/575x250&quot; alt=&quot;&quot;/&gt;
+    &lt;span class=&quot;grand-button-label&quot;&gt;Academics&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+      <div class="spacer-4"></div>
+      <h2>Large Grand Photo Buttons <code>.grand-photo-button-lg</code></h2>
+      <div class="alert alert-warning">
+        <p><strong><span class="ico fas fa-pencil-alt" aria-hidden="true"></span> Style Notice!</strong> This style will only change the size and spacing of the button label and not the size of the photo itself. To make the photo appear larger, place the button inside of a wider Bootstrap column, or use an image with a height larger than <code>250px</code>. But if you use an image with a larger height, it will appear much larger on mobile.</p>
+      </div>
+      <div class="code-example shadow-3">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="#" class="grand-photo-button-lg">
+              <img src="https://via.placeholder.com/575x250" alt=""/>
+              <span class="grand-button-label">Start Here</span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#" class="grand-photo-button-lg">
+              <img src="https://via.placeholder.com/575x250" alt=""/>
+              <span class="grand-button-label">Start Here</span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#" class="grand-photo-button-lg">
+              <img src="https://via.placeholder.com/575x250" alt=""/>
+              <span class="grand-button-label">Start Here</span>
+            </a>
+          </div>
+      </div>
+      </div>
+      <pre><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;grand-photo-button&quot;&gt;
+    &lt;img src=&quot;https://via.placeholder.com/575x250&quot; alt=&quot;&quot;/&gt;
+    &lt;span class=&quot;grand-button-label&quot;&gt;Academics&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+
+      </div>
+
+      </section>
+
+{% include patterns/nav.html %}

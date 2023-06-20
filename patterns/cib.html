@@ -1,0 +1,217 @@
+---
+layout: default-level2
+title: Content &amp; Image Boxes
+h1: Components
+permalink: patterns/cib.html
+---
+
+                <section>
+                    <div class="subsection3" id="cib">
+                        <div class="text-right">
+                            <a href="https://my2.siteimprove.com/Policy/26196522395/PolicyDetails/Content/1?policyId=29787626151&tagIds=&ignoredPolicyViolationsOnly=false&last30DaysOnly=false" class="button button-mn bg-cgrey"><span class="ico fas fa-search ico-left" aria-hidden="true"></span>View SiteImprove Policy for This Pattern</a>
+                        </div>
+                        <p class="lead">The Content &amp; Image Box (CIB) (formerly known as Content Box #1) is a flexible, multipurpose component that includes:</p>
+                        <ul>
+                            <li>an area for text/content and</li>
+                            <li>an area for a responsive image</li>
+                        </ul>
+                        <div class="code-example card-3">
+                            <div class="content-image-box bg-cprimary">
+                                <div class="wide-6 cib-left cib-img" id="get-started-apply"></div>
+                                <div class="wide-6 cib-right cib-content">
+                                    <h2 class="cb-title-xl">Employee Success</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                                    <h3>Subpoint</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                                    <p><a href="#" class="button bg-cprimary-lt">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row extra-space">
+                            <div class="col-md-12">
+                                <h3>Basic Code and Classes:</h3>
+                                <pre><code class="language-markup">&lt;div class="content-image-box"><br>
+    &lt;div class="wide-* cib-left cib-img" id="#">&lt;/div><br>
+    &lt;div class="wide-* cib-right cib-content"><br>
+        (content)
+    &lt;/div><br>
+&lt;/div></code></pre>
+                          <div class="spacer-2"></div>
+                          <ul>
+                            <li><code>.content-image-box</code> - applied to the containing <code>&lt;div&gt;</code></li>
+                            <li><code>.cib-left</code> - applied the child <code>&lt;div&gt;</code> you wish to appear on the <strong>left</strong></li>
+                            <li><code>.cib-right</code> - applied the child <code>&lt;div&gt;</code> you wish to appear on the <strong>right</strong></li>
+                            <li><code>.cib-img</code> - applied the child <code>&lt;div&gt;</code> that will contain the <strong>image</strong></li>
+                            <li><code>.cib-content</code> - applied the child <code>&lt;div&gt;</code> that will contain the <strong>content/text</strong></li>
+                            <li><code>.wide-*</code> - controls the width of each child <code>&lt;div&gt;</code> and is based on the <a href="utilities.html#width-classes">percentage-width helper classes</a></li>
+                            <li>Because images are <strong>applied via CSS</strong> with <code>background-image:</code> (and SharePoint strips out those types of CSS declarations from any content area), we attach images to the intended child <code>&lt;div&gt;</code> by applying a CSS ID (name of your choosing). In a Script Editor web part, we then include the following code:
+                            <code class="language-css">#ID-name {background-image: url(*file location*);}</code></li>
+                            <li>CIB's can be used at any size; simply wrap component within a sized <code>&lt;div&gt;</code>, or any bootstrap column</li>
+                          </ul>
+                          <div class="spacer-2"></div>
+                          <div class="alert extra-padding alert-info">
+                              <h3><span class="ico fas fa-pencil-alt ico-left" aria-hidden="true"></span>Style This Component</h3>
+                            <p>Notice how variations to the layout above can be made by customizing individual PEGASUS elements like the following:</p>
+                            <div class="spacer-1"></div>
+                            <ul>
+                              <li>The <a href="{{ site.baseurl }}elements/colors.html">color of the background</a> of the text (<code>.bg-cprimary</code> is used in this example)</li>
+                              <li>The <a href="{{ site.baseurl }}elements/typography.html#heading-styles">size and style of the heading</a> (<code>h2.cb-title-xl</code> is used in this example)</li>
+                              <li>The <a href="{{ site.baseurl }}elements/buttons.html">style, color or size of button</a> (<code>.button-md.bg-cprimary-lt</code> is used in this example)</li>
+                            </ul>
+                            </div>
+                            <div class="alert extra-padding alert-warning">
+                            <h3><strong><span class="ico fas fa-mobile-alt ico-left" aria-hidden="true"></span>Responsive/Accessibility Warning</strong></h3>
+                            <ul>
+                              <li>Under <code>575px</code> (on mobile) the <code>.cib-img</code> will disappear, so make sure not to include any vital content or information within the image and that it is only present for decorative purposes.</li>
+                            </ul>
+                            </div>
+                              </div>
+                            </div>
+
+                          <div class="spacer-3"></div>
+                                <h3>Examples:</h3>
+                                <p>Because the Content &amp; Image Boxes are so flexible, we have outlined a few different options/examples of how they could be implemented for different needs/uses:</p>
+                                <div class="row extra-space">
+                                  <div class="col-md-12">
+                                <h5>"Simple Content Rows"</h5>
+                                <p>This example of Content &amp; Image Box can be used to emphasize and embellish various chunks of content.</p>
+                                <div class="code-example card-3">
+                                <div class="content-image-box bg-cgrey">
+                                  <div class="wide-3 cib-left cib-img" id="get-started-apply"></div>
+                                  <div class="wide-9 cib-right cib-content">
+                                    <h2 class="cb-title">Employee Success</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                                  </div>
+                                </div>
+                                <div class="content-image-box bg-cgrey">
+                                  <div class="wide-3 cib-left cib-img" id="get-started-apply"></div>
+                                  <div class="wide-9 cib-right cib-content">
+                                    <h2 class="cb-title">Student Success</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <pre><code class="language-markup">&lt;div class=&quot;content-image-box bg-cgrey&quot;&gt;
+    &lt;div class=&quot;wide-3 cib-left cib-img&quot; id=&quot;#&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;wide-9 cib-right cib-content&quot;&gt;
+      &lt;h2 class=&quot;cb-title&quot;&gt;Employee Success&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum....&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content-image-box bg-cgrey&quot;&gt;
+    &lt;div class=&quot;wide-3 cib-left cib-img&quot; id=&quot;#&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;wide-9 cib-right cib-content&quot;&gt;
+      &lt;h2 class=&quot;cb-title&quot;&gt;Student Success&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+
+                          <div class="spacer-4"></div>
+                          <h4>"Navigation Rows"</h4>
+                          <p>This example can be used on landing pages to break up navigation items around common themes or topics:</p>
+                          <div class="code-example card-3">
+                          <div class="content-image-box bg-cgrey">
+                            <div class="wide-3 cib-left cib-img" id="get-started-apply"></div>
+                            <div class="wide-9 cib-right cib-content">
+                              <h2 class="cb-title-lg">What Will it Cost?</h2>
+                              <p>At Dallas College, you get a university-quality education for a quarter of the cost. Get all the details here.</p>
+                              <div class="spacer-1"></div>
+                              <div class="button-nav extra-margin">
+                                <a href="#" class="button button-md bg-cprimary">Main Link<span class="ico fas fa-arrow-circle-right ico-right"></span></a>
+                                <a href="#" class="button button-md bg-cprimary-dk">Secondary Link</a>
+                                <a href="#" class="button button-md bg-cprimary-dk">Secondary Link</a>
+                              </div>
+                              <ul class="list-inline">
+                                <li>
+                                  <a href="#">Tertiary Link</a></li>
+                                <li>
+                                  <a href="#">Tertiary Link</a></li>
+                                <li>
+                                  <a href="#">Tertiary Link</a></li>
+                              </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <pre><code class="language-markup">  &lt;div class=&quot;content-image-box bg-cgrey&quot;&gt;
+    &lt;div class=&quot;wide-3 cib-left cib-img&quot; id=&quot;#&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;wide-9 cib-right cib-content&quot;&gt;
+      &lt;h2 class=&quot;cb-title-lg&quot;&gt;What Will it Cost?&lt;/h2&gt;
+      &lt;p&gt;At Dallas College, you get a university-quality education for a quarter of the cost. Get all the details here.&lt;/p&gt;
+      &lt;div class=&quot;spacer-1&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;button-nav extra-margin&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button button-md bg-cprimary&quot;&gt;Main Link&lt;span class=&quot;ico fas fa-arrow-circle-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button button-md bg-cprimary-dk&quot;&gt;Secondary Link&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button button-md bg-cprimary-dk&quot;&gt;Secondary Link&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;ul class=&quot;list-inline&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tertiary Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tertiary Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tertiary Link&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+
+                          <div class="spacer-4"></div>
+                          <h4>"Side-by-Side Cards"</h4>
+                          <p>This example can be used on landing pages to break up navigation items around common themes or topics:</p>
+                          <div class="code-example card-3">
+                            <div class="row">
+                              <div class="col-sm-6" style="padding:0 15px 0">
+                                <div class="content-image-box bg-cgrey">
+                                  <div class="wide-6 cib-left cib-img" id="get-started-apply"></div>
+                                  <div class="wide-6 cib-right cib-content">
+                                    <div class="height-sm-400">
+                                      <h2 class="cb-title">Active Duty Armed Services</h2>
+                                      <p>Active duty or not — college is within your reach. We understand the challenge of trying to make the time needed to succeed in college, and our advisors are here to guide you every step of the way.</p>
+                                    </div>
+                                    <a class="button bg-cprimary button-full-block" href="#"><span class="ico fas fa-arrow-circle-right" aria-hidden="true"></span>Active Programs</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6" style="padding:0 15px 0">
+                                <div class="content-image-box bg-cgrey">
+                                  <div class="wide-6 cib-left cib-img" id="get-started-apply"></div>
+                                  <div class="wide-6 cib-right cib-content">
+                                    <div class="height-sm-400">
+                                      <h2 class="cb-title">Beneficiaries of Military Educational Programs</h2>
+                                      <p>We want you to receive the full value of your educational benefits. Convert your military experience into college credit, finish a degree or retrain for a new civilian career at Dallas College.</p>
+                                    </div>
+                                    <a class="button bg-cprimary button-full-block" href="#"><span class="ico fas fa-arrow-circle-right" aria-hidden="true"></span>Veteran Programs</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm-6&quot;&gt;
+    &lt;div class=&quot;content-image-box bg-cgrey&quot;&gt;
+      &lt;div class=&quot;wide-6 cib-left cib-img&quot; id=&quot;#&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;wide-6 cib-right cib-content&quot;&gt;
+        &lt;div class=&quot;height-sm-500&quot;&gt;
+          &lt;h2 class=&quot;cb-title&quot;&gt;Active Duty Armed Services&lt;/h2&gt;
+          &lt;p&gt;Active duty or not &mdash; college is within your reach...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;button bg-cprimary button-full-block&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;ico fas fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Active Military Programs&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-6&quot;&gt;
+    &lt;div class=&quot;content-image-box bg-cgrey&quot;&gt;
+      &lt;div class=&quot;wide-6 cib-left cib-img&quot; id=&quot;#&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;wide-6 cib-right cib-content&quot;&gt;
+        &lt;div class=&quot;height-sm-500&quot;&gt;
+          &lt;h2 class=&quot;cb-title&quot;&gt;Veterans &amp; Other Beneficiaries of Military Educational Programs&lt;/h2&gt;
+          &lt;p&gt;We want you to receive the full value of your educational benefits...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;button bg-cprimary button-full-block&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;ico fas fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Veteran Programs&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                              </div>
+                            </div>
+                    </div>
+                </section>
+
+                {% include patterns/nav.html %}

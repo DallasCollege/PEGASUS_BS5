@@ -1,0 +1,32 @@
+---
+layout: default-level2
+title: Images With Caption
+cat: Patterns
+permalink: patterns/caption.html
+---
+
+                <section>
+                    <div class="subsection3" id="images-caption">
+                        <p>Images with captions within body copy can be styled easily by taking advantage of Bootstrap's <code>.thumbnail</code> and <code>.pull-*</code> classes.</p>
+                        <p><a class="button bg-cprimary" href="https://www.dallascollege.edu/test/documents/photo-captions.html">Image with Captions Generator</a></p>
+                        <div class="code-example shadow-3">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="pull-left col-sm-3 thumbnail">
+                                        <img class="img-responsive" src="{{ site.baseurl }}images/student-464x464.jpg" alt="" />
+                                        <div class="caption">Students are excited about the DCCCD's historic transition from seven colleges to one college.</div>
+                                    </div>
+                                    <p>Early on, the marketing group knew they would also have to come up with a brand that combines the history and heritage of the Dallas County Community College District, the former name, with the power and innovation of the new Dallas College, but research was needed.</p>
+                                    <p>At macro level, accreditation as a single institution means an improved student experience at Dallas College, which encompasses Brookhaven, Cedar Valley, Eastfield, El Centro, Mountain View, North Lake and Richland as campuses, not colleges.</p>
+                                    <p>A standout of the new logo is the “D” in Dallas, an intentional decision placing emphasis on the area home of an over five-decade relationship between DCCCD and local learners. Look even closer and you’ll notice a bit of familiarity: the Texas star and colors from the previous design, serving as both a tribute and promise to preserve and honor a rich history.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <pre><code class="language-markup">&lt;div class="pull-left col-sm-4 thumbnail"&gt;
+    &lt;img class="img-responsive" src="image.jpg" alt=""/&gt;
+    &lt;div class="caption"&gt;Students are excited about the DCCCD's historic transition from seven colleges to one college.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </section>
+
+                {% include patterns/nav.html %}

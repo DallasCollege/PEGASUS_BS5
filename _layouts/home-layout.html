@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=10; IE=11" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link id="normalize_style_0" rel="stylesheet" type="text/css" href="assets/normalize/normalize.css"/>
+        <link id="bootstrap_style_0" rel="stylesheet" type="text/css" href="assets/bootstrap3/css/bootstrap.min.css"/>
+        <link id="fontawesome_fonts__0" rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css"/>
+        <link id="site_style_0" rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+        <link id="site_style_1" rel="stylesheet" type="text/css" href="assets/css/framework-styles.css" />
+        <title>{{ site.title }} &ndash; Dallas College</title>
+        <script type="text/javascript" src="assets/jquery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="assets/bootstrap3/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/masterpage_scripts.js"></script>
+        <script src="assets/prism/prism.js"></script>
+        <link href="assets/prism/prism.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="{{ page.layout_id}}">
+            <div id="s4-workspace">
+                {% include header.html %}
+
+                <main>
+
+                  <div id="main__body">
+                    <div class="container">
+                      <article id="main__article">
+                        <h1 class="sr-only">{{ page.title }}</h1>
+                        <!-- SharePoint Content Area Begin -->
+                        {{ content }}
+                        <!-- SharePoint Content Area End -->
+                      </article>
+                    </div>
+                  </div>
+
+                </main>
+
+
+            </div>
+        </div>
+    </body>
+
+</html>

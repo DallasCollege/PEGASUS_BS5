@@ -1,0 +1,149 @@
+  <section>
+      <div class="subsection3" id="headings">
+          <h2 class="text-csecondary page-header">Headings</h2>
+          <div class="row extra-space">
+              <div class="col-sm-12">
+                  <h3>Default Heading Styles</h3>
+                  <p>These are the default heading styles for: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code>:
+                      <div class="code-example shadow-3">
+                          <h1>This is an H1 which has a font-size of 32px. <a href="#">This is an H1 link</a></h1>
+                          <div class="alert extra-padding alert-warning">
+                              <p><span aria-hidden="true" class="ico fas fa-universal-access"></span> <strong>Accessibility Note:</strong> <code>&lt;h1&gt;</code> elements should only appear <em>once</em> on the page (as
+                              the page title). These <a href="/about/accessibility/guidelines/Pages/headings.aspx#hierarchies">heading elements should also be nested properly</a> and <strong>not be used to <em>style</em> text</strong>. Proper use of headings is a way to establish order and structure to page content that helps not only those with screen readers, but all users.</p>
+                          </div>
+                          <hr>
+                          <h2>This is H2 which has a font-size of 24px. <a href="#">This is an H2 link</a></h2>
+                          <hr>
+                          <h3>This is H3 which has a font-size of 20px. <a href="#">This is an H3 link</a></h3>
+                          <hr>
+                          <h4>This is H4 which has a font-size of 18px. <a href="#">This is an H4 link</a></h4>
+                          <hr>
+                          <h5>This is H5 which has a font-size of 16px. <a href="#">This is an H5 link</a></h5>
+                          <hr>
+                          <h6>This is H6 which has a font-size of 14px. <a href="#">This is an H6 link</a></h6>
+                          <hr>
+                      </div>
+                      <div class="alert extra-padding alert-warning">
+                          <p><span aria-hidden="true" class="ico fas fa-universal-access"></span> <strong>Accessibility Note:</strong> Avoid applying any font color styles to headings and stick with the default color styles
+                          to maintain adequate contrast.</p></div>
+                      <div class="alert extra-padding alert-info">
+                          <h5 class="h3"><span aria-hidden="true" class="ico fas fa-life-ring"></span> Helper Class!</h5>
+                          <p>There will be times when you would like to style other blocks of text to appear as a heading without inputting incorrect, non-semantic HTML code. For this, we have built-in the ability to apply any of the above styles
+                              without having to code text as an <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, etc.</p>
+                          <p>To apply the same size/weight styles (without inputting incorrect HTML code) you can apply any of the following classes to any text element (including other heading elements):</p>
+                          <ul>
+                              <li><code>.h1</code></li>
+                              <li><code>.h2</code></li>
+                              <li><code>.h3</code></li>
+                              <li><code>.h4</code></li>
+                              <li><code>.h5</code></li>
+                              <li><code>.h6</code></li>
+                          </ul>
+                      </div>
+              </div>
+              <div class="col-sm-12">
+                  <h3>Heading + Small</h3>
+                  <p>You can apply the <code>.small</code> class to headings to create <strong>subheading text</strong>:</p>
+                  <div class="code-example shadow-3">
+                      <h2>You can have a regular header
+                          <small>And wrap it with the <code>.small</code> class for a subhead</small></h2>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row extra-space">
+              <div class="col-sm-12">
+                  <h3>Additional Heading Style: Page Header</h3>
+                  <p>To create added emphasis or hierarchy on a page, PEGASUS includes a style to add a thin full-width underline to the heading: <code>.page-header</code>.
+                      <div class="code-example shadow-3">
+                          <div class="page-header">
+                              <h2>This is an example page header with an H2</h2>
+                          </div>
+                      </div>
+                      <div class="alert extra-padding alert-success">
+                          <h4 class="h3"><span class="ico fas fa-check" aria-hidden="true"></span> Proper Use: Page Header</h4>
+                          <p>When designing a page with lots of headers and header levels, you will find a need to have additional styles to help differentiate between <code>&lt;h2&gt;</code> and
+                                  <code>&lt;h3&gt;</code>. Applying <code>.page-header</code> to these heading elements is appropriate.</p>
+                      </div>
+              </div>
+              <div class="col-sm-12">
+                  <h3>Additional Heading Style: Image Header</h3>
+                  <p>Add an image to your header using the <code>.img-header</code> class. This class works with <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> headers.</p>
+                  <div class="code-example shadow-3">
+                      <div class="img-header">
+                          <a href="#">
+                              <img class="img-circle width-75" src="images/student-464x464.jpg" alt="" /><h3 class="inline">Academic and Transfer Courses</h3>
+                          </a>
+                      </div>
+                  </div>
+                  <pre><code class="language-markup">&lt;div class="img-header"&gt;
+    &lt;a href="#"&gt;
+      &lt;img class="img-circle width-75" src="images/student-464x464.jpg" alt=""/&gt;&lt;h3 class="inline"&gt;Academic and Transfer Courses&lt;/h3&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="col-sm-12" id="cb-titles">
+                  <h3>Additional Heading Style: CB Titles</h3>
+                  <p>Rather than depending on headers to increase the size of your font, the USE Design Framework has built-in CSS classes that allow you to semantically change your font styles for a number of situations.</p>
+                  <div class="spacer-2"></div>
+                  <h4>CB Titles on Non-Heading Elements</h4>
+                  <p>Simply wrap your <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> element with these CSS classes to change your font style and size.</p>
+                  <div class="code-example shadow-3">
+                      <p class="cb-title">This title uses <code>.cb-title</code></p>
+                      <p class="cb-title-lg">This title uses <code>.cb-title-lg</code></p>
+                      <p class="cb-title-xl">This title uses <code>.cb-title-xl</code></p>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <pre><code class="language-css">.cb-title {
+    font-size: 20px;
+    font-weight: 600; /* Semibold */
+}</code></pre>
+                      </div>
+                      <div class="col-sm-4">
+                          <pre><code class="language-css">.cb-title-lg {
+    font-size: 24px;
+    font-weight: 600; /* Semibold */
+}</code></pre>
+                      </div>
+                      <div class="col-sm-4">
+                          <pre><code class="language-css">.cb-title-xl {
+    font-size: 40px;
+    font-weight: 300; /* Light */
+}</code></pre>
+                      </div>
+                  </div>
+                  <div class="spacer-4"></div>
+                  <h4>CB Titles on Heading Elements</h4>
+                  <div class="alert alert-warning extra-padding">
+                  <p>Applying <code>.cb-title</code> to actual heading elements will only alter the <code>font-size</code>. <code>font-family</code> and <code>font-weight</code> will remain unaffected and defaults to the heading style:</p>
+                  </div>
+                  <div class="code-example shadow-3">
+                      <h2>This is the default H2</h2>
+                      <div class="spacer-2"></div>
+                      <h2 class="cb-title">This H2 uses <code>.cb-title</code></h2>
+                      <h2 class="cb-title-lg">This H2 uses <code>.cb-title-lg</code></h2>
+                      <h2 class="cb-title-xl">This H2 uses <code>.cb-title-xl</code></h2>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <pre><code class="language-css">.cb-title {
+    font-size: 20px;
+}</code></pre>
+                      </div>
+                      <div class="col-sm-4">
+                          <pre><code class="language-css">.cb-title-lg {
+    font-size: 24px;
+}</code></pre>
+                      </div>
+                      <div class="col-sm-4">
+                          <pre><code class="language-css">.cb-title-xl {
+    font-size: 40px;
+}</code></pre>
+                      </div>
+                  </div>
+                  <div class="spacer-3"></div>
+          </div>
+          {% include back-to-top.html %}
+      </div>
+  </section>

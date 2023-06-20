@@ -1,0 +1,68 @@
+                <header id="l-header-desktop" class="ms-dialogHidden l-header-desktop--compact" aria-hidden="false">
+                    <div class="skiptocontent"><a style="color:#ffffff!important" href="#main__body">Skip to Main Content</a></div>
+                    {% include header__l-nav-utility.html %}
+                    <div class="pgs-banner pgs-banner--compact pgs-banner--econnect" style="background-image:url({{ site.baseurl }}images/banner.jpg)">
+                        <div class="pgs-banner__title">
+                            <div class="container">
+                                <div class="col-md-9 col-sm-8">
+                                    <div class="h1 pgs-banner__h1">
+                                        <a href="https://www.dallascollege.edu/">
+                                            <img class="logo-bar-slot__img" src="https://www.dallascollege.edu/publishingimages/logos/dc-logo-master-white.svg" alt="Dallas College">
+                                        </a>
+                                        <a class="underline-inv text-cwhite site-title" href="{{ 'index.html' | relative_url }}">{{ site.shorttitle }} <span class="hidden-sm">{{ site.extendedtitle }}</span></a></div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <a class="button button-sm bg-cprimary no-margin" href="{{ site.baseurl }}changelog.html">Updated: {{ site.updated }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pgs-banner__sub-nav bg-cprimary-lt">
+                        <div class="container">
+                            <nav class="pgs-navbar--banner">
+                                <div class="table-center">
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                      <ul class="nav navbar-nav">
+                                          {% for item in site.data.sitemap.toc %}
+                                          <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle{% if page.url contains "/{{ item.slug}}" %} current-page{% endif %}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title}} <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    {% for entry in item.subfolderitems %}
+                                                    <li><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
+                                                    {% endfor %}
+                                                </ul>
+                                          </li>
+                                          {% endfor %}
+                                        <!--
+                                        <li class="dropdown">
+                                          <a href="#" class="dropdown-toggle{% if page.url == " /templates.html " %} current-page{% endif %}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                          </ul>
+                                        </li> -->
+                                      </ul>
+                                      <!-- <form action="search.html" method="get" class="navbar-form navbar-right">
+                                        <div class="form-group">
+                                          <input type="text" id="search-box" name="query" class="form-control" placeholder="Search">
+                                        </div>
+                                        <button type="submit" class="btn btn-default" value="search">Search</button>
+                                      </form> -->
+                                    </div>
+                                </div>
+
+                            </nav>
+                        </div>
+                    </div>
+
+                </header>
+
+                {% include header--mobile.html %}
+
+
+                <!-- Site Notice can go here -->

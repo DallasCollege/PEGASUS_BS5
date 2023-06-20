@@ -1,0 +1,875 @@
+---
+layout: default-level2
+title: Module&colon; Campus Accordions
+h1: Templates
+permalink: templates/campus-accordions.html
+---
+
+                <aside class="text-right text-csecondary small"><strong>Last Updated:</strong> 9/11/2020</aside>
+                <div class="spacer-2"></div>
+                <div class="subsection3" id="flexbox-cards">
+                    <p class="lead">Below is a standard template for creating an Accordion group of all seven campuses. We also have an <a href="{{ site.baseurl }}accordion-generator.html">accordion generator</a>. Here are some important things to keep in mind:</p>
+                    <h2>Heading Structure</h2>
+                    <p>Be mindful about the heading hierarchy when you place an Accordion group on the page. If you are placing a block of accordions underneath a
+                       <code>&lt;h2&gt;</code> element, then the hierarchy should be as follows:</p>
+                    <pre class="language-markup"><code>&lt;h2&gt;Heading 2 Already On the Page&lt;/h2&gt;
+    &lt;h3&gt;Brookhaven&lt;/h3&gt;
+        &lt;h4&gt;Visit Us&lt;/h4&gt;
+        &lt;h4&gt;Call or Email Us&lt;/h4&gt;
+        &lt;h4&gt;Hours of Operation&lt;/h4&gt;
+        &lt;h4&gt;Additional Info&lt;/h4&gt;
+    &lt;h3&gt;Cedar Valley&lt;/h3&gt;
+        &lt;h4&gt;Visit Us&lt;/h4&gt;
+        &lt;h4&gt;Call or Email Us&lt;/h4&gt;
+        &lt;h4&gt;Hours of Operation&lt;/h4&gt;
+        &lt;h4&gt;Additional Info&lt;/h4&gt;</code></pre>
+        <div class="spacer-2"></div>
+                    <p>If you are placing a block of accordions by themselves and not underneath a
+                       <code>&lt;h2&gt;</code> element, then the hierarchy should be as follows:</p>
+                    <pre class="language-markup"> <code>&lt;h2&gt;Brookhaven&lt;/h2&gt;
+    &lt;h3&gt;Visit Us&lt;/h3&gt;
+    &lt;h3&gt;Call or Email Us&lt;/h3&gt;
+    &lt;h3&gt;Hours of Operation&lt;/h3&gt;
+    &lt;h3&gt;Additional Info&lt;/h3&gt;
+&lt;h2&gt;Cedar Valley&lt;/h2&gt;
+    &lt;h3&gt;Visit Us&lt;/h3&gt;
+    &lt;h3&gt;Call or Email Us&lt;/h3&gt;
+    &lt;h3&gt;Hours of Operation&lt;/h3&gt;
+    &lt;h3&gt;Additional Info&lt;/h3&gt;
+                 </code></pre>
+                    <p>
+                       <a href="https://webaim.org/techniques/semanticstructure/#contentstructure">Learn more about Headings on WebAIM.org</a></p>
+                    <a href="{{ site.baseurl}}components/dept-cards.html" class="button bg-cprimary">Learn More About Department Cards</a>
+                    <div class="spacer-4"></div>
+                    <h2>Template:</h2>
+                    <div class="code-example shadow-3">
+                    <h2>Locations and Contact Information</h2>
+                    <div class="panel-group pgs-accordion pgs-accordion--BHC" id="BHC">
+                       <h3>
+                          <button type="button" data-target="#collapse-BHC" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-BHC">
+                             <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Brookhaven</button></h3>
+                       <div id="collapse-BHC" class="panel-collapse collapse">
+                          <div class="panel-body">
+                             <div class="pgs-dept-card pgs-dept-card--quiet">
+                                <div class="row">
+                                   <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Visit Us</h4>
+                                      <ul class="fa-ul">
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, T-101</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>
+                                            <span class="ms-rtestate-read  ms-reusableTextView" contenteditable="false" id="__publishingReusableFragment" fragmentid="/ReusableContent/4_.000">
+                                               <strong>Brookhaven</strong><br/><a href="https://goo.gl/maps/TywG1sCbgheBq639A">3939 Valley View Lane
+                                                  <br/>Farmers Branch, TX 75244</a></span></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Call or Email Us</h4>
+                                      <ul class="fa-ul">
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>214-123-4567</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-fax"></span></span>214-123-4567 (fax)</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                            <a href="mailto:email@dcccd.edu">Email <span class="sr-only">Brookhaven </span>Health Center</a></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Hours of Operation</h4>
+                                      <ul class="fa-ul">
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Mon-Thurs:</strong> 9 a.m. - 2 p.m.</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Fri:</strong> 9 a.m. - noon</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Sat-Sun:</strong> Closed</li>
+                                         <li>
+                                            <strong>Note:</strong> Any additional notes about hours may go here.</li>
+                                      </ul>
+                                   </div>
+                                </div>
+                             </div>
+                             <h4>Additional Info</h4>
+                             <p>If there is any extra information or content, this is where it can go.</p>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="panel-group pgs-accordion pgs-accordion--CVC" id="CVC">
+                       <h3>
+                          <button type="button" data-target="#collapse-CVC" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false"  aria-controls="collapse-CVC">
+                             <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Cedar Valley</button></h3>
+                       <div id="collapse-CVC" class="panel-collapse collapse">
+                          <div class="panel-body">
+                             <div class="pgs-dept-card pgs-dept-card--quiet">
+                                <div class="row">
+                                   <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Visit Us</h4>
+                                      <ul class="fa-ul">
+                                         <li><span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, T-101</li>
+                                         <li><span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>
+                                            <span class="ms-rtestate-read  ms-reusableTextView" contenteditable="false" id="__publishingReusableFragment" fragmentid="/ReusableContent/5_.000">
+                                               <strong>Cedar Valley</strong><br/>
+                                               <a href="https://goo.gl/maps/4SDG3iV1zpvhFtAc6">3030 N. Dallas Ave.
+                                                  <br/>Lancaster, TX 75134</a></span></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Call or Email Us</h4>
+                                      <ul class="fa-ul">
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>214-123-4567</li>
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-fax"></span></span>214-123-4567 (fax)</li>
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                             <a href="mailto:email@dcccd.edu">Email
+                                               <span class="sr-only">Cedar Valley </span>Health Center</a>
+                                           </li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Hours of Operation</h4>
+                                      <ul class="fa-ul">
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Mon-Thurs:</strong> 9 a.m. - 2 p.m.</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Fri:</strong> 9 a.m. - noon</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Sat-Sun:</strong> Closed</li>
+                                         <li>
+                                            <strong>Note:</strong> Any additional notes about hours may go here.</li>
+                                      </ul>
+                                   </div>
+                                </div>
+                             </div>
+                             <h4>Additional Info</h4>
+                             <p>If there is any extra information or content, this is where it can go.</p>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="panel-group pgs-accordion pgs-accordion--EFC" id="EFC">
+                       <h3><button type="button" data-target="#collapse-EFC" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false"  aria-controls="collapse-EFC">
+                             <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Eastfield</button></h3>
+                       <div id="collapse-EFC" class="panel-collapse collapse">
+                          <div class="panel-body">
+                             <div class="pgs-dept-card pgs-dept-card--quiet">
+                                <div class="row">
+                                   <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Visit Us</h4>
+                                      <ul class="fa-ul">
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, T-101</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>
+                                            <span class="ms-rtestate-read  ms-reusableTextView" contenteditable="false" id="__publishingReusableFragment" fragmentid="/ReusableContent/6_.000">
+                                               <strong>Eastfield</strong><br/>
+                                               <a href="https://goo.gl/maps/XbfT2qV3ru9Zv8JP8">3737 Motley Drive
+                                                  <br/>Mesquite, TX 75150</a> </span></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Call or Email Us</h4>
+                                      <ul class="fa-ul">
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>214-123-4567</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-fax"></span></span>214-123-4567 (fax)</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                            <a href="mailto:email@dcccd.edu">Email <span class="sr-only">Eastfield </span>Health Center</a></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Hours of Operation</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Mon-Thurs:</strong> 9 a.m. - 2 p.m.</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Fri:</strong> 9 a.m. - noon</li>
+                                         <li>
+                                            <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Sat-Sun:</strong> Closed</li>
+                                         <li>
+                                            <strong>Note:</strong> Any additional notes about hours may go here.</li>
+                                      </ul>
+                                   </div>
+                                </div>
+                             </div>
+                             <h4>Additional Info</h4>
+                             <p>If there is any extra information or content, this is where it can go.</p>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="panel-group pgs-accordion pgs-accordion--ECC" id="ECC">
+                       <h3><button type="button" data-target="#collapse-ECC" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false"  aria-controls="collapse-ECC">
+                             <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>El Centro</button></h3>
+                       <div id="collapse-ECC" class="panel-collapse collapse">
+                          <div class="panel-body">
+                             <div class="pgs-dept-card pgs-dept-card--quiet">
+                                <div class="row">
+                                   <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Visit Us</h4>
+                                      <ul class="fa-ul">
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, T-101</li>
+                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>
+                                            <span class="ms-rtestate-read  ms-reusableTextView" contenteditable="false" id="__publishingReusableFragment" fragmentid="/ReusableContent/7_.000">
+                                               <strong>El Centro</strong><br/>
+                                               <a href="https://goo.gl/maps/FMEAY1hT5ud4jTKX6">801 Main St.
+                                                  <br/>Dallas, TX 75202</a></span></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Call or Email Us</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-phone"></span></span>214-123-4567</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-fax"></span></span>214-123-4567 (fax)</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                            <a href="mailto:email@dcccd.edu">Email
+                                               <span class="sr-only">El Centro </span>Health Center</a></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Hours of Operation</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Mon-Thurs:</strong> 9 a.m. - 2 p.m.</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Fri:</strong> 9 a.m. - noon</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Sat-Sun:</strong> Closed</li>
+                                         <li>
+                                            <strong>Note:</strong> Any additional notes about hours may go here.</li>
+                                      </ul>
+                                   </div>
+                                </div>
+                             </div>
+                             <h4>Additional Info</h4>
+                             <p>If there is any extra information or content, this is where it can go.</p>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="panel-group pgs-accordion pgs-accordion--MVC" id="MVC">
+                       <h3>
+                          <button type="button" data-target="#collapse-MVC" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-MVC">
+                             <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Mountain View</button></h3>
+                       <div id="collapse-MVC" class="panel-collapse collapse">
+                          <div class="panel-body">
+                             <div class="pgs-dept-card pgs-dept-card--quiet">
+                                <div class="row">
+                                   <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Visit Us</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, T-101</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>span fragmentid=&quot;/ReusableContent/8_.000&quot; id=&quot;__publishingReusableFragment&quot; class=&quot;ms-reusableTextView ms-rtestate-read&quot; contenteditable=&quot;false&quot;&gt;<strong>Mountain View</strong><br/><a href="https://goo.gl/maps/AG58z3i9q8wD8fGY8">4849 W. Illiniois Ave.
+                                               <br/>Dallas, TX 75211</a></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Call or Email Us</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-phone"></span></span>214-123-4567</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-fax"></span></span>214-123-4567 (fax)</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                            <a href="mailto:email@dcccd.edu">Email
+                                               <span class="sr-only">Mountain View </span>Health Center</a></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Hours of Operation</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Mon-Thurs:</strong> 9 a.m. - 2 p.m.</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Fri:</strong> 9 a.m. - noon</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Sat-Sun:</strong> Closed</li>
+                                         <li>
+                                            <strong>Note:</strong> Any additional notes about hours may go here.</li>
+                                      </ul>
+                                   </div>
+                                </div>
+                             </div>
+                             <h4>Additional Info</h4>
+                             <p>If there is any extra information or content, this is where it can go.</p>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="panel-group pgs-accordion pgs-accordion--NLC" id="NLC">
+                       <h3>
+                          <button type="button" data-target="#collapse-NLC" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-NLC">
+                             <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>North Lake</button></h3>
+                       <div id="collapse-NLC" class="panel-collapse collapse">
+                          <div class="panel-body">
+                             <div class="pgs-dept-card pgs-dept-card--quiet">
+                                <div class="row">
+                                   <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Visit Us</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, C-180</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>
+                                            <span class="ms-rtestate-read  ms-reusableTextView" contenteditable="false" id="__publishingReusableFragment" fragmentid="/ReusableContent/9_.000">
+                                               <strong>North Lake</strong>
+                                               <br/>
+                                               <a href="https://goo.gl/maps/DYatZigzqoNv6rsr7">5001 N. MacArthur Blvd.
+                                                  <br/>Irving, TX 75038</a></span></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Call or Email Us</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-phone"></span></span>214-123-4567</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-fax"></span></span>214-123-4567 (fax)</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                            <a href="mailto:email@dcccd.edu">Email
+                                               <span class="sr-only">North Lake </span>Health Center</a></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Hours of Operation</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Mon-Thurs:</strong> 9 a.m. - 2 p.m.</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Fri:</strong> 9 a.m. - noon</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Sat-Sun:</strong> Closed</li>
+                                         <li>
+                                            <strong>Note:</strong> Any additional notes about hours may go here.</li>
+                                      </ul>
+                                   </div>
+                                </div>
+                             </div>
+                             <h4>Additional Info</h4>
+                             <p>If there is any extra information or content, this is where it can go.</p>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="panel-group pgs-accordion pgs-accordion--RLC" id="RLC">
+                       <h3>
+                          <button type="button" data-target="#collapse-RLC" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-RLC">
+                             <span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Richland</button></h3>
+                       <div id="collapse-RLC" class="panel-collapse collapse">
+                          <div class="panel-body">
+                             <div class="pgs-dept-card pgs-dept-card--quiet">
+                                <div class="row">
+                                   <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Visit Us</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, C-180</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span>
+                                            <span class="ms-rtestate-read  ms-reusableTextView" contenteditable="false" id="__publishingReusableFragment" fragmentid="/ReusableContent/10_.000">
+                                               <strong>Richland</strong>
+                                               <br/>
+                                               <a href="https://g.page/richland-college-dallas?share">12800 Abrams Road<br/>Dallas, TX 75243</a></span></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Call or Email Us</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-phone"></span></span>214-123-4567</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-fax"></span></span>214-123-4567 (fax)</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-envelope"></span></span>
+                                            <a href="mailto:email@dcccd.edu">Email
+                                               <span class="sr-only">Richland </span>Health Center</a></li>
+                                      </ul>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                                      <h4 class="pgs-dept-card__subhead">Hours of Operation</h4>
+                                      <ul class="fa-ul">
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Mon-Thurs:</strong> 9 a.m. - 2 p.m.</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Fri:</strong> 9 a.m. - noon</li>
+                                         <li>
+                                            <span class="fa-li">
+                                               <span aria-hidden="true" class="ico fas fa-clock"></span></span>
+                                            <strong>Sat-Sun:</strong> Closed</li>
+                                         <li>
+                                            <strong>Note:</strong> Any additional notes about hours may go here.</li>
+                                      </ul>
+                                   </div>
+                                </div>
+                             </div>
+                             <h4>Additional Info</h4>
+                             <p>If there is any extra information or content, this is where it can go.</p>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+<div class="spacer-3"></div>
+<h2>HTML Markup:</h2>
+                             <pre class="language-markup"><code>&lt;h2&gt;Locations and Contact Information&lt;/h2&gt;
+&lt;div class=&quot;panel-group pgs-accordion pgs-accordion--BHC&quot; id=&quot;BHC&quot;&gt;
+   &lt;h3&gt;
+      &lt;button type=&quot;button&quot; data-target=&quot;#collapse-BHC&quot; class=&quot;bg-cgrey collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-BHC&quot;&gt;
+         &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;Brookhaven&lt;/button&gt;&lt;/h3&gt;
+   &lt;div id=&quot;collapse-BHC&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+         &lt;div class=&quot;pgs-dept-card pgs-dept-card--quiet&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Thunderduck Hall, T-101&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;span class=&quot;ms-rtestate-read  ms-reusableTextView&quot; contenteditable=&quot;false&quot; id=&quot;__publishingReusableFragment&quot; fragmentid=&quot;/ReusableContent/4_.000&quot;&gt;
+                           &lt;strong&gt;Brookhaven&lt;/strong&gt;&lt;br/&gt;&lt;a href=&quot;https://goo.gl/maps/TywG1sCbgheBq639A&quot;&gt;3939 Valley View Lane
+                              &lt;br/&gt;Farmers Branch, TX 75244&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-fax&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567 (fax)&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;a href=&quot;mailto:email@dcccd.edu&quot;&gt;Email &lt;span class=&quot;sr-only&quot;&gt;Brookhaven &lt;/span&gt;Health Center&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours of Operation&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 9 a.m. - 2 p.m.&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Fri:&lt;/strong&gt; 9 a.m. - noon&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;strong&gt;Note:&lt;/strong&gt; Any additional notes about hours may go here.&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;h4&gt;Additional Info&lt;/h4&gt;
+         &lt;p&gt;If there is any extra information or content, this is where it can go.&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel-group pgs-accordion pgs-accordion--CVC&quot; id=&quot;CVC&quot;&gt;
+   &lt;h3&gt;
+      &lt;button type=&quot;button&quot; data-target=&quot;#collapse-CVC&quot; class=&quot;bg-cgrey collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-CVC&quot;&gt;
+         &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;Cedar Valley&lt;/button&gt;&lt;/h3&gt;
+   &lt;div id=&quot;collapse-CVC&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+         &lt;div class=&quot;pgs-dept-card pgs-dept-card--quiet&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Thunderduck Hall, T-101&lt;/li&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;span class=&quot;ms-rtestate-read  ms-reusableTextView&quot; contenteditable=&quot;false&quot; id=&quot;__publishingReusableFragment&quot; fragmentid=&quot;/ReusableContent/5_.000&quot;&gt;
+                           &lt;strong&gt;Cedar Valley&lt;/strong&gt;&lt;br/&gt;
+                           &lt;a href=&quot;https://goo.gl/maps/4SDG3iV1zpvhFtAc6&quot;&gt;3030 N. Dallas Ave.
+                              &lt;br/&gt;Lancaster, TX 75134&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567&lt;/li&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-fax&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567 (fax)&lt;/li&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                         &lt;a href=&quot;mailto:email@dcccd.edu&quot;&gt;Email
+                           &lt;span class=&quot;sr-only&quot;&gt;Cedar Valley &lt;/span&gt;Health Center&lt;/a&gt;
+                       &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours of Operation&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 9 a.m. - 2 p.m.&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Fri:&lt;/strong&gt; 9 a.m. - noon&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;strong&gt;Note:&lt;/strong&gt; Any additional notes about hours may go here.&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;h4&gt;Additional Info&lt;/h4&gt;
+         &lt;p&gt;If there is any extra information or content, this is where it can go.&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel-group pgs-accordion pgs-accordion--EFC&quot; id=&quot;EFC&quot;&gt;
+   &lt;h3&gt;&lt;button type=&quot;button&quot; data-target=&quot;#collapse-EFC&quot; class=&quot;bg-cgrey collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-EFC&quot;&gt;
+         &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;Eastfield&lt;/button&gt;&lt;/h3&gt;
+   &lt;div id=&quot;collapse-EFC&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+         &lt;div class=&quot;pgs-dept-card pgs-dept-card--quiet&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Thunderduck Hall, T-101&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;span class=&quot;ms-rtestate-read  ms-reusableTextView&quot; contenteditable=&quot;false&quot; id=&quot;__publishingReusableFragment&quot; fragmentid=&quot;/ReusableContent/6_.000&quot;&gt;
+                           &lt;strong&gt;Eastfield&lt;/strong&gt;&lt;br/&gt;
+                           &lt;a href=&quot;https://goo.gl/maps/XbfT2qV3ru9Zv8JP8&quot;&gt;3737 Motley Drive
+                              &lt;br/&gt;Mesquite, TX 75150&lt;/a&gt; &lt;/span&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-fax&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567 (fax)&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;a href=&quot;mailto:email@dcccd.edu&quot;&gt;Email &lt;span class=&quot;sr-only&quot;&gt;Eastfield &lt;/span&gt;Health Center&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours of Operation&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 9 a.m. - 2 p.m.&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Fri:&lt;/strong&gt; 9 a.m. - noon&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;strong&gt;Note:&lt;/strong&gt; Any additional notes about hours may go here.&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;h4&gt;Additional Info&lt;/h4&gt;
+         &lt;p&gt;If there is any extra information or content, this is where it can go.&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel-group pgs-accordion pgs-accordion--ECC&quot; id=&quot;ECC&quot;&gt;
+   &lt;h3&gt;&lt;button type=&quot;button&quot; data-target=&quot;#collapse-ECC&quot; class=&quot;bg-cgrey collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-ECC&quot;&gt;
+         &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;El Centro&lt;/button&gt;&lt;/h3&gt;
+   &lt;div id=&quot;collapse-ECC&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+         &lt;div class=&quot;pgs-dept-card pgs-dept-card--quiet&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Thunderduck Hall, T-101&lt;/li&gt;
+                     &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;span class=&quot;ms-rtestate-read  ms-reusableTextView&quot; contenteditable=&quot;false&quot; id=&quot;__publishingReusableFragment&quot; fragmentid=&quot;/ReusableContent/7_.000&quot;&gt;
+                           &lt;strong&gt;El Centro&lt;/strong&gt;&lt;br/&gt;
+                           &lt;a href=&quot;https://goo.gl/maps/FMEAY1hT5ud4jTKX6&quot;&gt;801 Main St.
+                              &lt;br/&gt;Dallas, TX 75202&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-fax&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567 (fax)&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;a href=&quot;mailto:email@dcccd.edu&quot;&gt;Email
+                           &lt;span class=&quot;sr-only&quot;&gt;El Centro &lt;/span&gt;Health Center&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours of Operation&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 9 a.m. - 2 p.m.&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Fri:&lt;/strong&gt; 9 a.m. - noon&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;strong&gt;Note:&lt;/strong&gt; Any additional notes about hours may go here.&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;h4&gt;Additional Info&lt;/h4&gt;
+         &lt;p&gt;If there is any extra information or content, this is where it can go.&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel-group pgs-accordion pgs-accordion--MVC&quot; id=&quot;MVC&quot;&gt;
+   &lt;h3&gt;
+      &lt;button type=&quot;button&quot; data-target=&quot;#collapse-MVC&quot; class=&quot;bg-cgrey collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-MVC&quot;&gt;
+         &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;Mountain View&lt;/button&gt;&lt;/h3&gt;
+   &lt;div id=&quot;collapse-MVC&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+         &lt;div class=&quot;pgs-dept-card pgs-dept-card--quiet&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Thunderduck Hall, T-101&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;span fragmentid=&amp;quot;/ReusableContent/8_.000&amp;quot; id=&amp;quot;__publishingReusableFragment&amp;quot; class=&amp;quot;ms-reusableTextView ms-rtestate-read&amp;quot; contenteditable=&amp;quot;false&amp;quot;&amp;gt;&lt;strong&gt;Mountain View&lt;/strong&gt;&lt;br/&gt;&lt;a href=&quot;https://goo.gl/maps/AG58z3i9q8wD8fGY8&quot;&gt;4849 W. Illiniois Ave.
+                           &lt;br/&gt;Dallas, TX 75211&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-fax&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567 (fax)&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;a href=&quot;mailto:email@dcccd.edu&quot;&gt;Email
+                           &lt;span class=&quot;sr-only&quot;&gt;Mountain View &lt;/span&gt;Health Center&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours of Operation&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 9 a.m. - 2 p.m.&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Fri:&lt;/strong&gt; 9 a.m. - noon&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;strong&gt;Note:&lt;/strong&gt; Any additional notes about hours may go here.&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;h4&gt;Additional Info&lt;/h4&gt;
+         &lt;p&gt;If there is any extra information or content, this is where it can go.&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel-group pgs-accordion pgs-accordion--NLC&quot; id=&quot;NLC&quot;&gt;
+   &lt;h3&gt;
+      &lt;button type=&quot;button&quot; data-target=&quot;#collapse-NLC&quot; class=&quot;bg-cgrey collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-NLC&quot;&gt;
+         &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;North Lake&lt;/button&gt;&lt;/h3&gt;
+   &lt;div id=&quot;collapse-NLC&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+         &lt;div class=&quot;pgs-dept-card pgs-dept-card--quiet&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Thunderduck Hall, C-180&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;span class=&quot;ms-rtestate-read  ms-reusableTextView&quot; contenteditable=&quot;false&quot; id=&quot;__publishingReusableFragment&quot; fragmentid=&quot;/ReusableContent/9_.000&quot;&gt;
+                           &lt;strong&gt;North Lake&lt;/strong&gt;
+                           &lt;br/&gt;
+                           &lt;a href=&quot;https://goo.gl/maps/DYatZigzqoNv6rsr7&quot;&gt;5001 N. MacArthur Blvd.
+                              &lt;br/&gt;Irving, TX 75038&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-fax&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567 (fax)&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;a href=&quot;mailto:email@dcccd.edu&quot;&gt;Email
+                           &lt;span class=&quot;sr-only&quot;&gt;North Lake &lt;/span&gt;Health Center&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours of Operation&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 9 a.m. - 2 p.m.&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Fri:&lt;/strong&gt; 9 a.m. - noon&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;strong&gt;Note:&lt;/strong&gt; Any additional notes about hours may go here.&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;h4&gt;Additional Info&lt;/h4&gt;
+         &lt;p&gt;If there is any extra information or content, this is where it can go.&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel-group pgs-accordion pgs-accordion--RLC&quot; id=&quot;RLC&quot;&gt;
+   &lt;h3&gt;
+      &lt;button type=&quot;button&quot; data-target=&quot;#collapse-RLC&quot; class=&quot;bg-cgrey collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-RLC&quot;&gt;
+         &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;Richland&lt;/button&gt;&lt;/h3&gt;
+   &lt;div id=&quot;collapse-RLC&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+         &lt;div class=&quot;pgs-dept-card pgs-dept-card--quiet&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-4 col-sm-12 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Visit Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-university&quot;&gt;&lt;/span&gt;&lt;/span&gt;Thunderduck Hall, C-180&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-map-marker-alt&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;span class=&quot;ms-rtestate-read  ms-reusableTextView&quot; contenteditable=&quot;false&quot; id=&quot;__publishingReusableFragment&quot; fragmentid=&quot;/ReusableContent/10_.000&quot;&gt;
+                           &lt;strong&gt;Richland&lt;/strong&gt;
+                           &lt;br/&gt;
+                           &lt;a href=&quot;https://g.page/richland-college-dallas?share&quot;&gt;12800 Abrams Road&lt;br/&gt;Dallas, TX 75243&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Call or Email Us&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-phone&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-fax&quot;&gt;&lt;/span&gt;&lt;/span&gt;214-123-4567 (fax)&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-envelope&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;a href=&quot;mailto:email@dcccd.edu&quot;&gt;Email
+                           &lt;span class=&quot;sr-only&quot;&gt;Richland &lt;/span&gt;Health Center&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-4 col-sm-6 pgs-dept-card__col&quot;&gt;
+                  &lt;h4 class=&quot;pgs-dept-card__subhead&quot;&gt;Hours of Operation&lt;/h4&gt;
+                  &lt;ul class=&quot;fa-ul&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Mon-Thurs:&lt;/strong&gt; 9 a.m. - 2 p.m.&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Fri:&lt;/strong&gt; 9 a.m. - noon&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;fa-li&quot;&gt;
+                           &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+                        &lt;strong&gt;Sat-Sun:&lt;/strong&gt; Closed&lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;strong&gt;Note:&lt;/strong&gt; Any additional notes about hours may go here.&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;h4&gt;Additional Info&lt;/h4&gt;
+         &lt;p&gt;If there is any extra information or content, this is where it can go.&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                          </div>

@@ -1,0 +1,47 @@
+---
+layout: default-level2
+title: Typography Cheatsheet
+permalink: cheatsheets/typography-cheatsheet.html
+---
+<style>
+    	[data-label="Class"] {width:20%;}
+        [data-label="When to use it"] {width:30%;}
+        [data-label="Example"] {width:20%;}
+        [data-label="Notes"] {width:30%;}
+</style>
+
+<div class="full-width-row">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 ">
+                {% for item in site.data.cheatsheets.typography %}
+                <section aria-label="{{ item.title}}">
+                    <h2 class="page-header text-csecondary text-center">{{ item.title }}</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped cheatsheet">
+                            <thead>
+                                  <tr>
+                                        <th scope="col" data-label="Class">Class</th>
+                                        <th scope="col" data-label="When to use it">When to use this</th>
+                                        <th scope="col" data-label="Example">Example</th>
+                                        <th scope="col" data-label="Notes">Notes</th>
+                                   </tr>
+                            </thead>
+                            <tbody>
+                            {% for entry in item.subfolderitems %}
+                                  <tr>
+                                        <th scope="row" data-label="Class"><code class="lead">.{{ entry.class }}</code></th>
+                                        <td scope="col" data-label="When to use it">{{ entry.when }}</td>
+                                        <td data-label="Example" class="{{ entry.class }}">Dallas College</td>
+                                        <td data-label="Notes">{{ entry.notes }}</td>
+                                   </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

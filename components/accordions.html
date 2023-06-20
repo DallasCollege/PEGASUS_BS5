@@ -1,0 +1,129 @@
+---
+layout: default-level2
+title: Accordions
+h1: Components
+permalink: components/accordions.html
+---
+
+<div class="subsection3" id="accordions">
+    <aside class="text-right text-csecondary small"><strong>Last Updated:</strong> 9/11/2020</aside>
+    <p class="lead">Accordions are used to organize lots of content into collapsible components.</p>
+    <p>There are three styles of accordion:</p>
+    <ul>
+        <li><strong>Block Accordions</strong> - used for breaking up content by campus (or location)</li>
+        <li><strong>Quiet Accordions</strong> - used for hiding blocks of content or styling collapsible FAQs</li>
+        <li><strong>Small Accordions</strong> - used for special cases where there is additional content that is hidden away for visual or layout purposes </li>
+    </ul>
+
+    <div class="subsection4">
+        <h3>Block Accordion (for Campus Info)</h3>
+        <div class="code-example shadow-3">
+            <div class="panel-group pgs-accordion" id="ACCORDION">
+                <h3>
+                    <button type="button" data-target="#collapse-ACCORDION" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-ACCORDION"><span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Block Accordion Title</button></h3>
+                <div id="collapse-ACCORDION" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Accordion Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indent">
+            <h4>Basic Code:</h4>
+            <pre><code class="language-markup">&lt;div class=&quot;panel-group pgs-accordion&quot; id=&quot;[CAMPUS-ID]&quot;&gt;
+    &lt;h3&gt;
+        &lt;button type=&quot;button&quot; data-target=&quot;#collapse-[CAMPUS-ID]&quot; class=&quot;bg-cgrey collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-[CAMPUS-ID]&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;Campus Accordion Title
+        &lt;/button&gt;
+    &lt;/h3&gt;
+    &lt;div id=&quot;collapse-[CAMPUS-ID]&quot; class=&quot;panel-collapse collapse&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;Accordion Content&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <ul>
+                <li>While the <code>[CAMPUS-ID]</code> could probably be whatever (just as long as it all matches up), for consistency we use the following:
+                    <ul>
+                        <li><strong>Main campuses:</strong> BHC, CVC, EFC, ECC, MVC, NLC, RLC</li>
+                        <li><strong>College operations:</strong> AO, DCSC, LCET</li>
+                        <li><strong>Centers and locations:</strong> BJP, CSC, CC, CPHC, DHC, DDC, DHSC, GC, IC, PGC, WDC</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-inline button-group">
+                <li><a href="{{ site.baseurl }}templates/campus-accordions.html" class="button bg-csecondary">View Template for Seven Campus Accordions</a></li>
+                <li><a href="{{ site.baseurl }}accordion-generator.html" class="button bg-csecondary">Use Block Accordion Generator</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="subsection4">
+        <h3>Quiet Accordion (for Content Blocks or FAQs)</h3>
+        <div class="code-example shadow-3">
+            <div class="panel-group pgs-accordion pgs-accordion--quiet" id="FAQ-accordion">
+                <h3>
+                    <button type="button" data-target="#collapse-FAQ-accordion" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-FAQ-accordion"><span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Quiet Accordion Title/Question</button></h3>
+                <div id="collapse-FAQ-accordion" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Accordion Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indent">
+            <h4>Basic Code:</h4>
+            <pre><code class="language-markup">&lt;div class=&quot;panel-group pgs-accordion pgs-accordion--quiet&quot; id=&quot;FAQ-[question]&quot;&gt;
+    &lt;h3&gt;
+        &lt;button type=&quot;button&quot; data-target=&quot;#collapse-FAQ-[question]&quot; class=&quot;collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-FAQ-[question]&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;Quiet Accordion Title/Question
+        &lt;/button&gt;
+    &lt;/h3&gt;
+    &lt;div id=&quot;collapse-FAQ-[question]&quot; class=&quot;panel-collapse collapse&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;Accordion Content&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <ul>
+                <li>The <code>[question]</code> can be made up of lowercase letters seperated by hyphens.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="subsection4">
+        <h3>Small Accordion</h3>
+        <div class="code-example shadow-3">
+            <div class="panel-group pgs-accordion pgs-accordion--quiet pgs-accordion--sm" id="small-accordion">
+                <h3>
+                    <button type="button" data-target="#collapse-small-accordion" class="collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-small-accordion"><span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>Small/Quiet Accordion Title</button></h3>
+                <div id="collapse-small-accordion" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Accordion Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indent">
+            <h4>Basic Code:</h4>
+            <pre><code class="language-markup">&lt;div class=&quot;panel-group pgs-accordion pgs-accordion--quiet pgs-accordion--sm&quot; id=&quot;[accordion]&quot;&gt;
+    &lt;h3&gt;
+        &lt;button type=&quot;button&quot; data-target=&quot;#collapse-[accordion]&quot; class=&quot;collapsible collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-[accordion]&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot; class=&quot;ico fas fa-chevron-circle-right&quot;&gt;&lt;/span&gt;Small/Quiet Accordion Title
+        &lt;/button&gt;
+    &lt;/h3&gt;
+    &lt;div id=&quot;collapse-[accordion]&quot; class=&quot;panel-collapse collapse&quot;&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;p&gt;Accordion Content&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <ul>
+                <li>The <code>[accordion]</code> can be made up of lowercase letters seperated by hyphens.</li>
+            </ul>
+        </div>
+    </div>
+
+
+                {% include components/nav.html %}

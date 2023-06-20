@@ -1,0 +1,127 @@
+---
+layout: default-level2
+title: Action Links
+cat: Patterns
+permalink: patterns/action-links.html
+---
+
+
+
+                <div class="subsection3">
+                    <div class="text-right">
+                        <a href="https://my2.siteimprove.com/Policy/26196522395/PolicyDetails/Content/1?policyId=29787623687&tagIds=&ignoredPolicyViolationsOnly=false&last30DaysOnly=false" class="button button-mn bg-cgrey"><span class="ico fas fa-search ico-left" aria-hidden="true"></span>View SiteImprove Policy for This Pattern</a>
+                    </div>
+                    <p class="lead"><strong>Action Links</strong> are styled links used when wanting to present the user with multiple action items.</p>
+                    <p>Action Links usually come in the form of a list of links but may also be used by itself. Here are the variations:</p>
+                    <ul>
+                        <li><a href="#single">Single Action Link</a></li>
+                        <li><a href="#quiet">Single Action Link (Quiet)</a> - to be used for action links found within body copy</li>
+                        <li><a href="#list">Action Link List</a> - vertical list of action links</li>
+                        <li><a href="#list-inline">Action Link List (Inline)</a> - horizontal list of action links to be used when design/layout calls for it</li>
+                        <li><a href="#list-center">Action Link List (Inline - Centered)</a> - centered inline list to be used when design/layout calls for it</li>
+                    </ul>
+                    <div class="alert extra-padding alert-success">
+                          <h2 class="h3"><span class="ico fas fa-check ico-left" aria-hidden="true"></span> When to use Action Links</h2>
+                          <p>Action Links were designed, in part, to replace the overuse of buttons in particular areas. Buttons are reserved more for specific primary or secondary calls to action. But there are times where there are additional links or actions that need to be highlighted and standardized that should probably not be made into buttons. These are instances where Action Links can be used.</p>
+                      </div>
+                    <div class="spacer-2"></div>
+                    <h2 id="single" class="page-header">Single Action Link</h2>
+                    <div class="indent">
+                        <div class="code-example shadow-3">
+                            <a class="pgs-action-link" href="#"><span class="ico fas fa-chevron-right"></span>Meet Tamera and other inspiring Dallas College students</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Basic Code and Classes:</h3>
+                                <pre><code class="language-markup">&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;Meet Tamera and other inspiring Dallas College students&lt;/a&gt;</code></pre>
+                                <div class="spacer-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="quiet" class="page-header">Single Action Link (Quiet)</h2>
+                    <div class="indent">
+                        <div class="code-example shadow-3">
+                            <a class="pgs-action-link pgs-action-link--quiet" href="#"><span class="ico fas fa-chevron-right"></span>Meet Tamera and other inspiring Dallas College students</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Basic Code and Classes:</h3>
+                                <p>The code is the same as the <strong>Single Action Link</strong> but you will need to add <code>.pgs-action-link--quiet</code> to the anchor element.</p>
+                                <pre><code class="language-markup">&lt;a class=&quot;pgs-action-link pgs-action-link--quiet&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;Meet Tamera and other inspiring Dallas College students&lt;/a&gt;</code></pre>
+                                <div class="spacer-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="list" class="page-header">Action Link List</h2>
+                    <div class="indent">
+                        <div class="code-example shadow-3">
+                            <ul class="pgs-action-link-list fa-ul">
+                                <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Search All Programs of Study</a></li>
+                                <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Browse Class Schedules</a></li>
+                                <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Open Course Catalog</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Basic Code and Classes:</h3>
+                                <pre><code class="language-markup">&lt;ul class=&quot;pgs-action-link-list fa-ul&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                <div class="spacer-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="list-inline" class="page-header">Action Link List (Inline)</h2>
+                    <div class="indent">
+                        <div class="code-example shadow-3">
+                            <ul class="list-inline pgs-action-link-list fa-ul">
+                                <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Search All Programs of Study</a></li>
+                                <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Browse Class Schedules</a></li>
+                                <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Open Course Catalog</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Basic Code and Classes:</h3>
+                                <p>The code is the same as the <strong>Action Link List</strong> but you will need to add <code>.list-inline</code> to the <code>&lt;ul&gt;</code> element.</p>
+                                <pre><code class="language-markup">&lt;ul class=&quot;list-inline pgs-action-link-list fa-ul&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;...&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;...&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+                                <div class="spacer-2"></div>
+                                <ul>
+                                    <li>You can also add <code>.no-margin</code> to the <code>&lt;ul&gt;</code> element to remove extra margins from the left and bottom of the list</li>
+                                </ul>
+                                <div class="spacer-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="list-center" class="page-header">Action Link List (Inline - Centered)</h2>
+                    <div class="indent">
+                        <div class="code-example shadow-3">
+                            <ul class="list-inline pgs-action-link-list pgs-action-link-list--center fa-ul">
+                                <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Search All Programs of Study</a></li>
+                                <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Browse Class Schedules</a></li>
+                                <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Open Course Catalog</a></li>
+                            </ul>
+                        </div>
+                        <div class="row>
+                            <div class="col-md-12">
+                                <h3>Basic Code and Classes:</h3>
+                                <p>The code is the same as the <strong>Action Link List Inline</strong> but you will need to add <code>.pgs-action-link-list--center</code> to the <code>&lt;ul&gt;</code> element.</p>
+                                <pre><code class="language-markup">&lt;ul class=&quot;list-inline pgs-action-link-list pgs-action-link-list--center fa-ul&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pgs-action-link&quot; href=&quot;[URL]&quot;&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;span class=&quot;ico fas fa-chevron-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                <div class="spacer-2"></div>
+                                <ul>
+                                    <li>You can also add <code>.no-margin</code> to the <code>&lt;ul&gt;</code> element to remove extra margins from the left and bottom of the list</li>
+                                </ul>
+                                <div class="spacer-4"></div>
+                        </div>
+                    </div>
+                </div>

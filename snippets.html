@@ -1,0 +1,42 @@
+---
+layout: default
+title: Snippets
+---
+
+<div id="top" class="outsideContainer">
+  <div class="container">
+    <section>
+      <div class="text-center h2sectionTitle">
+        <h1 class="serif csecondary-font cb-title-xl" id="modules">{{ page.title }}</h1>
+        <ul class="list-inline h5">
+          {% include snippets-ul.html %}
+        </ul>
+      </div>
+    </section>
+  </div> <!-- /container -->
+</div> <!-- /outsideContainer -->
+<div class="white-space-2"></div>
+
+
+<!-- Outside Container -->
+<div class="outsideContainer">
+  <div class="container">
+    {% include snippets/seven-college-listings.html %}
+  </div>
+</div> 
+
+{% include back-to-top.html %}
+
+<div class="outsideContainer">
+  <div class="container">
+    {% include snippets/mini-college-buttons.html %}
+  </div> <!-- /container -->
+</div> <!-- /outsideContainer -->
+
+{% include back-to-top.html %}
+
+<div class="outsideContainer">
+  <div class="container">
+    {% include snippets/gps-career-paths.html %}
+  </div> <!-- /container -->
+</div> <!-- /outsideContainer -->

@@ -1,0 +1,119 @@
+<section id="hero-split-section">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="page-header text-csecondary">Hero Split Section</h2>
+      <div class="extra-padding alert alert-danger"><strong>Only for full width page layouts.</strong> Not for pages with sidebars.</div>
+      <p class="lead"><strong>Hero Split Sections</strong> allow for large hero images and text to wrap across the entire screen, outside of the page container. This component includes:</p>
+      <ul>
+          <li>an area for text/content</li>
+          <li>an area for a responsive hero image</li>
+      </ul>
+  <br>
+  <div class="shadow-3 code-example">
+  <div class="full-width-row">
+    <section class="hero-split-section cprimary-lt">
+      <div class="col-sm-6 hero-split-photo"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-6 hero-split-content">
+            <h2 class="cb-title-xl">Employee Success</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+            <a href="#" class="button cprimary">Button</a>
+          </div>
+        </div>
+        <!-- end of row-->
+      </div>
+      <!-- end container -->
+    </section>
+  </div>
+  <!-- end of full-width-row -->
+</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+        <h3>Basic Code and Classes:</h3>
+      <pre><code class="language-markup">&lt;div class=&quot;full-width-row&quot;&gt;
+    &lt;section class=&quot;hero-split-section cprimary-lt&quot;&gt;
+        &lt;div class=&quot;col-sm-6 hero-split-photo&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-sm-6 col-sm-offset-6 hero-split-content&quot;&gt;
+                    &lt;!-- Content starts here --&gt;
+                        &lt;h2 class=&quot;cb-title-xl&quot;&gt;Employee Success&lt;/h2&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.&lt;/p&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;button cprimary&quot;&gt;Button&lt;/a&gt;
+                    &lt;!-- Content ends here --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+<div class="spacer-2"></div>
+<ul>
+    <li>Use the <a href="grid.html">bootstrap grid column</a> classes to control where the "split" occurs across this width of the page. This example uses <code>.col-sm-6</code> for the width of the photo, and <code>.col-sm-6</code> for the width of the content area.</li>
+    <li>You can put any HTML content inside <code>.hero-split-content</code></li>
+    </ul>
+
+<div class="alert extra-padding alert-info">
+    <h3><span class="ico fas fa-pencil-alt ico-left" aria-hidden="true"></span>Style This Component</h3>
+    <p>Notice how variations to the layout above can be made by customizing individual PEGASUS elements like the following:</p>
+    <div class="spacer-1"></div>
+    <ul>
+        <li>The <a href="colors.html">color of the background</a> of the text (<code>.bg-cprimary-lt</code> is used in this example)</li>
+        <li>The <a href="typography.html#heading-styles">size and style of the heading</a> (<code>h2.cb-title-xl</code> is used in this example)</li>
+        <li>The <a href="buttons.html">style, color or size of button</a> (<code>.button-md.bg-cprimary-lt</code> is used in this example)</li>
+    </ul>
+</div>
+
+  </div>
+  <div class="spacer-4"></div>
+  <h3>Another example</h3>
+  <div class="shadow-3 code-example">
+  <div class="full-width-row">
+    <section class="hero-split-section cprimary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 hero-split-content">
+            <h2 class="cb-title-xl">Employee Success</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+          </div>
+        </div>
+        <!-- end of row-->
+      </div>
+      <!-- end container -->
+      <div class="col-sm-3 hero-split-photo col-sm-offset-9"></div>
+    </section>
+  </div>
+  <!-- end full-width-row -->
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <pre>
+<code class="language-markup">&lt;div class=&quot;full-width-row&quot;&gt;
+    &lt;section class=&quot;hero-split-section cprimary&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-sm-9 hero-split-content&quot;&gt;
+                    &lt;!-- Content starts here--&gt;
+                    &lt;h2 class=&quot;cb-title-xl&quot;&gt;Employee Success&lt;/h2&gt;
+                    &lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.&lt;/p&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet veniam.&lt;/p&gt;
+                    &lt;!-- Content ends here--&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-3 hero-split-photo col-sm-offset-9&quot;&gt;&lt;/div&gt;
+    &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+<div class="spacer-2"></div>
+<ul>
+    <li>This example uses <code>.col-sm-9</code> for the width of the content area, and <code>.col-sm-3</code> for the width of the photo.</li>
+    <li><strong>Be aware</strong> that you will also need to add an <a href="http://getbootstrap.com/css/#grid-offsetting" target="_blank">offset class</a> to whichever column is to appear at the right, and the width of that offset class is to be the same as the width of the column that appears at the left. So in this example, the column that appears to the right (the photo) needs to also have <code>.col-sm-offset-9</code> which is the same width as the column on the left (the content area) which has <code>.col-sm-9</code>.</li>
+</ul>
+    </div>
+    {% include back-to-top.html %}
+</div> <!-- /subsection3 -->
+</section>

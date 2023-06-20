@@ -1,0 +1,77 @@
+typography:
+  - title: Heading Styles
+    subfolderitems:
+      - class: h1
+        when: Use to style any text similar to <code>&lt;h1&gt;</code>
+        notes:
+      - class: h2
+        when: Use to style any text similar to <code>&lt;h2&gt;</code>
+        notes:
+      - class: h3
+        when: Use to style any text similar to <code>&lt;h3&gt;</code>
+        notes:
+      - class: h4
+        when: Use to style any text similar to <code>&lt;h4&gt;</code>
+        notes:
+      - class: h5
+        when: Use to style any text similar to <code>&lt;h5&gt;</code>
+        notes:
+      - class: h6
+        when: Use to style any text similar to <code>&lt;h6&gt;</code>
+        notes:
+      - class: page-header
+        when: Use when wanting to style a heading with full-width underline
+        notes: Must be applied to any heading element
+  - title: Body Copy Styles
+    subfolderitems:
+      - class: mont
+        when: Use to apply <code class="language-css">font-family:Mont</code> to any text
+        notes:
+      - class: lead
+        when: Use when style introductory text at the beginning of any given page
+        notes: Applies <code class="language-css">font-weight:300</code> and <code class="language-css">font-family:1.5em</code> (24px)
+      - class: small
+        when: Use to style any text as a footnote
+        notes: Applies <code class="language-css">font-size:.875em</code> (14px)
+      - class: indent
+        when: Use to indent text without the use of <code>&lt;blockquote&gt;</code>
+        notes: Applies <code class="language-css">padding:1.5rem</code> and <code class="language-css">margin:1.5rem</code>
+  - title: Font Weight
+    subfolderitems:
+      - class: font-light
+        when:
+        notes: Applies <code class="language-css">font-weight:300</code> (or light) to Open Sans
+      - class: font-semibold
+        when: 
+        notes: Applies <code class="language-css">font-weight:600</code> (or semibold) to Open Sans
+      - class: font-bold
+        when:
+        notes: Applies <code class="language-css">font-weight:700</code> (or bold) to Open Sans
+  - title: Text Alignment
+    subfolderitems:
+      - class: text-left
+        when: Use to align text to the left
+        notes: Applies <code class="language-css">text-align:left;</code>
+      - class: text-right
+        when: Use to align text to the right
+        notes: Applies <code class="language-css">text-align:right;</code>
+      - class: text-center
+        when: Use to align text to the center
+        notes: Applies <code class="language-css">text-align:center;</code>
+      - class: text-justify
+        when: Use to justify text
+        notes: Applies <code class="language-css">text-align:justify;</code>
+      - class: text-nowrap
+        when: Use to force text to not wrap
+        notes: Applies <code class="language-css">white-space:nowrap;</code>
+  - title: Transform Cases
+    subfolderitems:
+      - class: text-lowercase
+        when: Use to transform case to all lowercase
+        notes: Applies <code class="language-css">text-transform:lowercase;</code>
+      - class: text-uppercase
+        when: Use to transform case to all uppercase
+        notes: Applies <code class="language-css">text-transform:uppercase;</code>
+      - class: text-capitalize
+        when: Use to capitalize the first letter of every word
+        notes: Applies <code class="language-css">text-transform:capitalize;</code>

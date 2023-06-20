@@ -1,0 +1,230 @@
+---
+layout: default-level2
+title: Award Cards
+h1: Components
+permalink: components/award-cards.html
+---
+
+
+<div class="subsection3" id="award-cards">
+    <div class="row">
+        <div class="col-md-8">
+            <p class="lead">These are for use when displaying degree or certificate information.</p>
+        </div>
+    </div>
+
+
+
+    <div class="subsection4">
+        <h3>Degree Award Cards</h3>
+        <div class="row">
+            <div class="col-md-8">
+            </div>
+        </div>
+        <div class="code-example shadow-3">
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card award-box shadow-1">
+                                <div class="text-cprimary-dk card-header award-degree bg-cprimary-lt">
+                                    <div class="row">
+                                        <div class="col-xs-8 card-header-left">Card Header</div>
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="height-sm-50">
+                                        <h3 class="h4 card-title">Award Title</h3>
+                                    </div>
+                                    <ul class="list-icons">
+                                        <li class="clock-o">
+                                            <strong>4 <a href="#semesters">semesters</a></strong> to complete<br /></li>
+                                        <li class="money">
+                                            <strong>$3,540</strong> <a href="#tuition">tuition</a></li>
+                                    </ul>
+                                    <a class="button bg-cprimary  button-mn button-block" href="https://www1.dcccd.edu/catalog/programs/degree.cfm?degree=aas.acct&loc=DCCCD">View Degree Plan<span class="sr-only"> for Accounting
+                                            AAS</span>
+                                        <span class="ico fas fa-arrow-circle-right ico-right" aria-hidden="true"></span></a>
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="card-footer-title">Campuses:</h4>
+                                    <ul class="list-inline">
+                                        <li class="BHC">Brookhaven</li>
+                                        <li class="CVC">Cedar Valley</li>
+                                        <li class="EFC">Eastfield</li>
+                                        <li class="ECC">El Centro</li>
+                                        <li class="MVC">Mountain View</li>
+                                        <li class="NLC">North Lake</li>
+                                        <li class="RLC">Richland</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <ul>
+                    <li>Code below must be nested inside of a bootstrap column (either <code>&lt;div class=&quot;col-sm-12&quot;&gt;</code> or <code>&lt;div class=&quot;col-sm-6&quot;&gt;</code>)</li>
+                    <li>"Card Header" divs for degrees should be <code>.bg-cprimary-lt</code> and <code>.text-cprimary-dk</code></li>
+                    <li>The type of degree should be written out in the "Card Header" div. For example, "Degree, Associate of Applied Science" for AAS, or "Degree, Associate of Science" for AS, etc.</li>
+                    <li>The "Award Title" should reflect what the title of the award is in the catalog</li>
+                    <li>The "Award Title" is wrapped inside of a div with a <a href="utilities.html#responsive-height-classes">special height class</a> that controls its height at various breakpoints, so all of the cards in a given sub-listing are sized uniformly (though this is more relevant to Certificate cards than Degree cards)</li>
+                    <li>Degrees do not have Gainful Employment Information so there is no link for it.</li>
+                    <li>The number of listed colleges will vary depending on the award itself.</li>
+                    <li>The college listings area is wrapped inside of a div with a <a href="utilities.html#responsive-height-classes">special height class</a> that controls its height at various breakpoints, so all of the cards in a given
+                        sub-listing are sized uniformly (though this is more relevant to Certificate cards than Degree cards)</li>
+                </ul>
+                <div class="alert alert-warning">
+                    <p><strong><span class="ico fas fa-universal-access" aria-hidden="true"></span> Accessibility Note!</strong> In the code for the "View Degree Plan" button we have added an extra piece of code to be read by screen readers only:
+                        <code>View Degree Plan&lt;span class=&quot;sr-only&quot;&gt; for Accounting AAS&lt;/span&gt;</code></p>
+                </div>
+            </div>
+        </div>
+
+        <h4>HTML Code (for Degree Cards)</h4>
+
+  <pre><code class="language-markup">&lt;div class=&quot;card award-box shadow-1&quot;&gt;
+    &lt;div class=&quot;text-cprimary-dk card-header award-degree bg-cprimary-lt&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-8 card-header-left&quot;&gt;[DEGREE TYPE]&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-block&quot;&gt;
+      &lt;div class=&quot;height-sm-50&quot;&gt;
+        &lt;h3 class=&quot;h4 card-title&quot;&gt;[AWARD TITLE]&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;ul class=&quot;list-icons&quot;&gt;
+      &lt;li class=&quot;briefcase&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;Gainful Employment Information &lt;span class=&quot;sr-only&quot;&gt;for [AWARD TITLE]&lt;/span&gt;&lt;/a&gt;
+      &lt;/li&gt;
+        &lt;li class=&quot;clock-o&quot;&gt;
+           &lt;strong&gt;[4] &lt;a href=&quot;#semesters&quot;&gt;semesters&lt;/a&gt;&lt;/strong&gt; to complete&lt;br/&gt;&lt;/li&gt;
+        &lt;li class=&quot;money&quot;&gt;
+           &lt;strong&gt;[$3,540]&lt;/strong&gt; &lt;a href=&quot;#tuition&quot;&gt;tuition&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;a class=&quot;button bg-cprimary button-mn button-block&quot; href=&quot;[DEGREE PLAN IN CATALOG]&quot;&gt;View Degree Plan&lt;span class=&quot;sr-only&quot;&gt; for [AWARD TITLE]&lt;/span&gt;
+        &lt;span class=&quot;ico fas fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt; &lt;/div&gt;
+      &lt;div class=&quot;card-footer&quot;&gt;
+        &lt;h4 class=&quot;card-footer-title&quot;&gt;Campuses:&lt;/h4&gt;
+        &lt;ul class=&quot;list-inline&quot;&gt;
+          &lt;li class=&quot;BHC&quot;&gt;Brookhaven&lt;/li&gt;
+          &lt;li class=&quot;CVC&quot;&gt;Cedar Valley&lt;/li&gt;
+          &lt;li class=&quot;EFC&quot;&gt;Eastfield&lt;/li&gt;
+          &lt;li class=&quot;ECC&quot;&gt;El Centro&lt;/li&gt;
+          &lt;li class=&quot;MVC&quot;&gt;Mountain View&lt;/li&gt;
+          &lt;li class=&quot;NLC&quot;&gt;North Lake&lt;/li&gt;
+          &lt;li class=&quot;RLC&quot;&gt;Richland&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+
+                </div>
+
+                <div class="subsection4">
+                <h3>Certificate Award Cards</h3>
+                <div class="code-example shadow-3">
+
+                <div class="row">
+                <div class="col-sm-8">
+                <div class="row">
+                <div class="col-sm-6">
+                <div class="card award-box shadow-1">
+                              <div class="csecondary-dk-font card-header award-certificate bg-csecondary-lt">
+                                 <div class="row">
+                                    <div class="col-xs-8 card-header-left">Certificate, Level 1 </div>
+                                 </div>
+                              </div>
+                              <div class="card-block">
+                                 <div class="height-sm-100 height-md-75 height-lg-50">
+                                    <h3 class="h4 card-title">Accounting Clerk Certificate</h3>
+                                 </div>
+                                 <ul class="list-icons">
+                                    <li class="briefcase">
+                                       <a href="https://www1.dcccd.edu/catalog/programs/degree_gei.cfm?a=407&amp;loc=DCCCD" >Gainful Employment Information <span class="sr-only">for Accounting Clerk Certificate</span></a></li>
+                                    <li class="clock-o">
+                                       <strong>1 <a href="#semesters">semester</a></strong> to complete<br></li>
+                                    <li class="money">
+                                       <strong>$1,062</strong> <a href="#tuition">tuition</a></li>
+                                 </ul>
+                                 <a class="button bg-cprimary  button-mn button-block" href="https://www1.dcccd.edu/catalog/programs/degree.cfm?degree=cert.acct.clerk&amp;loc=DCCCD" >View Degree Plan<span class="sr-only"> for Accounting Clerk Certificate</span>
+                                    <span class="ico fas fa-arrow-circle-right ico-right" aria-hidden="true"></span></a> </div>
+                              <div class="card-footer height-sm-100">
+                                 <h4 class="card-footer-title">Campuses:</h4>
+                                 <ul class="list-inline">
+                                   <li class="BHC">Brookhaven</li>
+                                   <li class="CVC">Cedar Valley</li>
+                                   <li class="EFC">Eastfield</li>
+                                   <li class="ECC">El Centro</li>
+                                   <li class="MVC">Mountain View</li>
+                                   <li class="NLC">North Lake</li>
+                                   <li class="RLC">Richland</li>
+                                 </ul>
+                              </div>
+                           </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+                </div>
+                <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                <ul>
+                <li>Code below must be nested inside of a bootstrap column (<code>&lt;div class=&quot;col-sm-6&quot;&gt;</code>)</li>
+                <li>"Card Header" divs for certificates should be <code>.bg-csecondary-lt</code> and <code>.secondary-dk-font</code></li>
+                <li>The type of certificate should be written out in the "Card Header" div. For example, "Certificate, Level 1," or "Certificate, Advanced Technical"</li>
+                <li>The "Award Title" should reflect what the title of the award is in the catalog</li>
+                <li>The "Award Title" is wrapped inside of a div with a <a href="utilities.html#responsive-height-classes">special height class</a> that controls its height at various breakpoints, so all of the cards in a given sub-listing are sized uniformly</li>
+                <li>The number of listed colleges will vary depending on the award itself.</li>
+                <li>The college listings area is wrapped inside of a div with a <a href="utilities.html#responsive-height-classes">special height class</a> that controls its height at various breakpoints, so all of the cards in a given sub-listing are sized uniformly</li>
+                </ul>
+                <div class="alert alert-warning">
+                  <p><strong><span class="ico fas fa-universal-access" aria-hidden="true"></span> Accessibility Note!</strong> In the code for the "Gainful Employment Information" link we have added an extra piece of code to be read by screen readers only: <code>&lt;span class=&quot;sr-only&quot;&gt;for Accounting Clerk Certificate&lt;/span&gt;</code></p>
+                </div>
+                <div class="alert alert-warning">
+                  <p><strong><span class="ico fas fa-universal-access" aria-hidden="true"></span> Accessibility Note!</strong> In the code for the "View Degree Plan" button we have added an extra piece of code to be read by screen readers only: <code>View Degree Plan&lt;span class=&quot;sr-only&quot;&gt; for Accounting AAS&lt;/span&gt;</code></p>
+                </div>
+                </div>
+                </div>
+
+                <h4>HTML Code</h4>
+  <pre><code class="language-markup">&lt;div class=&quot;card award-box shadow-1&quot;&gt;
+    &lt;div class=&quot;csecondary-dk-font card-header award-certificate bg-csecondary-lt&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-8 card-header-left&quot;&gt;[CERTIFICATE TYPE]&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-block&quot;&gt;
+      &lt;div class=&quot;height-sm-50&quot;&gt;
+        &lt;h3 class=&quot;h4 card-title&quot;&gt;[AWARD TITLE]&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;ul class=&quot;list-icons&quot;&gt;
+        &lt;li class=&quot;briefcase&quot;&gt;&lt;a href=&quot;#&quot;&gt;Gainful Employment Information &lt;span class=&quot;sr-only&quot;&gt;for [AWARD TITLE]&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;clock-o&quot;&gt;&lt;strong&gt;[4] &lt;a href=&quot;#semesters&quot;&gt;semesters&lt;/a&gt;&lt;/strong&gt; to complete&lt;br/&gt;&lt;/li&gt;
+        &lt;li class=&quot;money&quot;&gt;&lt;strong&gt;[$3,540]&lt;/strong&gt; &lt;a href=&quot;#tuition&quot;&gt;tuition&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;a class=&quot;button bg-cprimary button-mn button-block&quot; href=&quot;[DEGREE PLAN IN CATALOG]&quot;&gt;View Degree Plan&lt;span class=&quot;sr-only&quot;&gt; for [AWARD TITLE]&lt;/span&gt; &lt;span class=&quot;ico fas fa-arrow-circle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt; &lt;/div&gt;
+      &lt;div class=&quot;card-footer&quot;&gt;
+        &lt;h4 class=&quot;card-footer-title&quot;&gt;Campuses:&lt;/h4&gt;
+        &lt;ul class=&quot;list-inline&quot;&gt;
+          &lt;li class=&quot;BHC&quot;&gt;Brookhaven&lt;/li&gt;
+          &lt;li class=&quot;CVC&quot;&gt;Cedar Valley&lt;/li&gt;
+          &lt;li class=&quot;EFC&quot;&gt;Eastfield&lt;/li&gt;
+          &lt;li class=&quot;ECC&quot;&gt;El Centro&lt;/li&gt;
+          &lt;li class=&quot;MVC&quot;&gt;Mountain View&lt;/li&gt;
+          &lt;li class=&quot;NLC&quot;&gt;North Lake&lt;/li&gt;
+          &lt;li class=&quot;RLC&quot;&gt;Richland&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+
+                </div>
+                </div>
+
+                {% include components/nav.html %}

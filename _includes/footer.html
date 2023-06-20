@@ -1,0 +1,55 @@
+<footer id="l-footer" class="bg-cprimary-dk">
+    <h2 class="sr-only">Footer</h2>
+    <div id="l-footer__main" class="bg-cprimary">
+        <div class="container">
+            <div class="row">
+                <div class="l-footer__main__all-items col-md-12">
+                    <div class="row">
+                        {% for item in site.data.sitemap.toc %}
+                        <nav class="col-md-2 col-xs-6">
+                            <h3 class="l-footer__main__heading">{{ item.title }}</h3>
+                                <ul>
+                                    {% for entry in item.subfolderitems %}
+                                    <li><a href="{{ site.baseurl }}{{ entry.url }}"">{{ entry.page }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                        </nav>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="l-footer__contact" class="bg-cprimary-dk">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="list-inline  text-center">
+                        {% for item in site.data.sitemap.toc2 %}
+                            <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="l-footer__fine-print" class="bg-cblack">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 l-footer__fine-print__copyright">
+                    © <span class="cpyyear">2020</span> <strong>Dallas College</strong>
+                </div>
+                <div class="col-lg-10 col-md-9 l-footer__fine-print__links">
+                    <ul class="list-inline">
+                        <li><a class="track-footer" href="https://www.dallascollege.edu/about/legal/accessibility/pages/default.aspx">Report an Accessibility Issue</a></li>
+                        <li><a class="track-footer" href="https://www.dallascollege.edu/about/legal/pages/default.aspx">Legal Notices</a></li>
+                        <li><a class="track-footer" href="https://www.dallascollege.edu/about/financial/transparency/pages/default.aspx">Financial Transparency</a></li>
+                        <li><a class="track-footer" href="https://www.dallascollege.edu/website/privacy-security.aspx">Privacy &amp; Security Policy</a></li>
+                        <li><a class="track-footer" href="https://www1.dallascollege.edu/fraudhotline/index.cfm">Report Fraud</a></li>
+                        <li><a class="track-footer" href="https://www.dallascollege.edu/website/pages/sitemap.aspx">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

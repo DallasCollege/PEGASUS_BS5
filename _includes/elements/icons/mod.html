@@ -1,0 +1,97 @@
+                <section>
+                    <div class="subsection3">
+                        <h2 class="page-header text-csecondary" id="mod">Modifying Icons</h2>
+                        <h3>Modifying Color</h3>
+                        <p>Icons are a type of font so can be styled like any other block of text. You can change the color of icons by applying any of <code>.text-c*</code> classes to the <code>&lt;span&gt;</code> itself (or a parent element):</p>
+                        <div class="row extra-space text-center">
+                            <div class="col-sm-4">
+                                <div class="code-example shadow-3 text-center">
+                                    <span aria-hidden="true" class="ico fas fa-user-circle text-cprimary"></span> Login
+                                </div>
+                                <code class="lead">.text-cprimary</code>
+                                <pre class="small text-left"><code class="language-markup">&lt;span aria-hidden="true" class="ico fas fa-user-circle text-cprimary"&gt;&lt;/span&gt; Login</code></pre>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="code-example shadow-3 text-center">
+                                    <span aria-hidden="true" class="ico fas fa-user-circle text-csecondary"></span> Login
+                                </div>
+                                <code class="lead">.text-csecondary</code>
+                                <pre class="small text-left"><code class="language-markup">&lt;span aria-hidden="true" class="ico fas fa-user-circle text-csecondary"&gt;&lt;/span&gt; Login</code></pre>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="code-example shadow-3 text-center">
+                                    <span aria-hidden="true" class="ico fas fa-user-circle text-cgrey"></span> Login
+                                </div>
+                                <code class="lead">.text-cgrey</code>
+                                <pre class="small text-left"><code class="language-markup">&lt;span aria-hidden="true" class="ico fas fa-user-circle text-cgrey"&gt;&lt;/span&gt; Login</code></pre>
+                            </div>
+                        </div>
+                        <div class="spacer-3"></div>
+                        <h3>Modifying Size</h3>
+                        <p>You can change the size of icons by applying any of the following classes to the <code>&lt;span&gt;</code> itself:</p>
+                        <div class="row extra-space text-center">
+                            <div class="col-sm-12">
+                                <div class="code-example shadow-3 text-center">
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-lg"></span>
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-2x"></span>
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-3x"></span>
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-4x"></span>
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-5x"></span>
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-6x"></span>
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-7x"></span>
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-8x"></span>
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-9x"></span>
+                                    <span aria-hidden="true" class="ico fas fa-user-circle icon-10x"></span>
+                                </div>
+                                <pre><code class="language-markup">&lt;span aria-hidden="true" class="ico fas fa-user-circle icon-2x"&gt;&lt;/span&gt;</code></pre>
+                                <p class="col-count-2 text-left"><code>.icon-lg</code> will increase the font size to 1.33em<br>
+                                    <code>.icon-2x</code> to 2em</br>
+                                    <code>.icon-3x</code> to 3em</br>
+                                    <code>.icon-4x</code> to 4em</br>
+                                    <code>.icon-5x</code> to 5em</br>
+                                    <code>.icon-6x</code> to 6em</br>
+                                    <code>.icon-7x</code> to 7em</br>
+                                    <code>.icon-8x</code> to 8em</br>
+                                    <code>.icon-9x</code> to 9em</br>
+                                    <code>.icon-10x</code> to 10em</br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spacer-3"></div>
+                        <h3>Modifying Position</h3>
+                        <p>Whether you are using icons in a button or inline next to text, you can apply either of the following classes to add appropriate spacing:</p>
+                        <ul>
+                            <li><code>.ico-left</code> - adds extra margin to the right side of an icon</li>
+                            <li><code>.ico-right</code> - adds extra margin to the left side of an icon</li>
+                        </ul>
+                        <div class="row extra-space text-center">
+                            <div class="col-sm-4">
+                                <div class="code-example text-center bg-cgrey-05">
+                                    <p><a href="#"><span class="ico fas fa-check" aria-hidden="true"></span>Apply Now!</a></p>
+                                </div>
+                                <p class="lead">No position class</p>
+                                <pre class="small text-left"><code class="language-markup">&lt;a href=&quot;#&quot;&gt;
+    &lt;span class=&quot;ico fas fa-check&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Apply Now!
+&lt;/a&gt;</code></pre>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="code-example shadow-3 text-center">
+                                    <p><a href="#"><span class="ico fas fa-check ico-left" aria-hidden="true"></span>Apply Now!</a></p>
+                                </div>
+                                <p class="lead"><code>.ico-left</code></p>
+                                <pre class="small text-left"><code class="language-markup">&lt;a href=&quot;#&quot;&gt;
+    &lt;span class=&quot;ico fas fa-check ico-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;Apply Now!
+&lt;/a&gt;</code></pre>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="code-example shadow-3 text-center">
+                                    <p><a href="#">Apply Now!<span class="ico fas fa-check ico-right" aria-hidden="true"></span></a></p>
+                                </div>
+                                <p class="lead"><code>.ico-right</code></p>
+                                <pre class="small text-left"><code class="language-markup">&lt;a href=&quot;#&quot;&gt;
+    Apply Now!&lt;span class=&quot;ico fas fa-check ico-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+                            </div>
+                        <div class="spacer-3"></div>
+                    </div>
+                </section>

@@ -1,0 +1,23 @@
+---
+layout: default-level2
+title: Patterns
+cat: Patterns
+permalink: patterns/index.html
+---
+
+<p class="lead">{% include _content/patterns-intro.html %}</p>
+<div class="row text-center">
+{% for item in site.data.sitemap.toc %}
+    {% for entry in item.subfolderitems %}
+        {% if entry.url contains "patterns" %}
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                <a href="{{ site.baseurl }}{{ entry.url }}"">
+                    <img src="{{ site.baseurl }}images/menu/pegasus-menu-{{ entry.slug }}-400x400.png" class="img-responsive" alt=""/>
+                    <span class="text-center h5">{{ entry.page }}</span>
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</div>
+<div class="spacer-4"></div>

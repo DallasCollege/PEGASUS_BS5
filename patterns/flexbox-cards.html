@@ -1,0 +1,110 @@
+---
+layout: default-level2
+title: Flexbox Cards &ndash; Components
+h1: Components
+permalink: patterns/flexbox-cards.html
+---
+
+
+                <div class="subsection3" id="flexbox-cards">
+                    <p class="lead">Cards can be used individually within the grid or can be utilized in rows with <code>.card-group</code>.</p>
+                    <p>They are designed to display an image, title, text and a link while maintaining an equal height across the row.</p>
+                    <div class="subsection3">
+                        <h3>Single Card</h3>
+                        <p>This is a single card wrapped in 4 columns.</p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="shadow-3 code-example">
+                                    <div class="card">
+                                        <img class="card-img-top img-responsive" src="https://via.placeholder.com/575x250" alt="">
+                                        <div class="card-block">
+                                            <span class="card-title"><a href="#">Financial Aid Step by Step</a></span>
+                                            <p class="card-text">Browse online job listings for full- and part-time job opportunities in the Dallas metroplex, or post your resumé and let employers find you. Specialized sites also are available for health care students and internship seekers.</p>
+                                            <span class="link"><a href="#" class="button bg-cprimary button-mn">Link</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre><code class="language-markup">&lt;div class="card"&gt;
+    &lt;img class="card-img-top img-responsive" src="https://via.placeholder.com/575x250" alt=""&gt;
+    &lt;div class="card-block"&gt;
+        &lt;span class="card-title"&gt;&lt;a href="#"&gt;Financial Aid Step by Step&lt;/a&gt;&lt;/span&gt;
+        &lt;p class="card-text">Browse online job listings for full- and part-time job opportunities in the Dallas metroplex, or post your resumé and let employers find you. Specialized sites also are available for health care students and internship seekers.&lt;/p&gt;
+        &lt;span class="link"&gt;&lt;a href="#" class="button bg-cprimary button-mn"&gt;Link&lt;/a&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                    </div>
+
+                    <div class="subsection3">
+                        <h3>Card Group</h3>
+                        <p>Wrapping cards in a <code>.card-group</code> groups the cards in a row with equal heights, no matter what content is included in each card.</p>
+                        <p>In theory you can add as many cards to a group as you'd like but in the Dallas College site, no more than four or five cards are recommended in each group or row.</p>
+                        <div class="code-example shadow-3">
+                            <div class="card-group">
+                                <div class="card shadow-1">
+                                    <img class="card-img-top img-responsive" src="https://via.placeholder.com/575x250" alt="">
+                                    <div class="card-block">
+                                        <span class="card-title"><a href="#">Financial Aid Step by Step</a></span>
+                                        <p class="card-text"><a href="#">Browse online job listings</a> for full- and part-time job opportunities in the Dallas metroplex, or post your resumé and let employers find you. Specialized sites also are available for
+                                            health care students and internship seekers.</p>
+                                        <span class="link"><a href="#" class="button bg-cprimary button-mn">Link</a></span>
+                                    </div>
+                                </div>
+                                <div class="card cprimary-lt shadow-2">
+                                    <img class="card-img-top img-responsive" src="https://via.placeholder.com/575x250" alt="">
+                                    <div class="card-block">
+                                        <h2 class="card-title"><a href="#">Financial Aid Step by Step</a></h2>
+                                        <p class="card-text">Career services include individual <a href="#">career counseling</a>, career assessment, computerized career guidance programs, resume assistance and mock interviewing. Browse online job listings for
+                                            full- and part-time job opportunities in the Dallas metroplex, or post your resumé and let employers find you. Specialized sites also are available for health care students and internship seekers.</p>
+                                        <span class="link"><a href="#" class="button bg-cprimary button-mn">Don't Use Learn More</a></span>
+                                    </div>
+                                </div>
+                                <div class="card bg-cprimary shadow-3">
+                                    <img class="card-img-top img-responsive" src="https://via.placeholder.com/575x250" alt="">
+                                    <div class="card-block">
+                                        <h3 class="card-title">Financial Aid Step by Step</h3>
+                                        <p class="card-text">The campuses of Dallas College offer numerous <a href="#">career fairs</a> and on-campus recruiting events.</p>
+                                        <span class="link"><a href="#" class="button bg-cwhite button-mn">Read the Step by Step <span aria-hidden="true" class="ico fab fa-youtube ico-right"></span> </a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Notice how you can change the card with a number of variables, including applying a light color with <code>.cprimary-lt</code>, adding a button for your bottom link using <code>button bg-cprimary button-mn</code>, applying shadows with
+                            <code>.shadow-1</code>, <code>.shadow-2</code> or <code>.shadow-3</code>.</p>
+                        <pre><code class="language-markup">&lt;div class="card-group"&gt;
+
+    &lt;div class="card shadow-1"&gt;
+        &lt;img class="card-img-top img-responsive" src="https://via.placeholder.com/575x250" alt=""&gt;
+        &lt;div class="card-block"&gt;
+            &lt;span class="card-title"&gt;&lt;a href="#"&gt;Financial Aid Step by Step&lt;/a&gt;&lt;/span&gt;
+            &lt;p class="card-text"&gt;Browse online job listings ...  and internship seekers.&lt;/p&gt;
+            &lt;span class="link"&gt;&lt;a href="#" class="button bg-cprimary button-mn"&gt;Link&lt;/a&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card cprimary-lt shadow-1"&gt;
+        &lt;img class="card-img-top img-responsive" src="https://via.placeholder.com/575x250" alt=""&gt;
+        &lt;div class="card-block"&gt;
+            &lt;h2 class="card-title"&gt;&lt;a href="#"&gt;Financial Aid Step by Step&lt;/a&gt;&lt;/h2&gt;
+            &lt;p class="card-text"&gt;Career services... &lt;/p&gt;
+            &lt;span class="link"&gt;&lt;a href="#" class="button bg-cprimary button-mn"&gt;Don't Use Learn More&lt;/a&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card bg-cprimary shadow-1"&gt;
+        &lt;img class="card-img-top img-responsive" src="https://via.placeholder.com/575x250" alt=""&gt;
+        &lt;div class="card-block"&gt;
+            &lt;h3 class="card-title"&gt;Financial Aid Step by Step&lt;/h3&gt;
+            &lt;p class="card-text"&gt;The campuses of Dallas College offer numerous career fairs and on-campus recruiting events.&lt;/p&gt;
+            &lt;span class="link"&gt;&lt;a href="#"&gt;Read the Step by Step &lt;span aria-hidden="true"  class="ico fab fa-youtube"&gt;&lt;/span&gt; &lt;/a&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                </div>
+
+                {% include patterns/nav.html %}

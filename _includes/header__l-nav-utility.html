@@ -1,0 +1,72 @@
+<div id="l-nav-utility" class="bg-cprimary-dk navbar navbar--utility-nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#resources-for" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="ico fas fa-bars fa-lg" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="resources-for">
+            <ul class="nav navbar-nav">
+                <!--
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Students<span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="track-header" href="/students/pages/future-students.aspx">Future Students</a></li>
+                        <li><a class="track-header" href="/students/pages/current-students.aspx">Current Students</a></li>
+                        <li><a class="track-header" href="/admissions/international/pages/default.aspx">International Students</a></li>
+                        <li><a class="track-header" href="/high-school-students/pages/default.aspx">High School Students &amp; Parents</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a class="track-header" href="/alumni/pages/default.aspx">Alumni</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community &amp; Business<span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="track-header" href="/community/Pages/default.aspx">Community</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a class="track-header" href="/business/pages/default.aspx">Business &amp; Industry</a></li>
+                        <li><a class="track-header" href="/business/pages/do-business-with-us.aspx">Suppliers</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a class="track-header" href="https://foundation.dallascollege.edu">Donate</a></li>
+                    </ul>
+                </li>
+                -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Governance<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      {% for item in site.data.sitemap.gov %}
+                          <li><a href="https://{{ item.url }}">{{ item.title }} <small><span class="ico-right ico fas fa-external-link-alt" aria-label="(Link to External Website)"></span></small></a></li>
+                      {% endfor %}
+                  </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Guidelines and Best Practices <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    {% include ul/guidelines-ul.html %}
+                  </ul>
+                </li> -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Tools <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      {% for item in site.data.sitemap.tools %}
+                          <li><a href="https://{{ item.url }}">{{ item.title }} <small><span class="ico-right ico fas fa-external-link-alt" aria-label="(Link to External Website)"></span></small></a></li>
+                      {% endfor %}
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cheatsheets &amp; Generators <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      {% for item in site.data.sitemap.toc2 %}
+                          <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                      {% endfor %}
+                  </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</div>

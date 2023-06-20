@@ -1,0 +1,129 @@
+---
+layout: default-level2
+title: Testimonials
+cat: Components
+permalink: components/testimonials.html
+---
+
+<section id="testimonials">
+    <p class="lead">Testimonials are to be used to highlight quotes from faculty, staff, leadership, partners and alumni any where on the website.</p>
+    <p>Testimonials come in three forms:</p>
+    <ul>
+        <li><a href="#standard"><strong>Standard Testimonials</strong></a> &ndash; the most commonly used version</li>
+        <li><a href="#small"><strong>Small Testimonials</strong></a> &ndash; for more compact implementations</li>
+        <li><a href="#mega"><strong>Mega Testimonials</strong></a> &ndash; this version focuses on the quote itself and drops the photo</li>
+        <li><a href="#showcase"><strong>Showcase Testimonials</strong></a> &ndash; this version is much more visual and is for use on higher-level landing and showcase pages</li>
+    </ul>
+</section>
+
+
+<section class="subsection3">
+  <h2 id="standard">Standard Testimonials</h2>
+  <div class="shadow-3 code-example">
+      <div class="row">
+          <div class="testimonial">
+              <div class="col-md-7 col-md-offset-1  col-md-push-4">
+                  <div class="testimonial-quote">
+                      <blockquote><span class="sr-only">&ldquo;</span>I think one of the main reasons I love working for Dallas College is that they encourage all of us to be innovative and to continuously learn new technologies that help our students be successful.&rdquo;</blockquote>
+                  </div>
+              </div>
+              <div class="col-md-4 col-md-pull-8">
+                  <div class="testimonial-photo text-center">
+                      <img class="img-circle" src="https://via.placeholder.com/300" alt="">
+                      <div class="testimonial-name">Bob Newhart</div>
+                      <div class="testimonial-titletitle">Program Coordinator</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;testimonial&quot;&gt;
+      &lt;div class=&quot;col-md-7 col-md-offset-1 col-md-push-4&quot;&gt;
+          &lt;div class=&quot;testimonial-quote&quot;&gt;
+              &lt;blockquote&gt;&lt;span class=&quot;sr-only&quot;&gt;&amp;ldquo;&lt;/span&gt;[QUOTE]&amp;rdquo;&lt;/blockquote&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4 col-md-pull-8&quot;&gt;
+          &lt;div class=&quot;testimonial-photo text-center&quot;&gt;
+              &lt;img class=&quot;img-circle&quot; src=&quot;[IMAGE LOCATION]&quot; alt=&quot;&quot;&gt;
+              &lt;div class=&quot;testimonial-name&quot;&gt;[PERSON NAME]&lt;/div&gt;
+              &lt;div class=&quot;testimonial-titletitle&quot;&gt;[PERSON TITLE]&lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</section>
+<section class="subsection3">
+<h2 id="small">Small Testimonials</h2>
+    <div class="shadow-3 code-example">
+        <div class="row">
+            <div class="testimonial testimonial-small">
+                <div class="col-sm-8 col-sm-push-3 col-sm-offset-1">
+                    <div class="testimonial-quote">
+                        <blockquote><span class="sr-only">“</span>I think one of the main reasons I love working for Dallas College is that they encourage all of us to be innovative and to continuously learn new technologies that help our students be
+                            successful.” <a href="#">Read Bob's story</a>.</blockquote>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-pull-9">
+                    <div class="testimonial-photo text-center">
+                        <img class="img-circle" src="https://via.placeholder.com/100" alt="">
+                        <div class="testimonial-name">Bob Newhart</div>
+                        <div class="testimonial-titletitle">Program Coordinator</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;testimonial testimonial-small&quot;&gt;
+        &lt;div class=&quot;col-sm-8 col-sm-push-3 col-sm-offset-1&quot;&gt;
+            &lt;div class=&quot;testimonial-quote&quot;&gt;
+                &lt;blockquote&gt;&lt;span class=&quot;sr-only&quot;&gt;&amp;ldquo;&lt;/span&gt;[QUOTE]&amp;rdquo; &lt;a href=&quot;#&quot;&gt;[LINK TEXT]&lt;/a&gt;.&lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-3 col-sm-pull-9&quot;&gt;
+            &lt;div class=&quot;testimonial-photo text-center&quot;&gt;
+                &lt;img class=&quot;img-circle&quot; src=&quot;[IMAGE LOCATION]&quot; alt=&quot;&quot;&gt;
+                &lt;div class=&quot;testimonial-name&quot;&gt;[PERSON NAME]&lt;/div&gt;
+                &lt;div class=&quot;testimonial-titletitle&quot;&gt;[PERSON TITLE]&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</section>
+
+<section class="subsection3">
+    <h2 id="mega">Mega Testimonials</h2>
+    <div class="shadow-3 code-example">
+        <div class="row">
+            <div class="testimonial testimonial--mega text-center">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="testimonial-quote">
+                        <blockquote><span class="sr-only">&ldquo;</span>I think one of the main reasons I love working for Dallas College is that they encourage all of us to be innovative and to continuously learn new technologies that help our students be successful.<span class="sr-only">&rdquo;</span></blockquote>
+                    </div>
+                    <div class="text-cgrey-60">
+                        <div class="testimonial-name">Bob Newhart</div>
+                        <div class="testimonial-titletitle">Program Coordinator</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;testimonial testimonial--mega text-center&quot;&gt;
+        &lt;div class=&quot;col-xs-10 col-xs-offset-1&quot;&gt;
+            &lt;div class=&quot;testimonial-quote&quot;&gt;
+                &lt;blockquote&gt;&lt;span class=&quot;sr-only&quot;&gt;&amp;ldquo;&lt;/span&gt;[QUOTE]&lt;span class=&quot;sr-only&quot;&gt;&amp;rdquo;&lt;/span&gt;&lt;/blockquote&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;text-cgrey-60&quot;&gt;
+                &lt;div class=&quot;testimonial-name&quot;&gt;[PERSON NAME]&lt;/div&gt;
+                &lt;div class=&quot;testimonial-titletitle&quot;&gt;[PERSON TITLE]&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</section>
+
+
+                {% include components/nav.html %}

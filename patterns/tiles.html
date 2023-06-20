@@ -1,0 +1,204 @@
+---
+layout: default-level2
+title: Tiles
+cat: Patterns
+permalink: patterns/tiles.html
+---
+
+
+
+                <div class="subsection3" id="tiles">
+                  <p class="lead"><strong>Tiles</strong> are patterns used to give visual weight and prominence to either a navigational menu or to a list of important links. Tile patterns can be customized in the following ways:</p>
+                  <ul>
+                    <li>background image can be chosen by adding custom CSS</li>
+                    <li>overlay and border colors can be modified using custom CSS</li>
+                    <li>width is determined by bootstrap column (default values offered below)</li>
+                    <li>height can be determined <a href="{{ site.baseurl }}utilities/widths-heights.html#height">responsive height classes</a> (default values offered below)</li>
+                  </ul>
+                  <div class="spacer-2"></div>
+                  <h3 class="page-header">Default Tiles</h3>
+                <div class="code-example shadow-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <a href="#" class="pgs-tile underline-inv shadow-1 height-sm-150 height-xxs-125">
+                                <span class="pgs-tile__title">Business, Hospitality and Global Trade</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <a href="#" class="pgs-tile underline-inv shadow-1 height-sm-150 height-xxs-125">
+                                <span class="pgs-tile__title">Creative Arts, Entertainment and Design</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <a href="#" class="pgs-tile underline-inv shadow-1 height-sm-150 height-xxs-125">
+                                <span class="pgs-tile__title">Education</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <a href="#" class="pgs-tile underline-inv height-sm-150 height-xxs-125">
+                                <span class="pgs-tile__title">Engineering, Technology, Mathematics and Sciences</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="row extra-space">
+                    <div class="col-md-12">
+                      <h4>Basic Code and Classes:</h4>
+                      <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-3 col-md-4 col-xs-6&quot;&gt;
+        &lt;a href=&quot;[URL]&quot; class=&quot;pgs-tile underline-inv shadow-1 height-sm-150 height-xxs-125&quot;&gt;
+            &lt;span class=&quot;pgs-tile__title&quot;&gt;Business, Hospitality and Global Trade&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-3 col-md-4 col-xs-6&quot;&gt;
+        &lt;a href=&quot;[URL]&quot; class=&quot;pgs-tile underline-inv shadow-1 height-sm-150 height-xxs-125&quot;&gt;
+            &lt;span class=&quot;pgs-tile__title&quot;&gt;Creative Arts, Entertainment and Design&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-3 col-md-4 col-xs-6&quot;&gt;
+        &lt;a href=&quot;[URL]&quot; class=&quot;pgs-tile underline-inv shadow-1 height-sm-150 height-xxs-125&quot;&gt;
+            &lt;span class=&quot;pgs-tile__title&quot;&gt;Education&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-3 col-md-4 col-xs-6&quot;&gt;
+        &lt;a href=&quot;[URL]&quot; class=&quot;pgs-tile underline-inv height-sm-150 height-xxs-125&quot;&gt;
+            &lt;span class=&quot;pgs-tile__title&quot;&gt;Engineering, Technology, Mathematics and Sciences&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                      <div class="spacer-2"></div>
+                      <ul>
+                        <li><code>.pgs-tile</code> - applied to the containing <code>&lt;a&gt;</code></li>
+                        <li><code>.pgs-tile__title</code> - applied to the <code>&lt;span&gt;</code> that includes the text of the tile</li>
+                      </ul>
+                      <div class="spacer-2"></div>
+</div>
+</div>
+<h3 class="page-header">Tiles With Custom Colors and Background Images</h3>
+<div class="code-example shadow-3">
+  <div class="row">
+      <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="pgs-tile pgs-tile--business underline-inv shadow-1 height-sm-150 height-xxs-125">
+              <span class="pgs-tile__title">Business, Hospitality and Global Trade</span>
+          </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="pgs-tile underline-inv pgs-tile--arts shadow-1 height-sm-150 height-xxs-125">
+              <span class="pgs-tile__title">Creative Arts, Entertainment and Design</span>
+          </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="pgs-tile underline-inv pgs-tile--education shadow-1 height-sm-150 height-xxs-125">
+              <span class="pgs-tile__title">Education</span>
+          </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="pgs-tile underline-inv pgs-tile--stem height-sm-150 height-xxs-125">
+              <span class="pgs-tile__title">Engineering, Technology, Mathematics and Sciences</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+<div class="row extra-space">
+  <div class="col-md-12">
+    <h4>Code and Classes:</h4>
+    <p>Notice there is an extra class <code>pgs-tile--*</code> added to each of the <code>&lt;a&gt;</code> elements. This class is what is used in the custom CSS below.</p>
+    <pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-3 col-md-4 col-xs-6&quot;&gt;
+        &lt;a href=&quot;[URL]&quot; class=&quot;pgs-tile pgs-tile--business underline-inv shadow-1 height-sm-150 height-xxs-125&quot;&gt;
+            &lt;span class=&quot;pgs-tile__title&quot;&gt;Business, Hospitality and Global Trade&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-3 col-md-4 col-xs-6&quot;&gt;
+        &lt;a href=&quot;[URL]&quot; class=&quot;pgs-tile underline-inv pgs-tile--arts shadow-1 height-sm-150 height-xxs-125&quot;&gt;
+            &lt;span class=&quot;pgs-tile__title&quot;&gt;Creative Arts, Entertainment and Design&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-3 col-md-4 col-xs-6&quot;&gt;
+        &lt;a href=&quot;[URL]&quot; class=&quot;pgs-tile underline-inv pgs-tile--education shadow-1 height-sm-150 height-xxs-125&quot;&gt;
+            &lt;span class=&quot;pgs-tile__title&quot;&gt;Education&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-3 col-md-4 col-xs-6&quot;&gt;
+        &lt;a href=&quot;[URL]&quot; class=&quot;pgs-tile underline-inv pgs-tile--stem height-sm-150 height-xxs-125&quot;&gt;
+            &lt;span class=&quot;pgs-tile__title&quot;&gt;Engineering, Technology, Mathematics and Sciences&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    <div class="spacer-2"></div>
+    <h4>Custom CSS:</h4>
+    <div class="row">
+        <div class="col-sm-8">
+    <pre><code class="language-css">  .pgs-tile--business {
+    background: linear-gradient(0deg, rgba([R], [G], [B], 0.85), rgba([R], [G], [B], 0.85)), url([IMAGE URL]);
+    border-bottom-color:[COLOR];
+}
+
+.pgs-tile--arts {
+    background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85)), url([IMAGE URL]);
+    border-bottom-color:[COLOR];
+}
+
+.pgs-tile--education {
+    background: linear-gradient(0deg, rgba(133, 45, 129, 0.85), rgba(133, 45, 129, 0.85)), url([IMAGE URL]);
+    border-bottom-color:[COLOR];
+}
+
+.pgs-tile--stem {
+    background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85)), url([IMAGE URL]);
+    border-bottom-color:[COLOR];
+}
+</code></pre>
+</div>
+<div class="col-sm-4">
+  <h5>Key</h5>
+  <p>Picking the color for the background requires knowledge of <a href="https://www.w3schools.com/cssref/func_rgba.asp"><code>rgba</code> color function</a>.</p>
+  <ul>
+      <li><code>[R]</code> - the red value 0-255</li>
+      <li><code>[G]</code> - the green value 0-255</li>
+      <li><code>[B]</code> - the blue value 0-255</li>
+      <li><code>[A]</code> - the alpha value (transparency) - 0.85 recommended</li>
+      <li><code>[IMAGE URL]</code> - the location of the image you would like to use as a background image</li>
+  </ul>
+  </div>
+</div>
+    <div class="spacer-2"></div>
+
+                    </div>
+                  </div>
+
+        </div>
+
+                {% include patterns/nav.html %}
+
+
+                <style>
+                    .pgs-tile--business {
+                        background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-business-400x300.jpg');
+                        background-size:cover;
+                        background-position:center;
+                        border-bottom-color:#249E31;
+                    }
+
+                    .pgs-tile--arts {
+                        background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-arts-400x300.jpg');
+                        background-size:cover;
+                        background-position:center;
+                        border-bottom-color:#C00D1E;
+                    }
+
+                    .pgs-tile--education {
+                        background: linear-gradient(0deg, rgba(133, 45, 129, 0.85), rgba(133, 45, 129, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-education-400x300.jpg');
+                        background-size:cover;
+                        background-position:center;
+                        border-bottom-color:#93328E;
+                    }
+
+                    .pgs-tile--stem {
+                        background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-stem-400x300.jpg');
+                        background-size:cover;
+                        background-position:center;
+                        border-bottom-color:#FF7500;
+                    }
+                </style>

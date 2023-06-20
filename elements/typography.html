@@ -1,0 +1,28 @@
+---
+layout: default-level2
+title: Typography
+permalink: elements/typography.html
+---
+
+                <!-- TYPOGRAPHY Outside Container -->
+                <div id="top">
+                    <section id="typography">
+                        <nav class="text-center">
+                            <h2 class="sr-only">On This Page:</h2>
+                            <ul class="list-inline h4">
+                                {% include ul/typography-ul.html %}
+                            </ul>
+                            <a class="button button-sm bg-cprimary" href="{{ site.baseurl }}cheatsheets/typography-cheatsheet.html">View Typography Cheatsheet</a>                                                        
+                        </nav>
+                    </section>
+                </div> <!-- /outsideContainer -->
+
+                {% include elements/typography/typefaces.html %}
+
+                {% include elements/typography/heading-styles.html %}
+
+                {% include elements/typography/body-copy.html %}
+
+                {% include elements/typography/lists.html %}
+
+                {% include elements/typography/blockquote-and-indent.html %}

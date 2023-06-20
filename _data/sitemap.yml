@@ -1,0 +1,176 @@
+toc:
+  - title: Elements
+    slug: elements
+    subfolderitems:
+      - page: Typography
+        slug: typography
+        url: elements/typography.html
+      - page: Colors
+        slug: colors
+        url: elements/colors.html
+      - page: Icons
+        slug: icons
+        url: elements/icons.html
+      - page: Buttons
+        slug: buttons
+        url: elements/buttons.html
+      - page: Grid
+        slug: grid
+        url: elements/grid.html
+  - title: Patterns
+    slug: patterns
+    subfolderitems:
+      - page: Action Links
+        slug: action-links
+        url: patterns/action-links.html
+      - page: Boxes, Content and Image
+        slug: cib
+        url: patterns/cib.html
+      - page: Boxes, Data
+        slug: data-boxes
+        url: patterns/data-boxes.html
+      - page: Buttons, Grand
+        slug: grand-buttons
+        url: patterns/grand-buttons.html
+      - page: Calls-To-Action
+        slug: cta
+        url: patterns/cta.html
+      - page: Cards, Feature
+        slug: feature-cards
+        url: patterns/feature-cards.html
+      - page: Cards, Flexbox
+        slug: flexbox-cards
+        url: patterns/flexbox-cards.html
+      - page: Cards, Organizational
+        slug: org-cards
+        url: patterns/org-cards.html
+      - page: Images with Caption
+        slug: img-caption
+        url: patterns/caption.html
+      - page: Tiles
+        slug: tiles
+        url: patterns/tiles.html
+  - title: Components
+    slug: components
+    subfolderitems:
+      - page: Accordions
+        slug: accordions
+        url: components/accordions.html
+      - page: Cards, Award
+        slug: award-cards
+        url: components/award-cards.html
+      - page: Cards, Department
+        slug: dept-cards
+        url: components/dept-cards.html
+      - page: Cards, Event
+        slug: event-cards
+        url: components/event-cards.html
+      - page: Cards, People
+        slug: people-cards
+        url: components/people-cards.html
+      - page: Dropdowns, Grand
+        slug: grand-dropdowns
+        url: components/grand-dropdowns.html
+      - page: Testimonials
+        slug: testimonials
+        url: components/testimonials.html
+  - title: Templates
+    slug: templates
+    subfolderitems:
+      - page: Page&colon; Conference Landing
+        slug: conf-landing
+        url: templates/conf-landing.html
+      - page: Module&colon; Campus Accordions
+        slug: campus-accordions
+        url: templates/campus-accordions.html
+  - title: Utilities
+    slug: utilities
+    subfolderitems:
+      - page: Margins and Padding
+        slug: margins-padding
+        url: utilities/margins-padding.html
+      - page: Spacers
+        slug: spacers
+        url: utilities/spacers.html
+      - page: Shadows
+        slug: shadows
+        url: utilities/shadows.html
+      - page: Widths and Heights
+        slug: widths-heights
+        url: utilities/widths-heights.html
+  - title: Guidelines
+    slug: guidelines
+    subfolderitems:
+      - page: Banners and Graphics
+        slug: graphics
+        url: guidelines/graphics.html
+      - page: Known Issues
+        slug: issues
+        url: guidelines/issues.html
+      - page: Naming Sites and Pages
+        slug: naming
+        url: guidelines/naming.html
+      - page: Page Layouts
+        slug: page-layouts
+        url: guidelines/page-layouts.html
+      - page: Minimal Headers and Footers
+        slug: minimal
+        url: guidelines/minimal.html
+      - page: PDFs, Word Docs and Accessibility
+        slug: docs
+        url: guidelines/docs.html
+      - page: Navigation Settings
+        slug: nav
+        url: guidelines/nav.html
+toc2:
+  - title: Typography Cheatsheet
+    slug: typography-cheatsheet
+    url: cheatsheets/typography-cheatsheet.html
+  - title: Color Cheatsheet
+    slug: color-cheatsheet
+    url: cheatsheets/color-cheatsheet.html
+  - title: Accordion Generator
+    slug: accordion-generator
+    url: accordion-generator.html
+  - title: Photo &amp; Caption Generator
+    slug: photo-caption-generator
+    url: cheatsheets/photo-caption-generator.html
+  - title: Script Generator (Login required)
+    slug: script-generator
+    url: https://wwws.dallascollege.edu/sandbox/Documents/html/scriptgen.html
+tools:
+  - title: SiteImprove
+    slug: siteimprove
+    url: my2.siteimprove.com/Dashboard/5765905975/2572/Dashboard/Index
+  - title: Convert Excel to HTML
+    slug: excel-table
+    url: /webapps.dcccd.edu/tools/convertexcel/
+  - title: HTML Cleaner
+    slug: html-cleaner
+    url: html-cleaner.com/
+  - title: Responsive Table Generator
+    slug: table-generator
+    url: ianrmedia.unl.edu/responsive-table-generator-tool
+gov:
+  - title: DCT Web Guidelines
+    slug: web-guidelines
+    url: dcccd.sharepoint.com/sites/dct/SitePages/Web-Content-Guidelines.aspx?web=1
+  - title: DCT Online Forms Guidelines
+    slug: online-forms
+    url: dcccd.sharepoint.com/sites/dct/SitePages/Guidelines-and-Requirements-for-Online-Forms.aspx?web=1
+  - title: DC Brand and Logo Guidelines
+    slug: brand-logo
+    url: dcccd.sharepoint.com/sites/StyleGuide
+upcoming:
+  - page: Page&colon; FAQ
+    slug: faq
+    url: templates/faq.html
+  - page: Page&colon; Alternating Landing
+    slug: alt-landing
+    url: templates/alt-landing.html
+  - page: Page&colon; Video Transcript
+    slug: video-transcript
+    url: templates/video-transcript.html
+  - page: Snippet&colon; Campus Button Nav
+    slug: campus-nav
+    url: templates/campus-nav.html

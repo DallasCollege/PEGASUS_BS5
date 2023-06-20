@@ -1,0 +1,14 @@
+                <section>
+                    <h2 class="page-header text-csecondary h3 text-uppercase">Components</h2>
+                    <nav>
+                        <ul class="col-count-3 list-unstyled h5">
+                            {% for item in site.data.sitemap.toc %}
+                                {% for entry in item.subfolderitems %}
+                                    {% if entry.url contains "components" %}
+                            <li><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </section>

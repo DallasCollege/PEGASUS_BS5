@@ -1,0 +1,77 @@
+                <section>
+                    <div class="subsection3">
+                        <h2 class="page-header text-csecondary" id="using">Using Buttons</h2>
+                        <p>Buttons are built primarily for styling <code>&lt;a&gt;</code> links.</p>
+                        <p>To apply a basic button style to an <code>&lt;a&gt;</code> link:</p>
+                            <ol>
+                                <li>Add the <code>.button</code> class to your <code>&lt;a&gt;</code> link,</li>
+                                <li>Apply any one of the <code>.bg-*</code> (background) <a href="{{ site.baseurl }}cheatsheets/color-cheatsheet.html">PEGASUS color classes</a> (<code>.bg-cprimary</code> should always be used as default)</li>
+                            </ol>
+                            <div class="indent">
+                                <p><strong>Sample Code:</strong></p>
+                                <pre class="lead"><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;button bg-c*&quot;&gt;Button Text&lt;/a&gt;</code></pre>
+                            </div>
+                            <div class="alert alert-success extra-padding">
+                                <h3><span class="ico fas fa-thumbs-up ico-left" aria-hidden="true"></span>Best Practice: Buttons</h3>
+                                <ul>
+                                    <li>Always use title caps for text inside of icons</li>
+                                </ul>
+                            </div>
+                        <div class="row extra-space">
+                            <div class="col-sm-12">
+                                <h3>Buttons + Color</h3>
+                                <div class="alert alert-warning extra-padding">
+                                    <h4 class="h3"><span class="ico fas fa-life-ring ico-left" aria-hidden="true"></span>Accessibility Note: Button Colors</h4>
+                                    <p>Note that the text color of the button is styled to change to either black or white, depending on whatever background color you choose. This is to maximize color contrast.</p>
+                                </div></div>
+                            <div class="col-sm-4">
+                                <div class="code-example shadow-3 text-center">
+                                    <a href="#" class="button bg-cprimary">Button Text</a>
+                                </div>
+                                <pre class="text-center"><code class="language-markup">&lt;a href="#" class="button bg-cprimary"&gt;Button Text&lt;/a&gt;</code></pre>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="code-example shadow-3 text-center">
+                                    <a href="#" class="button bg-csecondary">Button Text</a>
+                                </div>
+                                <pre class="text-center"><code class="language-markup">&lt;a href="#" class="button bg-csecondary"&gt;Button Text&lt;/a&gt;</code></pre>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="code-example shadow-3 text-center">
+                                    <a href="#" class="button bg-cgrey">Button Text</a>
+                                </div>
+                                <pre class="text-center"><code class="language-markup">&lt;a href="#" class="button bg-cgrey"&gt;Button Text&lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="spacer-4"></div>
+                        <div class="subsesction4">
+                            <div class="row extra-space">
+                                <div class="col-sm-6">
+                                    <h3>Buttons + Icons</h3>
+                                    <p>You can insert any of the <a href="https://fontawesome.com/icons?d=gallery&q=thumbs&s=brands,regular,solid&m=free">Font Awesome 5 icons</a> within a button.</p>
+                                    <div class="code-example shadow-3 text-center">
+                                        <a href="#" class="button bg-cprimary"><span aria-hidden="true" class="ico fab fa-twitter"></span>Button with Icon</a>
+                                    </div>
+                                    <pre
+                                        class="text-center"><code class="language-markup">&lt;a href="#" class="button bg-cprimary"&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;ico fab fa-twitter&quot;&gt;&lt;/span&gt; Button Text&lt;/a&gt;</code></pre>
+                                    <div class="alert alert-success">
+                                        <p><span class="ico fas fa-check" aria-hidden="true"></span> <strong>Proper Use:</strong> The icon is to always be placed on the left side of the button.</p>
+                                        <p class="indent"><strong>Exception:</strong> when a right arrow is used, which should communicate a user's advancement to a new step or phase in their experience. Make sure to use <code>.ico-right</code>.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3>Buttons + Shadows</h3>
+                                    <p>You can add any of the <a href="{{ site.baseurl }}utilities/shadows.html">shadow classes</a> to any button.</p>
+                                    <div class="code-example shadow-3 text-center">
+                                        <a href="#" class="button bg-cprimary shadow-2">Button with Shadow</a>
+                                    </div>
+                                    <pre class="text-center"><code class="language-markup">&lt;a href="#" class="button bg-cprimary shadow-2"&gt;Button Text&lt;/a&gt;</code></pre>
+                                    <div class="alert alert-success">
+                                        <p><span class="ico fas fa-check" aria-hidden="true"></span> <strong>Proper Use:</strong> Shadows on buttons should be used sparingly as a way to draw emphasis and visual weight to the button itself.</p>
+                                        <p>A suggested use is on buttons that call the user to action. Overuse makes the page unnecessarily cluttered.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>

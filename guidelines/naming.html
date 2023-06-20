@@ -1,0 +1,117 @@
+---
+layout: sidebar
+title: Naming Sites and Pages
+permalink: guidelines/naming.html
+slug: naming
+---
+
+<section class="subsection3">
+    <h2 id="general" class="page-header">General Naming Conventions</h2>
+    <p>We should adhere to the following best practices when naming any sites or pages for the website:</p>
+    <h3>Guidelines:</h3>
+    <ul class="col-count-2">
+        <li>No capital letters</li>
+        <li>Dashes in places of spaces</li>
+        <li>No underscores</li>
+        <li>Keep verbiage concise</li>
+        <li>No articles or conjuctions (a/an/the/of/and/or/but)</li>
+        <li>Avoid abbreviations when possible</li>
+    </ul>
+
+    <h3>Example File Names:</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Example</th>
+                <th>Subsite</th>
+                <th>Page</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dual Credit</td>
+                <td><code>/dual-credit</code></td>
+                <td><code>dual-credit.aspx</code></td>
+            </tr>
+            <tr>
+                <td>How to Enroll in Service Learning</td>
+                <td><code>/enroll</code></td>
+                <td><code>enroll.aspx</code></td>
+            </tr>
+            <tr>
+                <td>Contact Coordinators</td>
+                <td><span class="sr-only">Not applicable</span></td>
+                <td><code>contact.aspx</code></td>
+            </tr>
+            <tr>
+                <td>Contact Faculty</td>
+                <td><span class="sr-only">Not applicable</span></td>
+                <td><code>contact.aspx</code></td>
+            </tr>
+            <tr>
+                <td>Make Payments</td>
+                <td><code>/payments</code></td>
+                <td><code>payments.aspx</code></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="subsection3">
+    <h2 id="general" class="page-header">Specific Naming Conventions and Best Practices</h2>
+    <h3>Campus Abbreviations</h3>
+    <p>When specifying a subsite or page for a specific campus, instead of using the full campus name, we are sticking with the three-letter abbreviation.</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <p>Here is an example of a site that would need <strong>subsites</strong> for each campus and how to name them:</p>
+    <pre>.
+└── advising/
+    ├── bhc/
+    ├── cvc/
+    ├── efc/
+    ├── ecc/
+    ├── mvc/
+    ├── nlc/
+    └── rlc/
+</pre>
+        </div>
+        <div class="col-sm-6">
+            <p>Here is an example of a site that would need <strong>subpages</strong> for each campus and how to name them:</p>
+<pre>.
+└── advising/
+    └── pages/
+        ├── bhc.aspx
+        ├── cvc.aspx
+        ├── efc.aspx
+        ├── ecc.aspx
+        ├── mvc.aspx
+        ├── nlc.aspx
+        └── rlc.aspx
+</pre>
+        </div>
+    </div>
+    <h3>Bio Pages</h3>
+    <p>For bio pages, the page file name should be <code>[first]-[last].aspx</code> and not include any titles, degrees, initials or abbreviations.</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Example</th>
+                <th>Page</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dr. Christa Slejko</td>
+                <td><code>christa-slejko.aspx</code></td>
+            </tr>
+            <tr>
+                <td>Bob Newhart Ph.D., J.D.</td>
+                <td><code>bob-newhart.aspx</code></td>
+            </tr>
+            <tr>
+                <td>P.L. Travers</td>
+                <td><code>pamela-travers.aspx</code></td>
+            </tr>
+        </tbody>
+    </table>
+</section>

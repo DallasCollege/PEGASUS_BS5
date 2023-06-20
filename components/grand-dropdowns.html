@@ -1,0 +1,101 @@
+---
+layout: default-level2
+title: Grand Dropdowns
+cat: Components
+permalink: components/grand-dropdowns.html
+---
+
+                <div class="subsection3" id="data-boxes">
+                    <aside class="text-right text-csecondary small"><strong>Last Updated:</strong> 9/4/2020</aside>
+                  <p class="lead">A <strong>Grand Dropdown</strong> is a component that offers users a dropdown of links to choose from. Use it on pages or layouts that are more visual and have a list of links that don't need to take up a whole lot of space. This component is available in the following sizes:</p>
+                  <ul>
+                    <li>standard size</li>
+                    <li>small size</li>
+                  </ul>
+                 <h3>Standard Size</h3>
+                <div class="code-example shadow-3">
+                    <div class="pgs-grand-dropdown">
+                        <h2>Heading for the dropdown</h2>
+                        <button class="bg-cwhite button button-lg pgs-grand-dropdown__btn dropdown-toggle shadow-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby="[DROPDOWN-ID]">
+                            This is a grand dropdown... <span class="ico fas fa-chevron-circle-down"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Option A</a></li>
+                            <li><a href="#">Option B</a></li>
+                            <li><a href="#">Option C</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                  <div class="row extra-space">
+                    <div class="col-md-12">
+                      <h3>Basic Code and Classes:</h3>
+                      <pre><code class="language-markup">  &lt;div class=&quot;pgs-grand-dropdown&quot;&gt;
+      &lt;h2 id=&quot;[DROPDOWN-ID]&quot;&gt;Heading for the dropdown&lt;/h2&gt;
+      &lt;button class=&quot;bg-cwhite button button-lg pgs-grand-dropdown__btn dropdown-toggle shadow-2&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-labelledby=&#x22;[DROPDOWN-ID]&#x22;&gt;
+          This is a grand dropdown... &lt;span class=&quot;ico fas fa-chevron-circle-down&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option A&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option B&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option C&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/div&gt;                      </code></pre>
+                      <div class="spacer-2"></div>
+                      <ul>
+                        <li>Grand Dropdowns can be used at any width; simply wrap component within a sized <code>&lt;div&gt;</code>, or any bootstrap column</li>
+                      </ul>
+                      <div class="spacer-2"></div>
+                      <div class="alert alert-info extra-padding">
+                        <h3><span class="ico fas fa-palette ico-left" aria-hidden="true"></span>Style This Component</h3>
+                        <p>Notice how variations to the layout above can be made by customizing individual Pegasus elements like the following:</p>
+                        <ul>
+                          <li>The use of a <a href="utilities.html#shadows">shadow</a> on the dropdown (apply to <code>.pgs-grand-dropdown</code>) </li>
+                          <li>The <a href="colors.html">color of the background</a> of the dropdown (apply to <code>button</code>; <code>.bg-cwhite</code> is used in the above example) </li>
+                        </ul>
+                      </div>
+
+                      <div class="alert alert-warning extra-padding">
+                        <h3><span class="ico fas fa-universal-access ico-left" aria-hidden="true"></span>Accessibility Notice!</h3>
+                        <p>HTML attributes <code>type</code>, <code>data-toggle</code>, <code>aria-haspopup</code>, <code>aria-expanded</code> and <code>aria-labelledby</code> must always be used to ensure the highest level of accessibility.</p>
+                        <p>Also, always use a heading above the dropdown to give users the proper context as to what type of options they can expect to find in the dropdown. Use <code>aria-labelledby</code> to match the ID given to the heading. This will assist users with screen readers.</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="spacer-3"></div>
+                <h3>Small Size</h3>
+                <div class="code-example shadow-3">
+                   <div class="pgs-grand-dropdown pgs-grand-dropdown--sm">
+                       <h2 class="h3" id="[DROPDOWN-ID]">Heading for the dropdown</h2>
+                       <button class="bg-cwhite button pgs-grand-dropdown__btn dropdown-toggle shadow-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby="[DROPDOWN-ID]">
+                           This is a grand dropdown... <span class="ico fas fa-chevron-circle-down"></span>
+                       </button>
+                       <ul class="dropdown-menu">
+                           <li><a href="#">Option A</a></li>
+                           <li><a href="#">Option B</a></li>
+                           <li><a href="#">Option C</a></li>
+                       </ul>
+                   </div>
+                </div>
+
+                 <div class="row extra-space">
+                   <div class="col-md-12">
+                     <h3>Code and Classes:</h3>
+                     <pre><code class="language-markup">&lt;div class=&quot;pgs-grand-dropdown pgs-grand-dropdown--sm&quot;&gt;
+     &lt;h2 class=&quot;h3&quot; id=&quot;[DROPDOWN-ID]&quot;&gt;Heading for the dropdown&lt;/h2&gt;
+     &lt;button class=&quot;bg-cwhite button pgs-grand-dropdown__btn dropdown-toggle shadow-2&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;  aria-labelledby=&#x22;[DROPDOWN-ID]&#x22;&gt;
+         This is a grand dropdown... &lt;span class=&quot;ico fas fa-chevron-circle-down&quot;&gt;&lt;/span&gt;
+     &lt;/button&gt;
+     &lt;ul class=&quot;dropdown-menu&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option A&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option B&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option C&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+                </div>
+            </div>
+        </div>
+
+
+                {% include components/nav.html %}
