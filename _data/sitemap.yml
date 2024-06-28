@@ -134,10 +134,16 @@ toc2:
     url: accordion-generator.html
   - title: Photo &amp; Caption Generator
     slug: photo-caption-generator
-    url: cheatsheets/photo-caption-generator.html
+    url: cheatsheets/photo-caption-generator-generic.html
+  - title: Video and Accordion Generator
+    slug: vid-accordion-generator
+    url: cheatsheets/vid-accordion-generator.html
+  - title: Form Assembly iFrame Generator
+    slug: fa-iframe-src-generator-generic
+    url: cheatsheets/fa-iframe-src-generator-generic.html
   - title: Script Generator (Login required)
     slug: script-generator
-    url: https://wwws.dallascollege.edu/sandbox/Documents/html/scriptgen.html
+    url: scriptgen.html
 tools:
   - title: SiteImprove
     slug: siteimprove

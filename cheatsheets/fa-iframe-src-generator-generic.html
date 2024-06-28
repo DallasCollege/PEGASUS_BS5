@@ -1,0 +1,193 @@
+---
+layout: default-level2
+title: Form Assembly iFrame generator
+permalink: cheatsheets/fa-iframe-src-generator-generic.html
+---
+
+<script>
+    function iFramesrcurl () {
+        var codeString =
+        document.getElementById("formURL").value + '?' + 'tfa_6=' + document.getElementById("areaInterest").value + '&tfa_36=' + document.getElementById("campaignID").value + '&tfa_18=Tell%20Me%20More%20-%20' + document.getElementById("Title").value + '&tfa_19=' + document.getElementById("mktgLead").value;
+
+        document.getElementById("iframeurl").innerText = codeString;
+        document.getElementById("iframeurl2").innerText = codeString;
+
+        var formTitleString = 
+        document.getElementById("Title").value;
+        var formDescriptionString = 
+        document.getElementById("Description").value;
+
+        document.getElementById("formTitle").innerText = formTitleString;
+        document.getElementById("formDescription").innerText = formDescriptionString;
+
+
+    }
+</script>
+
+
+        <div class="row">
+
+
+            <div class="col-sm-12">
+                <p class="lead">Fill out the form below to generate the iFrame link for your form.</p>
+            </div>
+            <div class="col-sm-6">
+                <form id="form1" onsubmit="return false">
+                    <div class="form-group">
+                        Form Title<br><small>What is the title for your form</small> <br>
+                        <input type="text" class="form-control" name="Title" id="Title">
+                    </div>
+
+                    <div class="form-group">
+                        Form Description<br><small>What is the description for your form</small> <br>
+                        Sign up to receive additional information about the [ INSERT NAME ] program:<br>
+                        <textarea class="form-control" name="Description" id="Description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                            Form URL<br><small>What is the source URL for your form</small> <br>
+                            <small>Generic Form: https://www.dallascollege.edu/sitecollectiondocuments/tmm/tmm-sfmc-generic.html</small>
+                            <input type="text" class="form-control" name="formURL" id="formURL">
+                        </div>
+
+                        <!-- <div class="form-group">
+                            Form Name<br><small>What is the name for your form (this appears in the company field and should begin with "Tell Me More -"</small> 
+                            <input type="text" class="form-control" name="TMM" id="TMM">
+                        </div> -->
+                      
+                    <div class="form-group">
+                        What school (area) is the program part of
+                        <select name="areaInterest" id="areaInterest" title="Area of Interset Selector" class="">
+                            <option selected="selected">Select One</option>
+                            <option>Arts</option>
+                            <option>Business</option>
+                            <option>Education</option>
+                            <option>ETMS</option>
+                            <option value="Health%20Sciences">Health Sciences</option>
+                            <option value="Law%20Public%20Safety">Law Public Safety</option>
+                            <option>Manufacturing</option>
+                        </select>
+                        </div> 
+
+                        <div class="form-group">
+                            Campaign ID<br><small>What is the Salesforce Campaign ID</small> 
+                            <!-- <input type="text" class="form-control" name="campaignID" id="campaignID"> -->
+                     
+                        <select name="campaignID" id="campaignID" title="Campaign Selector" class="">
+                            <option value="">Please select...</option>
+                            <option value="7014W000001BEhVQAW" id="campaignID">Accounting - 7014W000001BEhVQAW</option>
+                        <option value="7014W000001BEhaQAG" id="campaignID">Advanced Manufacturing/Mechatronics Technology - 7014W000001BEhaQAG</option>
+                        <option value="7014W000001BEhfQAG" id="campaignID">Air Conditioning & Refrigeration Technology - 7014W000001BEhfQAG</option>
+                        <option value="701Rb000001gdNmIAI" id="campaignID">Art Institute - 701Rb000001gdNmIAI</option>
+                        <option value="7014W000001BEhkQAG" id="campaignID">Auto Body - 7014W000001BEhkQAG</option>
+                        <option value="7014W000001BEhpQAG" id="campaignID">Automotive Tech - 7014W000001BEhpQAG</option>
+                        <option value="7014W000001BGQTQA4" id="campaignID">Business and Management - 7014W000001BGQTQA4</option>
+                        <option value="7014W000001BEhqQAG" id="campaignID">Cardiac Sonography - 7014W000001BEhqQAG</option>
+                        <option value="7014W000001BGMoQAO" id="campaignID">Child Development - 7014W000001BGMoQAO</option>
+                        <option value="701Rb000006rKDJIA2" id="campaignID">CIT - 701Rb000006rKDJIA2</option>
+                        <option value="701Rb00000BH5RbIAL" id="campaignID">Criminal Justice - 701Rb00000BH5RbIAL</option>
+                        <option value="7014W000001BEhrQAG" id="campaignID">Commercial Music - 7014W000001BEhrQAG</option>
+                        <option value="7014W000001BEhuQAG" id="campaignID">Construction Management - 7014W000001BEhuQAG</option>
+                        <option value="7014W000001BEi4QAG" id="campaignID">Construction Technology - 7014W000001BEi4QAG</option>
+                        <option value="701Rb00000BxzqmIAB" id="campaignID">CPA Exam Prep - 701Rb00000BxzqmIAB</option>
+                        <option value="7014W000001BGQNQA4" id="campaignID">Culinary - 7014W000001BGQNQA4</option>
+                        <option value="7014W000001BEi9QAG" id="campaignID">Dental Hygiene - 7014W000001BEi9QAG</option>
+                        <option value="7014W000000rFslQAE" id="campaignID">Diagnostic Medical - 7014W000000rFslQAE</option>
+                        <option value="7014W000001BSIPQA4" id="campaignID">Digital Art Design - 7014W000001BSIPQA4</option>
+                        <option value="7014W000000rFsgQAE" id="campaignID">Electrical Technology - 7014W000000rFsgQAE</option>
+                        <option value="7014W000001BGQDQA4" id="campaignID">EMS Education - 7014W000001BGQDQA4</option>
+                        <option value="7014W000001BGQIQA4" id="campaignID">Engine Technology - 7014W000001BGQIQA4</option>
+                        <option value="7014W000000rFt5QAE" id="campaignID">Game Design - 7014W000000rFt5QAE</option>
+                        <option value="7014W000001BCojQAG" id="campaignID">General - 7014W000001BCojQAG</option>
+                        <option value="7014W000001BGQOQA4" id="campaignID">Health Information Tech - 7014W000001BGQOQA4</option>
+                        <option value="7014W000001BGQSQA4" id="campaignID">Health Professions Readiness - 7014W000001BGQSQA4</option>
+                        <option value="7014W000000rFtPQAU" id="campaignID">HEEM - 7014W000000rFtPQAU</option>
+                        <option value="701Rb000006rSxCIAU" id="campaignID">Human Resources - 701Rb000006rSxCIAU</option>
+                        <option value="7014W000001BGQcQAO" id="campaignID">International Business and Trade - 7014W000001BGQcQAO</option>
+                        <option value="7014W000001BGQdQAO" id="campaignID">Invasive Cardiovascular Tech - 7014W000001BGQdQAO</option>
+                        <option value="7014W000000rLXNQA2" id="campaignID">Law Enforcement - 7014W000000rLXNQA2</option>
+                        <option value="701Rb000009WNJlIAO" id="campaignID">Logistics - 701Rb000009WNJlIAO</option>
+                        <option value="7014W000001BGQhQAO" id="campaignID">Medical Assisting - 7014W000001BGQhQAO</option>
+                        <option value="7014W000001BGQUQA4" id="campaignID">Medical Front Office - 7014W000001BGQUQA4</option>
+                        <option value="7014W000001BGQmQAO" id="campaignID">Medical Laboratory Tech - 7014W000001BGQmQAO</option>
+                        <option value="7014W000001BGQrQAO" id="campaignID">MRI - 7014W000001BGQrQAO</option>
+                        <option value="7014W000001BEKqQAO" id="campaignID">Nursing - 7014W000001BEKqQAO</option>
+                        <option value="701Rb0000092WUuIAM" id="campaignID">Occupational Therapy - 701Rb0000092WUuIAM</option>
+                        <option value="701Rb000003VdRdIAK" id="campaignID">Online - 701Rb000003VdRdIAK</option>
+                        <option value="701Rb000007sfF3IAI" id="campaignID">Paralegal - 701Rb000007sfF3IAI</option>
+                        <option value="7014W000001BGQwQAO" id="campaignID">Radiologic Sciences - 7014W000001BGQwQAO</option>
+                        <option value="7014W000000rE7iQAE" id="campaignID">Real Estate - 7014W000000rE7iQAE</option>
+                        <option value="7014W000000rGCsQAM" id="campaignID">Respiratory Care - 7014W000000rGCsQAM</option>
+                        <option value="7014W000001BDM2QAO" id="campaignID">School of Business - 7014W000001BDM2QAO</option>
+                        <option value="7014W000001BDLnQAO" id="campaignID">School of Creative Arts - 7014W000001BDLnQAO</option>
+                        <option value="7014W000001BDM7QAO" id="campaignID">School of Education - 7014W000001BDM7QAO</option>
+                        <option value="7014W000001BDMCQA4" id="campaignID">School of Engineering - 7014W000001BDMCQA4</option>
+                        <option value="7014W000000rGFTQA2" id="campaignID">School of ETMS - 7014W000000rGFTQA2</option>
+                        <option value="7014W000001BDMHQA4" id="campaignID">School of Health Sciences - 7014W000001BDMHQA4</option>
+                        <option value="7014W000001BDM8QAO" id="campaignID">School of Law and Public Safety - 7014W000001BDM8QAO</option>
+                        <option value="7014W000001BDMMQA4" id="campaignID">School of Manufacturing - 7014W000001BDMMQA4</option>
+                        <option value="7014W000000rGWlQAM" id="campaignID">Social Work - 7014W000000rGWlQAM</option>
+                        <option value="7014W000000rGpoQAE" id="campaignID">Substance Abuse - 7014W000000rGpoQAE</option>
+                        <option value="7014W000000rGJCQA2" id="campaignID">Surgical Technology - 7014W000000rGJCQA2</option>
+                        <option value="7014W000000rGJHQA2" id="campaignID">Vet Tech - 7014W000000rGJHQA2</option>
+                        <option value="7014W000000rGCnQAM" id="campaignID">Welding - 7014W000000rGCnQAM</option>                           
+                        </select>
+                    </div>
+
+
+                        <div class="form-group">
+                            Marketing Lead Info<br><small>What is lead source? (Web or Advertisement)</small> 
+                            <input type="text" class="form-control" name="mktgLead" id="mktgLead" value="Web">
+                        </div>
+
+
+                        <input type="submit" onclick="iFramesrcurl();" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <hr>
+
+            <h3>Expected Output</h3>
+
+            <div class="row">
+
+                <!-- <div id="captionDemo"></div> -->
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h3>Copy and Paste</h3>
+                    <p>Once you've submitted your form, here is the URL:</p>
+
+                    <div class="well">
+                        <code>
+                             <div id="iframeurl"></div> 
+                        </code>
+                    </div>
+
+                     <p>Here is the full iFrame code:</p>
+
+                    <div class="well">
+                        <code>
+                            &#x3C;section aria-label=&#x22;Tell Me More&#x22; id=&#x22;tmm&#x22;&#x3E;<br>
+                            &#x3C;div class=&#x22;full-width-row bg-cgrey&#x22;&#x3E;<br>
+                            &#x3C;div style=&#x22;overflow:hidden;-webkit-overflow-scrolling:touch&#x22;&#x3E;<br>
+                            &#x3C;div class=&#x22;spacer-1&#x22;&#x3E;&#x3C;/div&#x3E;<br>
+                            &#x3C;div class=&#x22;container&#x22;&#x3E;<br>
+                            &#x3C;h2&#x3E;<div id="formTitle" style="display:inline"></div>&#x3C;/h2&#x3E;<br>
+                            &#x3C;p class="lead mb-0"&#x3E;<div id="formDescription" style="display:inline"></div>&#x3C;/p&#x3E;<br>
+                            &#x3C;/div&#x3E;<br>
+                            &#x3C;iframe title=&#x22;Tell Me More&#x22; class=&#x22;height-xxs-900 height-sm-800 height-md-400 height-lg-400&#x22; style=&#x22;height:100%; width:100%; border:none&#x22; src=&#x22;<div id="iframeurl2" style="display:inline"></div>&#x22;&#x3E;<br>
+                            Please select a different web browser or enable iFrames to view this form.<br>
+                            &#x3C;/iframe&#x3E;<br>
+                            &#x3C;/div&#x3E;<br>
+                            &#x3C;/div&#x3E;<br>
+                            &#x3C;/section&#x3E;
+                        
+                        </code>
+                    </div> 
+
+                </div>
+            </div>

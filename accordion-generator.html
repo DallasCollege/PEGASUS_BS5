@@ -19,14 +19,18 @@
 
 <script>
 function contactForm () {
+var str = document.getElementById("AccordionID").value;
+var accordID = str.replace(/\s/g, ''); //remove spaces
+document.getElementById("AccordionID").value = accordID; //update text field
+
 var codeString =
-'<div class="panel-group pgs-accordion" id="' + document.getElementById("campusID").value + '">\n'	+
+'<div class="panel-group pgs-accordion" id="' + accordID + '">\n'	+
 '<h3>\n'	+
-'<button type="button" data-target="#collapse-' + document.getElementById("campusID").value + '" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-' + document.getElementById("campusID").value + '">\n'	+
+'<button type="button" data-target="#collapse-' + accordID + '" class="bg-cgrey collapsible collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-' + accordID + '">\n'	+
 '<span aria-hidden="true" class="ico fas fa-chevron-circle-right"></span>' + document.getElementById("AccordionTitle").value + '\n'	+
 '</button>\n'	+
 '</h3>\n'	+
-'<div id="collapse-'+ document.getElementById("campusID").value + '" class="panel-collapse collapse">\n'	+
+'<div id="collapse-'+ accordID + '" class="panel-collapse collapse">\n'	+
 '<div class="panel-body">\n'	+
 '<!-- Accordion Content -->\n'	+
 document.getElementById("AccordionContent").value + '\n' +
@@ -156,7 +160,7 @@ document.getElementById("contactDemo").innerHTML = codeString;
 <a class="underline-inv text-cwhite site-title" href="/about/style/documents/pegasus/index.html">PEGASUS <span class="hidden-sm">Web Resources</span></a></div>
 </div>
 <div class="col-md-3 col-sm-4 text-right">
-<a class="button button-sm bg-cprimary no-margin" href="/about/style/documents/pegasus/changelog.html">Updated: Sept. 11, 2020</a>
+<a class="button button-sm bg-cprimary no-margin" href="/about/style/documents/pegasus/changelog.html">Updated: Nov. 2, 2023</a>
 </div>
 </div>
 </div>
@@ -519,17 +523,8 @@ $hamburger.toggleClass("is-active");
 <div class="col-sm-6">
 <form id="form1" onsubmit="return false">
 <div class="form-group">
-<p><label for="campusID">Select Location for Styling:</label></p>
-<select class="form-control" name="campusID" id="campusID">
-<option>BH</option>
-<option>CV</option>
-<option>EF</option>
-<option>EC</option>
-<option>MV</option>
-<option>NL</option>
-<option>RL</option>
-<option>DC</option>
-</select>
+<p><label for="AccordionID">Accordion ID:</label></p>
+<input type="text" class="form-control" style="width: 200px;" name="AccordionID" id="AccordionID">
 </div>
 <div class="form-group">
 <p><label for="AccordionTitle">Accordion Title:</label></p>
