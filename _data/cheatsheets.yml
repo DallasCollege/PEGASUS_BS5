@@ -52,7 +52,7 @@ typography:
       - class: text-left
         when: Use to align text to the left
         notes: Applies <code class="language-css">text-align:left;</code>
-      - class: text-right
+      - class: text-end
         when: Use to align text to the right
         notes: Applies <code class="language-css">text-align:right;</code>
       - class: text-center
